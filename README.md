@@ -7,8 +7,9 @@ status](https://travis-ci.org/dzhw/questionMetadataPreperation.svg?branch=master
 # questionMetadataPreperation
 
 The goal of questionMetadataPreperation is to help with preparing
-question-metadata for the metadatamanagement system of the research data
-center of the dzhw. <https://metadata.fdz.dzhw.eu>
+question-metadata for the [metadatamanagement
+system](https://metadata.fdz.dzhw.eu) of the research data center of the
+dzhw.
 
 ## Installation
 
@@ -18,3 +19,8 @@ You can install the released version of questionMetadataPreperation from
 ``` r
 devtools::install_github("dzhw/questionMetadataPreperation")
 ```
+
+## Having trouble?
+
+Please file an issue in our [issue
+tracker](https://github.com/dzhw/metadatamanagement/issues)
