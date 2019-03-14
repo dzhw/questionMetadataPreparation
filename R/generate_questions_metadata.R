@@ -32,7 +32,7 @@ generate_questions_metadata <- function(projects_root, project_name) {
     for (i in 1:nrow(excel)) {
       que <- new.env(hash = TRUE, parent = emptyenv())
 
-      que[["indexInInstrument"]] <- unbox(
+      que[["indexInInstrument"]] <- jsonlite::unbox(
         as.numeric(excel[i, "indexInInstrument"])
       )
       que[["questionText"]] <- new.i18n_string(
@@ -76,7 +76,7 @@ generate_questions_metadata <- function(projects_root, project_name) {
         open = "w", encoding = "UTF-8"
       )
 
-      write(toJSON(nested_env_as_list(que),
+      write(jsonlite::toJSON(nested_env_as_list(que),
         null = "null", na = "null",
         pretty = TRUE
       ), file = con)
@@ -108,11 +108,11 @@ generate_questions_metadata <- function(projects_root, project_name) {
 
       que <- new.env(hash = TRUE, parent = emptyenv())
 
-      que[["language"]] <- unbox(questionExcel[i, "language"])
-      que[["containsAnnotations"]] <- unbox(
+      que[["language"]] <- jsonlite::unbox(questionExcel[i, "language"])
+      que[["containsAnnotations"]] <- jsonlite::unbox(
         as.logical(questionExcel[i, "containsAnnotations"])
       )
-      que[["indexInQuestion"]] <- unbox(
+      que[["indexInQuestion"]] <- jsonlite::unbox(
         as.numeric(questionExcel[i, "indexInQuestion"])
       )
 
@@ -126,7 +126,7 @@ generate_questions_metadata <- function(projects_root, project_name) {
       ), "w",
         encoding = "UTF-8"
       )
-      write(toJSON(nested_env_as_list(que),
+      write(jsonlite::toJSON(nested_env_as_list(que),
         null = "null", na = "null",
         pretty = TRUE
       ), file = con)
@@ -135,29 +135,10 @@ generate_questions_metadata <- function(projects_root, project_name) {
     }
     cat("Finished writing image jsons\n")
   }
-  read_and_trim_excel <- function(path, sheet) {
-    excel <- readxl::read_excel(path, sheet = sheet, col_types = "text")
-    excel <- data.frame(sapply(excel, trim_multiple_leading_trailing_ws),
-      stringsAsFactors = FALSE
-    )
-    excel <- del_NA_cols_and_rows(excel)
-    return(excel)
-  }
 
-  trim_multiple_leading_trailing_ws <- function(x) {
-    stringr::str_replace(
-      gsub("(?<=[\\s])\\s*|^\\s+|\\s+$", "", x, perl = TRUE),
-      "^$", NA_character_
-    )
-  }
 
-  del_NA_cols_and_rows <- function(excel) {
-    NAcol <- stringr::str_detect(colnames(excel), "NA.")
-    NArow <- apply(excel, 1, function(x) {
-      all(is.na(x))
-    })
-    return(excel[!NArow, !NAcol])
-  }
+
+
 
   trim_cols <- function(x) {
     gsub("\\s+", "", x)
@@ -182,8 +163,8 @@ generate_questions_metadata <- function(projects_root, project_name) {
 
   new.i18n_string <- function(de = NULL, en = NULL) {
     i18n_string <- new.env(hash = TRUE, parent = emptyenv())
-    i18n_string[["de"]] <- unbox(de)
-    i18n_string[["en"]] <- unbox(en)
+    i18n_string[["de"]] <- jsonlite::unbox(de)
+    i18n_string[["en"]] <- jsonlite::unbox(en)
     return(i18n_string)
   }
 
@@ -194,9 +175,9 @@ generate_questions_metadata <- function(projects_root, project_name) {
     technicalRepresentation.language,
     technicalRepresentation.source) {
     technical_representation <- new.env(hash = TRUE, parent = emptyenv())
-    technical_representation[["type"]] <- unbox(technicalRepresentation.type)
-    technical_representation[["language"]] <- unbox(technicalRepresentation.language)
-    technical_representation[["source"]] <- unbox(technicalRepresentation.source)
+    technical_representation[["type"]] <- jsonlite::unbox(technicalRepresentation.type)
+    technical_representation[["language"]] <- jsonlite::unbox(technicalRepresentation.language)
+    technical_representation[["source"]] <- jsonlite::unbox(technicalRepresentation.source)
     return(technical_representation)
   }
 
