@@ -28,3 +28,5 @@ Imports:
 URL: https://github.com/dzhw/questionMetadataPreparation
 BugReports: https://github.com/dzhw/metadatamanagement/issues
 RoxygenNote: 6.1.1
+Suggests: 
+    covr
