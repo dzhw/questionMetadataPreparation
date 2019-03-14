@@ -54,12 +54,12 @@ sort_images <- function(pathInImages, pathOutImages, pathXlsxFile){
     pathPng <- paste0(pathInImages,"/",instrument)
     images <- dir(pathPng, ".png")
     for (image in images) {
-      pngImage <- readPNG(paste0(pathPng,"/",image))
+      pngImage <- png::readPNG(paste0(pathPng,"/",image))
       # find image name in excel and get questionNumber
       questionNumber <- excel[excel$instrumentNumber == sub("ins","",
         instrument) & excel$fileName == image,"questionNumber"]
 
-      writePNG(pngImage, paste0(pathOutImages,"/",instrument,"/images/",
+      png::writePNG(pngImage, paste0(pathOutImages,"/",instrument,"/images/",
         questionNumber,"/", image))
     }
   }
