@@ -53,15 +53,24 @@ sort_images <- function(pathInImages, pathOutImages, pathXlsxFile){
   for (instrument in dir(pathInImages)) {
     pathPng <- paste0(pathInImages,"/",instrument)
     images <- dir(pathPng, ".png")
+<<<<<<< HEAD
     dir.create(paste0(pathOutImages, "/", instrument, "/images"),
       recursive = TRUE)
+=======
+    dir.create(paste0(pathOutImages, "/", instrument))
+    dir.create(paste0(pathOutImages, "/", instrument, "/images"))
+>>>>>>> de0e4059dce1efcc3dee0f777a03b1ffe7071ca9
     for (image in images) {
       pngImage <- png::readPNG(paste0(pathPng,"/",image))
       # find image name in excel and get questionNumber
       questionNumber <- excel[excel$instrumentNumber == sub("ins","",
         instrument) & excel$fileName == image,"questionNumber"]
       dir.create(paste0(pathOutImages, "/", instrument, "/images/",
+<<<<<<< HEAD
         questionNumber), recursive = TRUE)
+=======
+        questionNumber))
+>>>>>>> de0e4059dce1efcc3dee0f777a03b1ffe7071ca9
       png::writePNG(pngImage, paste0(pathOutImages,"/",instrument,"/images/",
         questionNumber,"/", image))
     }
