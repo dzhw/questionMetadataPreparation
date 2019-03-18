@@ -12,7 +12,9 @@ status](https://codecov.io/gh/dzhw/questionMetadataPreperation/branch/master/gra
 The goal of questionMetadataPreperation is to help with preparing
 question-metadata for the [metadatamanagement
 system](https://metadata.fdz.dzhw.eu) of the research data center of the
-dzhw.
+dzhw. If you do not work for the research data center of the dzhw, this
+package will probably be only useful for learning purposes, as it’s
+specifically designed to help with our internal processes.
 
 ## Installation
 
