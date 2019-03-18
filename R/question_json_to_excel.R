@@ -6,6 +6,7 @@
 #' @param in_path Input path, e.g. "./input/questions/ins1"
 #' @param out_file Path to the excel file to be generated, e.g.
 #'   "./output/projectname.xlsx"
+#' @export
 
 
 question_json_to_excel <- function(in_path, out_file){
