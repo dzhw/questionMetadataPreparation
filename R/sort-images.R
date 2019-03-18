@@ -35,10 +35,7 @@
 #' @param pathInImages path containing folders ins1 ins2 etc.
 #' @param pathOutImages path to newly generated json files
 #' @param pathXlsxFile path to the excel file
-
-
-
-
+#' @export
 
 sort_images <- function(pathInImages, pathOutImages, pathXlsxFile){
   # sort images -------------------------------------------------------------
@@ -49,16 +46,18 @@ sort_images <- function(pathInImages, pathOutImages, pathXlsxFile){
   excel <- read_and_trim_excel(pathXlsxFile, sheet = "images")
 
 
-
   for (instrument in dir(pathInImages)) {
     pathPng <- paste0(pathInImages,"/",instrument)
     images <- dir(pathPng, ".png")
+    dir.create(paste0(pathOutImages, "/", instrument, "/images"),
+      recursive = TRUE)
     for (image in images) {
-      pngImage <- png::readPNG(paste0(pathPng,"/",image))
+      pngImage <- png::readPNG(paste0(pathPng, "/", image))
       # find image name in excel and get questionNumber
       questionNumber <- excel[excel$instrumentNumber == sub("ins","",
         instrument) & excel$fileName == image,"questionNumber"]
-
+      dir.create(paste0(pathOutImages, "/", instrument, "/images/",
+        questionNumber), recursive = TRUE)
       png::writePNG(pngImage, paste0(pathOutImages,"/",instrument,"/images/",
         questionNumber,"/", image))
     }

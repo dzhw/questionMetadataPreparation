@@ -10,8 +10,9 @@
 #'
 #' @param projects_root the root folder where all your projects reside
 #' @param project_name the name of your project
+#' @export
 
-generate_questions_metadata <- function(projects_root, project_name) {
+generate_question_jsons <- function(projects_root, project_name) {
 
   generate_question_jsons <- function(pathXlsxFile, pathJson) {
 
