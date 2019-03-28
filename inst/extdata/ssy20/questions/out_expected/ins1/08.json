@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 14,
+  "instruction": {
+    "en": "Semesters for current course of study, plus completed studies as well as Holiday semesters, practical semester and semesters abroad.",
+    "de": "(Semester im derzeitigen Studiengang plus ggf. in einem anderen Studiengang absolvierte Semester sowie Urlaubssemester, Praxissemester und Semester an ausländischen Hochschulen)"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["09"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "For how many semesters (incl. Summer Semester 2012) have you been enrolled at the university in total?",
+    "de": "Wie viele Semester (einschl. Sommersemester 2012) sind Sie bisher insgesamt an Hochschulen eingeschrieben?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "08. Wie viele Semester (einschl. Sommersemester 2012) sind Sie bisher insgesamt ZAHL an Hochschulen eingeschrieben? (Semester im derzeitigen Studiengang plus ggf. in einem anderen Studiengang absolvierte Semester sowie Urlaubssemester, Praxissemester und Semester an ausländischen Hochschulen) ––––––––––––––––––––––––––––––––––––––––––––––––––––––– Anzahl Hochschulsemester"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

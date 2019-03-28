@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 2,
+  "instruction": {
+    "en": "Please only mark with a cross the qualification which you want to gain first.",
+    "de": "Bitte nur den Abschluss ankreuzen, den Sie zunächst erwerben wollen."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["03"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Which degree are you aiming for in your current course of study?",
+    "de": "Welchen Abschluss streben Sie in Ihrem derzeitigen Studiengang an?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "02. Welchen Abschluss streben Sie in Ihrem derzeitigen Studiengang an? Bitte nur den Abschluss ankreuzen, den Sie zunächst erwerben wollen. X Bachelor (nicht Lehramt) –––––––––––––––––––––––––––––––––––––––––––––––––– Bachelor mit dem Ziel Lehramt –––––––––––––––––––––––––––––––––––––––––––– Master (nicht Lehramt) ––––––––––––––––––––––––––––––––––––––––––––––––––– Master mit dem Ziel Lehramt––––––––––––––––––––––––––––––––––––––––––––––– Fachhochschuldiplom –––––––––––––––––––––––––––––––––––––––––––––––––––– Diplom einer Universität/Kunsthochschule o. ä. ––––––––––––––––––––––––––––– Magister –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Staatsexamen (ohne Lehramt) ––––––––––––––––––––––––––––––––––––––––––––– Staatsexamen für ein Lehramt ––––––––––––––––––––––––––––––––––––––––––––– kirchliche Prüfung ––––––––––––––––––––––––––––––––––––––––––––––––––––––– Promotion –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– anderen Abschluss (einschließlich Abschluss im Ausland) ––––––––––––––––––––––––––––– keinen Abschluss ––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 54,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["36.2", "37.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Do you have siblings?",
+    "de": "Haben Sie Geschwister?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "36. Haben Sie Geschwister? X nein ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 65,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["41.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Where were you born?",
+    "de": "Wo wurden Sie geboren?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "40. Wo wurden Sie geboren? X in Deutschland –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– in einem anderen Land –––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

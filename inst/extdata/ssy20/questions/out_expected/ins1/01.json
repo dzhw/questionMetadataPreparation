@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 1,
+  "instruction": {
+    "en": "Please list the number of appropriate or most appropriate subject areas from the list printed on the left.",
+    "de": "Bitte tragen Sie hier die Nummer des zutreffenden bzw. weitestgehend zutreffenden Studienbereichs/Studienfachs aus der links abgedruckten Liste der Studienbereiche/Studienfächer ein."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["02"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Which subjects are you studying in the Summer Semester of 2012?",
+    "de": "Welches Hauptfach bzw. welche Fächer studieren Sie im Sommersemester 2012?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "01. Welches Hauptfach bzw. welche Fächer studieren Sie 1. Fach im Sommersemester 2012? Bitte tragen Sie hier die Nummer des zutreffenden bzw. weitestgehend ggf. 2. Fach zutreffenden Studienbereichs/Studienfachs aus der links abgedruckten Liste der Studienbereiche/Studienfächer ein. ggf. 3. Fach"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

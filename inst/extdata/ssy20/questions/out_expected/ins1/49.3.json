@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 81,
+  "instruction": {
+    "en": "For multiple stays of the same type, please provide details for the longest stay.",
+    "de": "Bei mehreren Aufenthalten der gleichen Art, bitte Angaben für den längsten Aufenthalt machen."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["49.4"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Did the study-related stay abroad take place in the context of a programme?",
+    "de": "Fand der bzw. fanden die von Ihnen durchgeführten studienbezogenen Auslandsaufenthalt(e) im Rahmen eines Programms statt?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Fand der bzw. fanden die von Ihnen durchgeführten studienbezogeX nen Auslandsaufenthalt(e) im Rahmen eines Programms statt? Bei mehreren Aufenthalten der gleichen Art, bitte Angaben für den längsten Aufenthalt machen. Studium Praktikum Sprachkurs nein, ich habe den Aufenthalt selbst organisiert ––––––––––––––––––––––––––––– ja, ERASMUS ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja, anderes EUProgramm ––––––––––––––––––––––––––––––––––––––––––––––––– ja, DAADProgramm –––––––––––––––––––––––––––––––––––––––––––––––––––––– ja, Programm meiner Hochschule in Deutschland –––––––––––––––––––––––––––– ja, Programm meiner Gasthochschule im Ausland –––––––––––––––––––––––––––– ja, anderes Programm ––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Auslandserfahrungen"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

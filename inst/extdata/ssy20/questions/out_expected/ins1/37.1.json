@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 56,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["37.2", "38"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Do you have children?",
+    "de": "Haben Sie Kinder?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "37. Haben Sie Kinder? X nein ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– >> weiter mit Frage 38 ja ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

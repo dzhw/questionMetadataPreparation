@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 45,
+  "instruction": {
+    "en": "Please give the number corresponding to the type of living situation you prefer, even if you are already in your preferred living scenario.",
+    "de": "Bitte Nummer der Wohnform eintragen; auch dann, wenn Sie bereits in der bevorzugten Wohnform wohnen."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["29"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "If you could choose: Which living situation do you prefer?",
+    "de": "Wenn Sie die freie Wahl hätten: In welcher der genannten Wohnformen würden Sie am liebsten wohnen?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Wenn Sie die freie Wahl hätten: In welcher der genannten WohnforZAHL men würden Sie am liebsten wohnen? Bitte Nummer der Wohnform eintragen; auch dann, wenn Sie bereits in der bevorzugten Wohnform wohnen. ––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zur Wohnsituation"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

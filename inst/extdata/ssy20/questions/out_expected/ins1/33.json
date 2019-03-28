@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 50,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["34"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Your gender",
+    "de": "Ihr Geschlecht"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "33. Ihr Geschlecht X männlich ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– weiblich ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

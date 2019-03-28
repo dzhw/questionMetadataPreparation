@@ -212,5 +212,7 @@ generate_question_jsons <- function(projects_root, project_name) {
 
   # Export path (path to json files)
   pathJson <- paste0(projects_root, "/", project_name, "/questions", "/out")
+  base::dir.create(paste0(projects_root, "/", project_name, "/questions",
+    "/out"), recursive = TRUE)
   generate_question_jsons(pathXlsxFile, pathJson)
 }
