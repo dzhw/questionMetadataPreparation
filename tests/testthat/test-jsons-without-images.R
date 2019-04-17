@@ -16,7 +16,7 @@ test_that("json filenames and content are identical", {
   file_list_generated <- list.files(paste0(base::tempdir(),
     "/ssy20-without-images/questions/out"), recursive = TRUE)
   file_list_expected <- list.files(paste0(base::tempdir(),
-    "/ssy20-without-images/questions/out"), recursive = TRUE)
+    "/ssy20-without-images/questions/out_exp"), recursive = TRUE)
   generated_json_list <- vector("list", length(file_list_generated))
   expected_json_list <- vector("list", length(file_list_expected))
   for (i in seq_along(file_list_expected)) {

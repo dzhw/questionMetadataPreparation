@@ -109,7 +109,7 @@ generate_question_jsons <- function(projects_root, project_name,
         ),
         questionExcel[i, "questionNumber"]
       )
-}
+
       que <- new.env(hash = TRUE, parent = emptyenv())
 
       que[["language"]] <- jsonlite::unbox(questionExcel[i, "language"])
@@ -122,7 +122,6 @@ generate_question_jsons <- function(projects_root, project_name,
 
       # json export
       # nolint start
-      browser()
       con <- file(paste0(
         pathJson, "/ins",
         questionExcel[i, "instrumentNumber"], "/images/",
@@ -137,7 +136,7 @@ generate_question_jsons <- function(projects_root, project_name,
       ), file = con)
       close(con)
       # nolint end
-    }
+    }}
     cat("Finished writing image jsons\n")
   }
 
