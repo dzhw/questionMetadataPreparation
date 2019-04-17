@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 75,
+  "instruction": {
+    "en": "Please exactly describe the occupation of your parents, e.g. logistics salesperson, florist, machine fitter, secondary chool teacher; please do not write worker, employee or public official.",
+    "de": "Bitte beschreiben Sie hierbei den ausgeübten Beruf der Eltern möglichst genau, z.B. Speditionskauffrau, Blumenverkäuferin, Maschinenschlosser, Realschullehrer; tragen Sie bitte nicht Arbeiter(in), Angestellte(r), Beamter/Beamtin ein."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["46"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "What is/was the current/previous main occupation of your parents?",
+    "de": "Welchen Beruf üben/übten Ihre Eltern aktuell bzw. zuletzt hauptberuflich aus?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "45. Welchen Beruf üben/übten Ihre Eltern aktuell bzw. zuletzt hauptberuflich aus? TEXT Bitte beschreiben Sie hierbei den ausgeübten Beruf der Eltern möglichst genau, z.B. Speditionskauffrau, Blumenverkäuferin, Maschinenschlosser, Realschullehrer; tragen Sie bitte nicht Arbeiter(in), Angestellte(r), Beamter/Beamtin ein. Vater ggf. Erläuterungen: Mutter ggf. Erläuterungen:"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben über die Eltern"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

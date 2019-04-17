@@ -10,11 +10,13 @@
 #'
 #' @param projects_root the root folder where all your projects reside
 #' @param project_name the name of your project
+#' @param has_images do the questions have images? default is TRUE
 #' @export
 
-generate_question_jsons <- function(projects_root, project_name) {
+generate_question_jsons <- function(projects_root, project_name,
+  has_images = TRUE) {
 
-  generate_question_jsons <- function(pathXlsxFile, pathJson) {
+  write_question_jsons <- function(pathXlsxFile, pathJson, has_images) {
 
     # read excel file - sheet questions
     cat("Read excel file: sheet questions\n")
@@ -26,9 +28,10 @@ generate_question_jsons <- function(projects_root, project_name) {
     # -> create new directories for json export if don't exist (e.g. .../json/ins1)
     # -> or delete old jsons from directories if exist
     create_export_directories(pathJson, paste0("ins", unique(excel[["instrumentNumber"]])))
+    if(has_images == TRUE) {
     # and images folder if not existing
     create_export_directories(pathJson, paste0("ins", unique(excel[["instrumentNumber"]]), "/images"))
-
+}
     # for all questions in excel
     for (i in 1:nrow(excel)) {
       que <- new.env(hash = TRUE, parent = emptyenv())
@@ -85,7 +88,7 @@ generate_question_jsons <- function(projects_root, project_name) {
       # nolint end
     }
     cat("Finished writing question jsons\n")
-
+    if(has_images == TRUE) {
     ###
     ### create image jsons (one json per image)
 
@@ -106,7 +109,7 @@ generate_question_jsons <- function(projects_root, project_name) {
         ),
         questionExcel[i, "questionNumber"]
       )
-
+}
       que <- new.env(hash = TRUE, parent = emptyenv())
 
       que[["language"]] <- jsonlite::unbox(questionExcel[i, "language"])
@@ -119,6 +122,7 @@ generate_question_jsons <- function(projects_root, project_name) {
 
       # json export
       # nolint start
+      browser()
       con <- file(paste0(
         pathJson, "/ins",
         questionExcel[i, "instrumentNumber"], "/images/",
@@ -214,5 +218,5 @@ generate_question_jsons <- function(projects_root, project_name) {
   pathJson <- paste0(projects_root, "/", project_name, "/questions", "/out")
   base::dir.create(paste0(projects_root, "/", project_name, "/questions",
     "/out"), recursive = TRUE)
-  generate_question_jsons(pathXlsxFile, pathJson)
+  write_question_jsons(pathXlsxFile, pathJson, has_images)
 }

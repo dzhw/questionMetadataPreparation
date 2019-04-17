@@ -5,7 +5,7 @@
 #' Das Skript ist auszuführen, nachdem die json Dateien erzeugt wurden und die Ordnerstruktur angelegt wurde.
 #' Angepasst werden muss der Pfad an dem die Bilder liegen, der Pfad an dem die Bilder gespeichert werden
 #' sollen und der Pfad an dem die Question Excel Tabelle liegt (+ evtl. Projektname).
-#' Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch m?glich, wenn mehrere Bilder pro Frage vorliegen,
+#' Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch möglich, wenn mehrere Bilder pro Frage vorliegen,
 #' diese richtig einzusortieren.
 #' Ordnerstruktur der Bilder vor dem Einsortieren:
 #' \preformatted{
@@ -54,15 +54,20 @@ sort_images <- function(pathInImages, pathOutImages, pathXlsxFile){
   for (instrument in dir(pathInImages)) {
     pathPng <- paste0(pathInImages,"/",instrument)
     images <- dir(pathPng, ".png")
+    if (!dir.exists(paste0(pathOutImages, "/", instrument, "/images"))) {
     dir.create(paste0(pathOutImages, "/", instrument, "/images"),
       recursive = TRUE)
+      }
     for (image in images) {
       pngImage <- png::readPNG(paste0(pathPng, "/", image))
       # find image name in excel and get questionNumber
       questionNumber <- excel[excel$instrumentNumber == sub("ins","",
         instrument) & excel$fileName == image,"questionNumber"]
-      dir.create(paste0(pathOutImages, "/", instrument, "/images/",
+      if (!dir.exists(paste0(pathOutImages, "/", instrument, "/images/",
+        questionNumber))) {
+        dir.create(paste0(pathOutImages, "/", instrument, "/images/",
         questionNumber), recursive = TRUE)
+        }
       png::writePNG(pngImage, paste0(pathOutImages,"/",instrument,"/images/",
         questionNumber,"/", image))
     }

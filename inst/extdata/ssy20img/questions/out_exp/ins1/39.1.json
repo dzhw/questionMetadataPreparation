@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 63,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["39.2", "40"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Have you changed your nationality?",
+    "de": "Haben Sie Ihre Staatsangehörigkeit gewechselt?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "39. Haben Sie Ihre Staatsangehörigkeit gewechselt? X nein ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

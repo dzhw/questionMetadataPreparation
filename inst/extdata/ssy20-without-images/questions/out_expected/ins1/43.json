@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 73,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["44"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "What is the highest educational qualification held by your parents?",
+    "de": "Welches ist der höchste Schulabschluss Ihres Vaters/Ihrer Mutter?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "43. Welches ist der höchste Schulabschluss Ihres Vaters/Ihrer Mutter? Vater Mutter X Hauptschulabschluss (mindestens 8. Klasse) ––––––––––––––––––––––––––––––––––––– Realschulabschluss oder andere Mittlere Reife (1o. Klasse) ––––––––––––––––––––––– Abitur oder andere Hochschulreife (mindestens 12. Klasse) ––––––––––––––––––––––––– keinen Schulabschluss –––––––––––––––––––––––––––––––––––––––––––––––––––– mir nicht bekannt –––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben über die Eltern"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

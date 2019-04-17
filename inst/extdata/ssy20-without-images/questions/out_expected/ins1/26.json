@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 40,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["27.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Did you have a job in which you earned money in the time between the Winter Semester 2011/12 and the Summer Semester 2012?",
+    "de": "Sind Sie im Zeitraum nach der Vorlesungszeit im Wintersemester 2011/12 bis zum Beginn der Vorlesungszeit im Sommersemester 2012 einer Tätigkeit nachgegangen, mit der Sie Geld verdient haben?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "26. Sind Sie im Zeitraum nach der Vorlesungszeit im Wintersemester 2011/12 X bis zum Beginn der Vorlesungszeit im Sommersemester 2012 einer Tätigkeit nachgegangen, mit der Sie Geld verdient haben? entfällt, weil ich im Wintersemester 2011/12 noch nicht eingeschrieben war –––––– nein ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja, gelegentlich –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja, häufig ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja, laufend ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Geld verdienen während des Studiums"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 83,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["50.2", "51"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Do you intend to study abroad during your studies?",
+    "de": "Beabsichtigen Sie, während des Studiums einen – ggf. einen weiteren – studienbezogenen Auslandsaufenthalt durchzuführen?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "50. Beabsichtigen Sie, während des Studiums einen – ggf. einen weiteren – X studienbezogenen Auslandsaufenthalt durchzuführen? nein, kein Interesse –––––––––––––––––––––––––––––––––––––––––––––––––––––– nein, sehe keine Realisierungschance –––––––––––––––––––––––––––––––––––––– weiß ich noch nicht –––––––––––––––––––––––––––––––––––––––––––––––––––––– ja –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– } >> weiter mit Frage 51"
+  },
+  "topic": {
+    "en": null,
+    "de": "Auslandserfahrungen"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

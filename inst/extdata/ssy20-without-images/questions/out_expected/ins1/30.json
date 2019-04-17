@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 47,
+  "instruction": {
+    "en": "Check the average number per week",
+    "de": "durchschnittliche Anzahl pro Woche; zutreffende Zahl ankreuzen"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["31"],
+  "type": {
+    "en": "Item Set",
+    "de": "Itembatterie"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "How many times a week during Summer Semester do you eat meals in the Cafeteria?",
+    "de": "Wie häufig gehen Sie im Laufe einer Woche während der Vorlesungszeit im Sommersemester in eine Mensa oder Cafeteria zum Essen?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "30. Wie häufig gehen Sie im Laufe einer Woche während der X Vorlesungszeit im Sommersemester in eine Mensa oder Cafeteria zum durchschnittliche Anzahl pro Woche zutreffende Zahl ankreuzen Essen? zum Frühstück –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 0 1 2 3 4 5 6 zu einer Zwischenmahlzeit am Vormittag ––––––––––––––––––––––––––––––––––– 0 1 2 3 4 5 6 zum Mittagessen ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 0 1 2 3 4 5 6 zu einer Zwischenmahlzeit am Nachmittag –––––––––––––––––––––––––––––––––– 0 1 2 3 4 5 6 zum Abendessen –––––––––––––––––––––––––––––––––––––––––––––––––––––––– 0 1 2 3 4 5 6"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zur Ernährung"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

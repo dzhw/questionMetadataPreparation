@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 74,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["45"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "What is the highest professional qualification held by your parents?",
+    "de": "Welches ist der höchste berufliche Abschluss Ihres Vaters/Ihrer Mutter?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "44. Welches ist der höchste berufliche Abschluss Ihres Vaters/Ihrer Mutter? Vater Mutter X Lehre bzw. Facharbeiterabschluss –––––––––––––––––––––––––––––––––––––––––– Abschluss einer Fach, Meister, Technikerschule, Berufsoder Fachakademie –– Abschluss einer Fachhochschule ––––––––––––––––––––––––––––––––––––––––––– Abschluss einer Universität/Kunsthochschule (einschl. Lehrerausbildung) ––––––––––––––––– keinen Berufsabschluss ––––––––––––––––––––––––––––––––––––––––––––––––––– mir nicht bekannt –––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben über die Eltern"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

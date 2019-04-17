@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 26,
+  "instruction": {
+    "en": "Pleas state the name of the country.",
+    "de": "bitte (Bundes-)Land eintragen"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["17"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "In which federal state did you obtain your higher education entrance qualification? If you obtained this abroad, please give the name of the country.",
+    "de": "In welchem Bundesland haben Sie Ihre Studienberechtigung erworben? (Sollten Sie diese im Ausland erworben haben, geben Sie bitte den Staat an.)"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "16. In welchem Bundesland haben Sie Ihre Studienberechtigung erworben? TEXT (Sollten Sie diese im Ausland erworben haben, geben Sie bitte den Staat an.) ––– bitte (Bundes)Land eintragen"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zur Vorbildung"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

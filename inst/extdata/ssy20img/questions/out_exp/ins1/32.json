@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 49,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["33"],
+  "type": {
+    "en": "Item Set",
+    "de": "Itembatterie"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "What is particularly important to you in cafeterias?",
+    "de": "Was ist Ihnen an den Mensen/Cafeterien besonders wichtig?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "32. Was ist Ihnen an den Mensen/Cafeterien besonders wichtig? überhaupt nicht wichtig sehr wichtig X qualitativ hochwertige Angebote –––––––––––––––––––––––––––––––––––––––––– SKALA kostengünstige Angebote ––––––––––––––––––––––––––––––––––––––––––––––––– Angebote aus ökologisch erzeugten Produkten –––––––––––––––––––––––––––––– geringer Zeitaufwand –––––––––––––––––––––––––––––––––––––––––––––––––––– guter Service –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– eine gute räumliche Gestaltung der Mensa/Cafeteria ––––––––––––––––––––––––– die räumliche Nähe zur Hochschule –––––––––––––––––––––––––––––––––––––––– Mensa/Cafeteria als Ort der Kommunikation/Information ––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zur Ernährung"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 36,
+  "instruction": {
+    "en": "Mark all that apply.",
+    "de": "mehrere Nennungen möglich"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["26"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "For what reason(s) have you not yet applied for a student loan or will you not recieve a stundet loan in the summer semester of 2012?",
+    "de": "Aus welchem Grund haben Sie bisher keinen BAföG-Antrag gestellt bzw. werden Sie im Sommersemester 2012 nicht nach dem BAföG gefördert?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "24. Aus welchem Grund haben Sie bisher keinen BAföG-Antrag gestellt X bzw. werden Sie im Sommersemester 2012 nicht nach dem BAföG mehrere Nennungen möglich gefördert? Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin ist zu hoch –––––– eigenes Einkommen/Vermögen ist zu hoch –––––––––––––––––––––––––––––––––– Förderungshöchstdauer wurde überschritten –––––––––––––––––––––––––––––––– Studienfach wurde gewechselt –––––––––––––––––––––––––––––––––––––––––––– notwendige Leistungsbescheinigung konnte nicht erbracht werden –––––––––––– bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten –––––– >> weiter mit Frage 26 das jetzige Studium ist eine nicht förderungsfähige weitere Hochschulausbildung (Zweitstudium, Ergänzungsstudium, Promotionsstudium) ––––––––––––– der zu erwartende Förderungsbetrag ist so gering, dass es sich nicht lohnt –––––– will keine Schulden machen –––––––––––––––––––––––––––––––––––––––––––––– anderer Grund –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– und zwar (bitte erläutern):"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum BAföG"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

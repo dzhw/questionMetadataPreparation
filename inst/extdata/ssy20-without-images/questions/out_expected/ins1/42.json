@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 72,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["43"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Is you father/mother",
+    "de": "Ist Ihr Vater/Ihre Mutter"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "42. Ist Ihr Vater/Ihre Mutter Vater Mutter X vollzeiterwerbstätig –––––––––––––––––––––––––––––––––––––––––––––––––––––– teilzeiterwerbstätig –––––––––––––––––––––––––––––––––––––––––––––––––––––– arbeitslos/von Kurzarbeit betroffen –––––––––––––––––––––––––––––––––––––––– Rentner(in)/Pensionär(in) ––––––––––––––––––––––––––––––––––––––––––––––––– nicht erwerbstätig (z. B. Hausfrau, Hausmann) –––––––––––––––––––––––––––––––––––– verstorben/unbekannt ––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben über die Eltern"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}
