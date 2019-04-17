@@ -38,6 +38,7 @@ test_that("json filenames and content are identical", {
     generated_json_list[[i]] <-  jsonlite::read_json(paste0(base::tempdir(),
       "/ssy20img/questions/out/", json_file_list_generated[i]))
   }
+  i <- NULL
   testthat::expect_identical(json_file_list_generated, json_file_list_expected)
   testthat::expect_identical(generated_json_list, expected_json_list)
 })
