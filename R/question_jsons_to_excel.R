@@ -1,4 +1,4 @@
-#' Question-metadata json to excel
+#' Question-metadata jsons to excel
 #'
 #' This script generates a question metadata excel file from question metadata
 #' json files.
@@ -9,7 +9,7 @@
 #' @export
 
 
-question_json_to_excel <- function(in_path, out_file){
+question_jsons_to_excel <- function(in_path, out_file){
 files <- dir(in_path, pattern = "*.json")
 
 excel <- data.frame(matrix(ncol = 21, nrow = length(files)))
