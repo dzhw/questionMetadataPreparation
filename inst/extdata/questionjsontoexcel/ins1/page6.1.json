@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page6.1$",
+    "number":"page6.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"2016\" minValue=\"1950\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte nennen Sie eine Zahl\" variable=\"v1_6_jahr_prom\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Bitte nennen Sie das Jahr\n\t\t\t\t\t\tIhrer\n\t\t\t\t\t\t(ersten) Promotion.</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Jahr der Promotion:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page6.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Bitte nennen Sie das Jahr Ihrer (ersten) Promotion.,Jahr der Promotion:",
+        "en":"Please state the year you took your (first) doctorate.,Year of doctorate/PhD"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Bitte nennen Sie das Jahr Ihrer (ersten) Promotion.",
+        "en":"Please state the year you took your (first) doctorate."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":13
+}

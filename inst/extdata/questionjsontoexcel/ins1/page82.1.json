@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page82.1$",
+    "number":"page82.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mmc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\" visible=\"zofar.asNumber(v8_9_doktorand_betreuungsvereinbarung)==2\">Uns interessiert der Inhalt\n\t\t\t\t\t\tdieser Betreuungsvereinbarung.\n\t\t\t\t\t\tWelche der folgenden Punkte\n\t\t\t\t\t\tsind darin enthalten?</zofar:question>\n        <zofar:question block=\"true\" uid=\"q2\" visible=\"zofar.asNumber(v8_8_prof_betreuungsvereinbarung) gt 0\">Uns interessiert der Inhalt\n\t\t\t\t\t\tdieser Betreuungsvereinbarung.\n\t\t\t\t\t\tWelche der folgenden Punkte\n\t\t\t\t\t\tsind darin üblicherweise enthalten?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n        <zofar:answerOption label=\"Promotionsform (kumulativ/Monographie)\" uid=\"ao1\" variable=\"v8_10a_form\"/>\n        <zofar:answerOption label=\"Zeitliche Ressourcen für die Promotion\" uid=\"ao2\" variable=\"v8_10b_zeit\"/>\n        <zofar:answerOption label=\"Verfahren in Konfliktfällen\" uid=\"ao3\" variable=\"v8_10c_konfliktfaelle\"/>\n        <zofar:answerOption label=\"Termin für die Fertigstellung der Dissertationsschrift\" uid=\"ao4\" variable=\"v8_10d_frist\"/>\n        <zofar:answerOption label=\"Regelmäßiger Bericht zum Stand der Promotion\" uid=\"ao5\" variable=\"v8_10e_bericht\"/>\n        <zofar:answerOption label=\"Publikation von Zwischenergebnissen\" uid=\"ao6\" variable=\"v8_10f_zwischenergebnisse\"/>\n        <zofar:answerOption label=\"Infrastruktur, die zur Verfügung gestellt wird\" uid=\"ao7\" variable=\"v8_10g_infrastruktur\"/>\n        <zofar:answerOption label=\"Regeln guter wissenschaftlicher Praxis\" uid=\"ao8\" variable=\"v8_10h_regeln\"/>\n        <zofar:answerOption label=\"Registrierungs-/Immatrikulationspflicht\" uid=\"ao9\" variable=\"v8_10i_regiestrierung\"/>\n        <zofar:answerOption label=\"Sonstiges, \" uid=\"ao10\" variable=\"v8_10j_andere\">\n            <zofar:questionOpen size=\"20\" type=\"text\" uid=\"qo\" variable=\"v8_10\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l1\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "successorNumbers":[
+        "page84.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Uns interessiert der Inhalt dieser Betreuungsvereinbarung. Welche der folgenden Punkte sind darin enthalten?,Uns interessiert der Inhalt dieser Betreuungsvereinbarung. Welche der folgenden Punkte sind darin üblicherweise enthalten?,Promotionsform (kumulativ/Monographie),Zeitliche Ressourcen für die Promotion,Verfahren in Konfliktfällen,Termin für die Fertigstellung der Dissertationsschrift,Regelmäßiger Bericht zum Stand der Promotion,Publikation von Zwischenergebnissen,Infrastruktur, die zur Verfügung gestellt wird,Regeln guter wissenschaftlicher Praxis,Registrierungs-/Immatrikulationspflicht,Sonstiges,,und zwar:",
+        "en":"We are interested in the content of this supervision agreement. Which of the following points are included in it?,We are interested in the content of this supervision agreement. Which of the following points are usually included in it?,Doctorate form (cumulative/monograph),Time available for the doctorate,Procedures in case of conflict,Deadline for completion of the written dissertation,Regular reports on the status of the doctorate,Publication of interim findings,Infrastructure provided,Rules of good academic practice,Obligation of registration/enrolment,Other,Please give details:"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Uns interessiert der Inhalt dieser Betreuungsvereinbarung. Welche der folgenden Punkte sind darin enthalten?,Uns interessiert der Inhalt dieser Betreuungsvereinbarung. Welche der folgenden Punkte sind darin üblicherweise enthalten?",
+        "en":"We are interested in the content of this supervision agreement. Which of the following points are included in it?,We are interested in the content of this supervision agreement. Which of the following points are usually included in it?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":117
+}

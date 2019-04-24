@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page37.1$",
+    "number":"page37.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Denken Sie nun bitte an\n\t\t\t\t\t\tIhren letzten #{layout.UNDERLINED_START}entschiedenen#{layout.UNDERLINED_END} Projektantrag:\n\t\t\t\t\t\t#{layout.BREAK}\n\t\t\t\t\tWie hoch war Ihrer\n\t\t\t\t\t\tEinschätzung\n\t\t\t\t\t\tnach die Förderquote (Bewilligungsquote) in Bezug auf\n\t\t\t\t\t\tdas\n\t\t\t\t\t\tFörderprogramm, in dem Sie Ihren letzten entschiedenen Projektantrag gestellt\n\t\t\t\t\t\thaben?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain noResponseOptions=\"2\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Förderquote bei\n\t\t\t\t\t\t\tFörderer/Förderprogramm in Prozent (ca.)</zofar:title>\n            <zofar:title uid=\"t2\">Kann ich nicht beurteilen</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Letzter #{layout.UNDERLINED_START}entschiedener#{layout.UNDERLINED_END}\n\t\t\t\t\t\t\t\tProjektantrag: #{zofar.labelOf(v3_1c_zuletzt_entschieden)}</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_8_bewillgungsquote\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\">\n                    <zofar:questionOpen maxLength=\"2\" maxValue=\"99\" minValue=\"0\" size=\"7\" uid=\"qo\" validationMessage=\"Bitte tragen Sie eine Zahl ein\" variable=\"v3_8_bewillgungsquote_open\">\n                        <zofar:prefix>\n                            <zofar:label uid=\"l\"></zofar:label>\n                        </zofar:prefix>\n                    </zofar:questionOpen>\n                </zofar:answerOption>\n                <zofar:answerOption uid=\"ao2\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page37.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Denken Sie nun bitte an Ihren letzten entschiedenen Projektantrag: Wie hoch war Ihrer Einschätzung nach die Förderquote (Bewilligungsquote) in Bezug auf das Förderprogramm, in dem Sie Ihren letzten entschiedenen Projektantrag gestellt haben?,Förderquote bei Förderer/Förderprogramm in Prozent (ca.),Kann ich nicht beurteilen,Letzter entschiedener Projektantrag: #{zofar.labelOf(v3_1c_zuletzt_entschieden)}",
+        "en":"Now please consider your most recently decided project proposal: In your estimation, how high was the funding quota (acceptance quota) in relation to the funding programme to which you submitted your most recently decided project proposal?,Funding quota of the funding source/funding programme in percent (approx.),I cannot judge this,Most recently decided project proposal: #{zofar.labelOf(v3_1c_zuletzt_entschieden)}"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Denken Sie nun bitte an Ihren letzten entschiedenen Projektantrag: Wie hoch war Ihrer Einschätzung nach die Förderquote (Bewilligungsquote) in Bezug auf das Förderprogramm, in dem Sie Ihren letzten entschiedenen Projektantrag gestellt haben?",
+        "en":"Now please consider your most recently decided project proposal: In your estimation, how high was the funding quota (acceptance quota) in relation to the funding programme to which you submitted your most recently decided project proposal?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":54
+}

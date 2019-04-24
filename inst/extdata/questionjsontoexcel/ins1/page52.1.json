@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page52.1$",
+    "number":"page52.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Waren Sie seit Januar 2011\n\t\t\t\t\t\tals\n\t\t\t\t\t\t(Ko-)Autor/Autorin an Publikationen in wissenschaftlichen\n\t\t\t\t\t\tFachzeitschriften beteiligt?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v5_1_autor\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page52.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Waren Sie seit Januar 2011 als (Ko-)Autor/Autorin an Publikationen in wissenschaftlichen Fachzeitschriften beteiligt?,Ja,Nein",
+        "en":"Have you been involved as a (co-)author in publications in scientific journals since January 2011?,Yes,No"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Waren Sie seit Januar 2011 als (Ko-)Autor/Autorin an Publikationen in wissenschaftlichen Fachzeitschriften beteiligt?",
+        "en":"Have you been involved as a (co-)author in publications in scientific journals since January 2011?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":82
+}

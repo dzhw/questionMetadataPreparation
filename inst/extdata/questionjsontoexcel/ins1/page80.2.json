@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page80.2$",
+    "number":"page80.2",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc2\" visible=\"v8_3_promovierende_erstbetreuer.value!='' and v8_3_promovierende_erstbetreuer.value!='0'\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Anteil in Prozent:</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v8_8_prof_betreuungsvereinbarung_Anteil\">\n        <zofar:answerOption label=\"bitte wählen Sie: \" uid=\"ao0\" value=\"0\"/>\n        <zofar:answerOption label=\"10%\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"20%\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"30%\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"40%\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"50%\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"60%\" uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"70%\" uid=\"ao7\" value=\"7\"/>\n        <zofar:answerOption label=\"80%\" uid=\"ao8\" value=\"8\"/>\n        <zofar:answerOption label=\"90%\" uid=\"ao9\" value=\"9\"/>\n        <zofar:answerOption label=\"100%\" uid=\"ao10\" value=\"10\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page82.1",
+        "page83.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Anteil in Prozent:,bitte wählen Sie:,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%",
+        "en":"Proportion in percent:,Please choose,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Anteil in Prozent:",
+        "en":"Proportion in percent:"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":115
+}

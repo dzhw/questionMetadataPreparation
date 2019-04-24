@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page39.1$",
+    "number":"page39.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Für wie gerecht\n\t\t\t\t\t\toder\n\t\t\t\t\t\tungerecht\n\t\t\t\t\t\thalten Sie die leistungsabhängige Mittelvergabe an\n\t\t\t\t\t\tIhrer\n\t\t\t\t\t\tEinrichtung?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain direction=\"horizontal\" uid=\"rd\" variable=\"v4_2_lom_gerecht\">\n        <zofar:answerOption label=\"vollkommen ungerecht\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"eher ungerecht\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"teils/teils\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"eher gerecht\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"vollkommen gerecht\" uid=\"ao5\" value=\"5\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page39.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Für wie gerecht oder ungerecht halten Sie die leistungsabhängige Mittelvergabe an Ihrer Einrichtung?,vollkommen ungerecht,eher ungerecht,teils/teils,eher gerecht,vollkommen gerecht",
+        "en":"How fair or unfair is the performance-related grant of funding at your institution, in your opinion?,Completely unfair,Rather unfair,Undecided,Rather fair,Completely fair"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Für wie gerecht oder ungerecht halten Sie die leistungsabhängige Mittelvergabe an Ihrer Einrichtung?",
+        "en":"How fair or unfair is the performance-related grant of funding at your institution, in your opinion?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":58
+}

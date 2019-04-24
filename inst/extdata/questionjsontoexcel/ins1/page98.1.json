@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page98.1$",
+    "number":"page98.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie hoch ist Ihre\n\t\t\t\t\t\tvertraglich\n\t\t\t\t\t\tvereinbarte Lehrverpflichtung?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_26a_lehre_vertrag\">\n        <zofar:answerOption label=\"Ich habe keine Lehrverpflichtung.\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Ich habe eine Lehrverpflichtung.\" uid=\"ao2\" value=\"1\">\n            <zofar:questionOpen maxLength=\"4\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein\" variable=\"v8_26b_lehre_vertrag_stunden\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">Anzahl der vertraglich vereinbarten\n\t\t\t\t\t\t\t\t\tSemesterwochenstunden:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page98.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie hoch ist Ihre vertraglich vereinbarte Lehrverpflichtung?,Ich habe keine Lehrverpflichtung.,Ich habe eine Lehrverpflichtung.,Anzahl der vertraglich vereinbarten Semesterwochenstunden:",
+        "en":"How many hours are you contracted to teach?,I am not contracted to teach.,I am contracted to teach.,Number of contracted semester teaching hours per week:"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wie hoch ist Ihre vertraglich vereinbarte Lehrverpflichtung?",
+        "en":"How many hours are you contracted to teach?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":138
+}

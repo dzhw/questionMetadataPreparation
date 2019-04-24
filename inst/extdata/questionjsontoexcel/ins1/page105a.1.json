@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page105a.1$",
+    "number":"page105a.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"100\" rows=\"5\" smallOption=\"false\" uid=\"qo\" variable=\"v9_1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"qq\">Bitte schildern Sie kurz,\n\t\t\t\t\t\twelcher\n\t\t\t\t\t\tArt die Benachteiligung war:</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page106a.1",
+        "page107.1",
+        "page108.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Bitte schildern Sie kurz, welcher Art die Benachteiligung war:",
+        "en":"Please describe briefly the type of disadvantage:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Bitte schildern Sie kurz, welcher Art die Benachteiligung war:",
+        "en":"Please describe briefly the type of disadvantage:"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":148
+}

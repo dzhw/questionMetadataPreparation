@@ -1,0 +1,36 @@
+
+{
+    "id":"que-meisner1-ins1-page17.1$",
+    "number":"page17.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"2\" maxValue=\"50\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein(0-50)\" variable=\"v1_17_anzahl_befristet\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie viele befristete\n\t\t\t\t\t\tArbeitsverträge mit/an wissenschaftlichen Einrichtungen hatten Sie\n\t\t\t\t\t\tseit Ihrer ersten Tätigkeit als wissenschaftlicher\n\t\t\t\t\t\tMitarbeiter/wissenschaftliche Mitarbeiterin?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Anzahl:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page18.1",
+        "page19.1",
+        "page20.1",
+        "page21.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie viele befristete Arbeitsverträge mit/an wissenschaftlichen Einrichtungen hatten Sie seit Ihrer ersten Tätigkeit als wissenschaftlicher Mitarbeiter/wissenschaftliche Mitarbeiterin?,Anzahl:",
+        "en":"How many temporary contracts with/at scientific institutions have you had since your first position as research assistant?,Number:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Wie viele befristete Arbeitsverträge mit/an wissenschaftlichen Einrichtungen hatten Sie seit Ihrer ersten Tätigkeit als wissenschaftlicher Mitarbeiter/wissenschaftliche Mitarbeiterin?",
+        "en":"How many temporary contracts with/at scientific institutions have you had since your first position as research assistant?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":27
+}

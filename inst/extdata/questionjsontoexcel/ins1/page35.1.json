@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page35.1$",
+    "number":"page35.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie beurteilen Sie diese\n\t\t\t\t\t\tschriftliche Entscheidungsbegründung?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"5\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Trifft überhaupt nicht zu</zofar:title>\n            <zofar:title uid=\"t2\"/>\n            <zofar:title uid=\"t3\"/>\n            <zofar:title uid=\"t4\"/>\n            <zofar:title uid=\"t5\">Trifft voll und ganz zu</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Begutachtung war fachlich\n\t\t\t\t\t\t\t\tkorrekt</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_6a_fachlichkorrekt\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Bewertungsmaßstäbe waren\n\t\t\t\t\t\t\t\ttransparent.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_6b_transparent\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Entscheidung war\n\t\t\t\t\t\t\t\tnachvollziehbar.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_6c_nachvollziehbar\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i4\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Anmerkungen waren\n\t\t\t\t\t\t\t\thilfreich.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_6d_hilfreich\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i5\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Gutachtenden haben meinen\n\t\t\t\t\t\t\t\tAntrag offenbar nicht vollständig gelesen.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_6e_nicht_gelesen\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i6\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Gutachtenden haben den\n\t\t\t\t\t\t\t\tAntrag nicht richtig verstanden</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_6f_nicht_verstanden\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page37.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie beurteilen Sie diese schriftliche Entscheidungsbegründung?,Trifft überhaupt nicht zu,Trifft voll und ganz zu,Die Begutachtung war fachlich korrekt,Die Bewertungsmaßstäbe waren transparent.,Die Entscheidung war nachvollziehbar.,Die Anmerkungen waren hilfreich.,Die Gutachtenden haben meinen Antrag offenbar nicht vollständig gelesen.,Die Gutachtenden haben den Antrag nicht richtig verstanden",
+        "en":"How would you evaluate the written explanation?,Not at all applicable,Fully applicable,The evaluation was technically correct,The evaluation measures were transparent.,The decision was comprehensible.,The remarks were helpful.,The evaluators obviously did not read my application fully.,The evaluators misunderstood my application"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Wie beurteilen Sie diese schriftliche Entscheidungsbegründung?",
+        "en":"How would you evaluate the written explanation?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":52
+}

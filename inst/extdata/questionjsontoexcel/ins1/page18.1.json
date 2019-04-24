@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page18.1$",
+    "number":"page18.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Gab es zwischen den\n\t\t\t\t\t\tArbeitsverträgen Zeiten, in denen Sie ungewollt ohne\n\t\t\t\t\t\tBeschäftigungsverhältnis und ohne andere strukturierte Förderung\n\t\t\t\t\t\t(z. B. Stipendien) im akademisch-wissenschaftlichen Bereich waren?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_18a_luecke_vertrag\">\n        <zofar:answerOption label=\"Nein\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Ja,\" uid=\"ao2\" value=\"2\">\n            <zofar:questionOpen maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v1_18b_dauer_luecke_vertrag\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l1\">insgesamt umfasste(n) diese\n\t\t\t\t\t\t\t\t\tZeit(en):</zofar:label>\n                </zofar:prefix>\n                <zofar:postfix>\n                    <zofar:label uid=\"l2\">Monate</zofar:label>\n                </zofar:postfix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page18.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Gab es zwischen den Arbeitsverträgen Zeiten, in denen Sie ungewollt ohne Beschäftigungsverhältnis und ohne andere strukturierte Förderung (z. B. Stipendien) im akademisch-wissenschaftlichen Bereich waren?,Nein,Ja,,insgesamt umfasste(n) diese Zeit(en):,Monate",
+        "en":"Were there periods between working contracts where you were unintentionally not employed and had no other type of structured support (e.g. scholarships) in the academic/scientific field?,No,Yes,Altogether, this (these) period(s) comprised:,months"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Gab es zwischen den Arbeitsverträgen Zeiten, in denen Sie ungewollt ohne Beschäftigungsverhältnis und ohne andere strukturierte Förderung (z. B. Stipendien) im akademisch-wissenschaftlichen Bereich waren?",
+        "en":"Were there periods between working contracts where you were unintentionally not employed and had no other type of structured support (e.g. scholarships) in the academic/scientific field?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":28
+}

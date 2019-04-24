@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page117.1$",
+    "number":"page117.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie ist Ihr Familienstand?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v10_11_familienstand\">\n        <zofar:answerOption label=\"Verheiratet / eingetragene Lebenspartnerschaft, mit Partner zusammenlebend\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Verheiratet / eingetragene Lebenspartnerschaft, dauernd getrennt lebend\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Geschieden / eingetragene Lebenspartnerschaft aufgehoben\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Verwitwet / Lebenspartner verstorben\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Ledig\" uid=\"ao5\" value=\"5\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page117.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie ist Ihr Familienstand?,Verheiratet / eingetragene Lebenspartnerschaft, mit Partner zusammenlebend,Verheiratet / eingetragene Lebenspartnerschaft, dauernd getrennt lebend,Geschieden / eingetragene Lebenspartnerschaft aufgehoben,Verwitwet / Lebenspartner verstorben,Ledig",
+        "en":"What is your marital status?,Married / civil partnership, living with partner,Married / civil partnership, permanently separated from partner,Divorced / civil partnership dissolved,Widowed / partner dead,Single"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wie ist Ihr Familienstand?",
+        "en":"What is your marital status?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":165
+}

@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page63.1$",
+    "number":"page63.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"100\" rows=\"5\" smallOption=\"false\" type=\"text\" uid=\"qo\" variable=\"v6_3_grund\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Bitte nennen Sie kurz Ihre\n\t\t\t\t\t\tGründe:</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\"/>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page65.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Bitte nennen Sie kurz Ihre Gründe:",
+        "en":"Please state your reasons briefly:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Bitte nennen Sie kurz Ihre Gründe:",
+        "en":"Please state your reasons briefly:"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":97
+}

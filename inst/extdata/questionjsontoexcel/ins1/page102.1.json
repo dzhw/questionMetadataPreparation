@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page102.1$",
+    "number":"page102.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Inwieweit stimmen Sie\n\t\t\t\t\t\tfolgenden\n\t\t\t\t\t\tAussagen über das von Ihnen gegenwärtig bearbeitete\n\t\t\t\t\t\tForschungsthema zu?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"5\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title block=\"true\" uid=\"t1\">Trifft\n\t\t\t\t\t\t\t#{layout.BREAK}überhaupt #{layout.BREAK}nicht zu</zofar:title>\n            <zofar:title block=\"true\" uid=\"t2\">Trifft #{layout.BREAK}eher\n\t\t\t\t\t\t\t#{layout.BREAK}nicht zu</zofar:title>\n            <zofar:title block=\"true\" uid=\"t3\">Trifft\n\t\t\t\t\t\t\t#{layout.BREAK}teilweise #{layout.BREAK}zu</zofar:title>\n            <zofar:title block=\"true\" uid=\"t4\">Trifft #{layout.BREAK}eher\n\t\t\t\t\t\t\t#{layout.BREAK}zu</zofar:title>\n            <zofar:title block=\"true\" uid=\"t5\">Trifft #{layout.BREAK}voll\n\t\t\t\t\t\t\tund #{layout.BREAK}ganz zu</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die von mir gegenwärtig\n\t\t\t\t\t\t\t\tbehandelten Forschungsfragen habe ich frei gewählt.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_30a_frage_frei_gewaehlt\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Mein gegenwärtiges\n\t\t\t\t\t\t\t\tForschungsthema würde ich gern auch in 5 Jahren noch bearbeiten.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_30b_thema_5_jahre\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Ich bin stärker an der\n\t\t\t\t\t\t\t\tAnwendung und Weiterentwicklung meiner Methodenkenntnisse\n\t\t\t\t\t\t\t\tinteressiert als an bestimmten Forschungsthemen.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_30c_lieber_methoden\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page104.1",
+        "page105.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Inwieweit stimmen Sie folgenden Aussagen über das von Ihnen gegenwärtig bearbeitete Forschungsthema zu?,Trifft überhaupt nicht zu,Trifft eher nicht zu,Trifft teilweise zu,Trifft eher zu,Trifft voll und ganz zu,Die von mir gegenwärtig behandelten Forschungsfragen habe ich frei gewählt.,Mein gegenwärtiges Forschungsthema würde ich gern auch in 5 Jahren noch bearbeiten.,Ich bin stärker an der Anwendung und Weiterentwicklung meiner Methodenkenntnisse interessiert als an bestimmten Forschungsthemen.",
+        "en":"How far do you agree with the following statements on the research topic you are currently working on?,Doesn't apply at all,Tends not to apply,Applies in part,Tends to apply,Applies completely,I selected my current research topic freely.,I would like to be still working on my current research topic in 5 years' time.,I am more interested in the application and further development of my knowledge of methodology than in particular research topics."
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Inwieweit stimmen Sie folgenden Aussagen über das von Ihnen gegenwärtig bearbeitete Forschungsthema zu?",
+        "en":"How far do you agree with the following statements on the research topic you are currently working on?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":144
+}

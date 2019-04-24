@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page77.1$",
+    "number":"page77.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Im Folgenden sind einige\n\t\t\t\t\t\tKriterien aufgelistet, die häufig zur Beurteilung von\n\t\t\t\t\t\tDissertationsleistungen herangezogen werden. Welches dieser\n\t\t\t\t\t\tKriterien ist Ihrer Meinung nach das wichtigste zur Beurteilung\n\t\t\t\t\t\tvon Dissertationsleistungen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_5_diss_prioritaet1\">\n        <zofar:answerOption label=\"Die Dissertation muss neue Forschungsfragen aufwerfen und zum Fortschritt des Kenntnisstandes des Promotionsfaches beitragen.\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Die formalen Kriterien (etwa die Einhaltung der üblichen Zitierregeln) müssen erfüllt sein.\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Die Forschungsfrage muss methodisch sauber bearbeitet sein.\" uid=\"ao3\" value=\"3\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page81.1",
+        "page84.1",
+        "page79.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Im Folgenden sind einige Kriterien aufgelistet, die häufig zur Beurteilung von Dissertationsleistungen herangezogen werden. Welches dieser Kriterien ist Ihrer Meinung nach das wichtigste zur Beurteilung von Dissertationsleistungen?,Die Dissertation muss neue Forschungsfragen aufwerfen und zum Fortschritt des Kenntnisstandes des Promotionsfaches beitragen.,Die formalen Kriterien (etwa die Einhaltung der üblichen Zitierregeln) müssen erfüllt sein.,Die Forschungsfrage muss methodisch sauber bearbeitet sein.",
+        "en":"Some of the criteria that are often applied to the appraisal of dissertations are listed below. In your opinion, which of these criteria is the most important for the appraisal of dissertations?,The dissertation must generate new research issues and contribute to increasing knowledge in the doctorate subject.,The formal criteria (such as complying with the usual citation rules) must be fulfilled.,The examination of the research issue must be methodologically effective."
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Im Folgenden sind einige Kriterien aufgelistet, die häufig zur Beurteilung von Dissertationsleistungen herangezogen werden. Welches dieser Kriterien ist Ihrer Meinung nach das wichtigste zur Beurteilung von Dissertationsleistungen?",
+        "en":"Some of the criteria that are often applied to the appraisal of dissertations are listed below. In your opinion, which of these criteria is the most important for the appraisal of dissertations?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":111
+}

@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page59.1$",
+    "number":"page59.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Bitte geben Sie an,\n\t\t\t\t\t\twie\n\t\t\t\t\t\thäufig\n\t\t\t\t\t\tSie mögliche Mittelgeber/Förderorganisationen in den\n\t\t\t\t\t\t‚Acknowledgments‘ aufführen.\n\t\t\t\t\t\t#{layout.BREAK} #{layout.BREAK}\n\t\t\t\t\t\tBei Publikationen in Fachzeitschriften gebe ich…</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v5_8_foederer_nennen\">\n        <zofar:answerOption label=\"…immer die beteiligten Förderer an.\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"…meistens die beteiligten Förderer an.\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"…selten die beteiligten Förderer an.\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"…nie die beteiligten Förderer an\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Trifft nicht zu\" uid=\"ao5\" value=\"88\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page61.1",
+        "page66.1",
+        "page67.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Bitte geben Sie an, wie häufig Sie mögliche Mittelgeber/Förderorganisationen in den ‚Acknowledgments‘ aufführen. Bei Publikationen in Fachzeitschriften gebe ich…,…immer die beteiligten Förderer an.,…meistens die beteiligten Förderer an.,…selten die beteiligten Förderer an.,…nie die beteiligten Förderer an,Trifft nicht zu",
+        "en":"Please state how often you mention possible funding providers/funding organisations in the acknowledgments. In publications in specialist journals I â¦,...always mention the funding sources involved.,...usually mention the funding sources involved.,...rarely mention the funding sources involved.,...never mention the funding sources involved.,Not applicable"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Bitte geben Sie an, wie häufig Sie mögliche Mittelgeber/Förderorganisationen in den ‚Acknowledgments‘ aufführen. Bei Publikationen in Fachzeitschriften gebe ich…",
+        "en":"Please state how often you mention possible funding providers/funding organisations in the acknowledgments. In publications in specialist journals I â¦"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":93
+}

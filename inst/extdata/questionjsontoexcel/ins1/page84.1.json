@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page84.1$",
+    "number":"page84.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">In letzter Zeit wird\n\t\t\t\t\t\thäufiger\n\t\t\t\t\t\tdie\n\t\t\t\t\t\tEinführung des Promotionsrechtes für Fachhochschulen\n\t\t\t\t\t\tins\n\t\t\t\t\t\tGespräch\n\t\t\t\t\t\tgebracht. Wie ist Ihre Meinung dazu?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_12_promotionsrecht\">\n        <zofar:answerOption label=\"Alle Fachhochschulen sollten uneingeschränkt das Promotionsrecht erhalten.\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Unabhängig von der Art der Einrichtung (FHs, Universitäten) sollten nur diejenigen Einrichtungen/Fakultäten das Promotionsrecht erhalten bzw. behalten, die diesbezüglich bestimmte Qualitätsstandards erfüllen.\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Das Promotionsrecht sollte (bedingungslos) ausschließlich den Universitäten vorbehalten bleiben.\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Ich habe mir dazu (noch) keine Meinung gebildet.\" uid=\"ao4\" value=\"4444\"></zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page93.1",
+        "page85.1"
+    ],
+    "additionalQuestionText":{
+        "de":"In letzter Zeit wird häufiger die Einführung des Promotionsrechtes für Fachhochschulen ins Gespräch gebracht. Wie ist Ihre Meinung dazu?,Alle Fachhochschulen sollten uneingeschränkt das Promotionsrecht erhalten.,Unabhängig von der Art der Einrichtung (FHs, Universitäten) sollten nur diejenigen Einrichtungen/Fakultäten das Promotionsrecht erhalten bzw. behalten, die diesbezüglich bestimmte Qualitätsstandards erfüllen.,Das Promotionsrecht sollte (bedingungslos) ausschließlich den Universitäten vorbehalten bleiben.,Ich habe mir dazu (noch) keine Meinung gebildet.",
+        "en":"Recently the idea of permitting Universities of Applied Science to award doctorates has been discussed. What is your opinion on this topic?,All Universities of Applied Science should have unlimited rights to award doctorates.,Regardless of the type of institution (Universities of Applied Science, universities), only those institutions /faculties which fulfil certain quality standards in this area should be granted or retain the right to award doctorates.,The right to award doctorates should be exclusively granted to universities (unconditionally).,I have no opinion on this topic (yet)."
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"In letzter Zeit wird häufiger die Einführung des Promotionsrechtes für Fachhochschulen ins Gespräch gebracht. Wie ist Ihre Meinung dazu?",
+        "en":"Recently the idea of permitting Universities of Applied Science to award doctorates has been discussed. What is your opinion on this topic?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":119
+}

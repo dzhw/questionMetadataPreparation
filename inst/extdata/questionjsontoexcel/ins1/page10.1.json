@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page10.1$",
+    "number":"page10.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">An welcher Art von\n\t\t\t\t\t\tEinrichtung\n\t\t\t\t\t\tsind Sie derzeit primär wissenschaftlich tätig?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_10_einrichtung\">\n        <zofar:answerOption label=\"Universität\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Technische Hochschule\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Medizinische Hochschule\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Pädagogische Hochschule\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Theologische Hochschule\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"Kunsthochschule/Musikhochschule\" uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"Außeruniversitäres Forschungsinstitut\" uid=\"ao7\" value=\"7\"/>\n        <zofar:answerOption label=\"Private Hochschule\" uid=\"ao8\" value=\"8\"/>\n        <zofar:answerOption label=\"Fachhochschule\" uid=\"ao9\" value=\"9\"></zofar:answerOption>\n        <zofar:answerOption label=\"Andere,\" uid=\"ao10\" value=\"88\">\n            <zofar:questionOpen size=\"20\" uid=\"qo\" variable=\"v1_10a\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page11.1",
+        "page16.1",
+        "page12.1"
+    ],
+    "additionalQuestionText":{
+        "de":"An welcher Art von Einrichtung sind Sie derzeit primär wissenschaftlich tätig?,Universität,Technische Hochschule,Medizinische Hochschule,Pädagogische Hochschule,Theologische Hochschule,Kunsthochschule/Musikhochschule,Außeruniversitäres Forschungsinstitut,Private Hochschule,Fachhochschule,Andere,,und zwar",
+        "en":"At what type of institution are you primarily academically active at present?,University,Technical University,Medical School,College of Education,Theological College,College of Art/Music,Non-university research institution,Private university,University of Applied Sciences,Other,Please give details"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"An welcher Art von Einrichtung sind Sie derzeit primär wissenschaftlich tätig?",
+        "en":"At what type of institution are you primarily academically active at present?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":19
+}

@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page93.1$",
+    "number":"page93.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Neben Google Scholar und anderen\n\t\t\t\t\t\tprofessionellen Datenbanken (Scopus,\n\t\t\t\t\t\tWeb of Science) bieten auch\n\t\t\t\t\t\twissenschaftliche Netzwerke wie z.B.\n\t\t\t\t\t\tResearchGate die Möglichkeit,\n\t\t\t\t\t\tden Rezeptionserfolg der eigenen\n\t\t\t\t\t\tPublikationen über die Anzahl der\n\t\t\t\t\t\tZitierungen bzw. entsprechende\n\t\t\t\t\t\tIndizes (z.B. H-Index) zu\n\t\t\t\t\t\tverfolgen.\n\t\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\t\tBitte geben Sie an, wie häufig Sie sich über den Rezeptionserfolg (Anzahl der Zitierungen oder entsprechende Indizes) Ihrer Publikationen informieren.</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain direction=\"horizontal\" uid=\"rd\" variable=\"v8_21_wiss_netzwerke\">\n        <zofar:answerOption label=\"nie\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Einmal pro Monat oder seltener\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Mehrmals pro Monat\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Mehrmals pro Woche\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Täglich\" uid=\"ao5\" value=\"5\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page95.1",
+        "page96.1",
+        "page95.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Neben Google Scholar und anderen professionellen Datenbanken (Scopus, Web of Science) bieten auch wissenschaftliche Netzwerke wie z.B. ResearchGate die Möglichkeit, den Rezeptionserfolg der eigenen Publikationen über die Anzahl der Zitierungen bzw. entsprechende Indizes (z.B. H-Index) zu verfolgen. Bitte geben Sie an, wie häufig Sie sich über den Rezeptionserfolg (Anzahl der Zitierungen oder entsprechende Indizes) Ihrer Publikationen informieren.,nie,Einmal pro Monat oder seltener,Mehrmals pro Monat,Mehrmals pro Woche,Täglich",
+        "en":"Both Google Scholar and other professional databases (Scopus, Web of Science) as well as scientific networks such as e.g. ResearchGate give you the chance to follow the success of your own publications as reflected in the number of citations, or the relevant indices (e.g. H index). Please state how often you check the success of your own publications (the number of citations or the relevant indices).,Never,Once a month or less,Several times a month,Several times a week,Daily"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Neben Google Scholar und anderen professionellen Datenbanken (Scopus, Web of Science) bieten auch wissenschaftliche Netzwerke wie z.B. ResearchGate die Möglichkeit, den Rezeptionserfolg der eigenen Publikationen über die Anzahl der Zitierungen bzw. entsprechende Indizes (z.B. H-Index) zu verfolgen. Bitte geben Sie an, wie häufig Sie sich über den Rezeptionserfolg (Anzahl der Zitierungen oder entsprechende Indizes) Ihrer Publikationen informieren.",
+        "en":"Both Google Scholar and other professional databases (Scopus, Web of Science) as well as scientific networks such as e.g. ResearchGate give you the chance to follow the success of your own publications as reflected in the number of citations, or the relevant indices (e.g. H index). Please state how often you check the success of your own publications (the number of citations or the relevant indices)."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":133
+}

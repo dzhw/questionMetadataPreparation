@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page85.1$",
+    "number":"page85.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Waren an Ihrem Lehrstuhl\n\t\t\t\t\t\tbzw. in\n\t\t\t\t\t\tIhrer Organisationseinheit in den letzten 24 Monaten offene\n\t\t\t\t\t\tStellen für wissenschaftliches Personal (ohne Professuren) zu\n\t\t\t\t\t\tbesetzen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_13_besetzung_wissenschaftler\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page87_bewerberauswahl.1",
+        "page92.1",
+        "page87.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Waren an Ihrem Lehrstuhl bzw. in Ihrer Organisationseinheit in den letzten 24 Monaten offene Stellen für wissenschaftliches Personal (ohne Professuren) zu besetzen?,Ja,Nein",
+        "en":"Were there job vacancies for academic positions (excluding professorships) in your department or organisational unit during the last 24 months?,Yes,No"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Waren an Ihrem Lehrstuhl bzw. in Ihrer Organisationseinheit in den letzten 24 Monaten offene Stellen für wissenschaftliches Personal (ohne Professuren) zu besetzen?",
+        "en":"Were there job vacancies for academic positions (excluding professorships) in your department or organisational unit during the last 24 months?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":121
+}

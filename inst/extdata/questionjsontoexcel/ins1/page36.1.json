@@ -1,0 +1,36 @@
+
+{
+    "id":"que-meisner1-ins1-page36.1$",
+    "number":"page36.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie hat sich Ihrer Ansicht\n\t\t\t\t\t\tnach\n\t\t\t\t\t\tdie Qualität der Begutachtung von Förderanträgen in den\n\t\t\t\t\t\tletzten 5\n\t\t\t\t\t\tJahren entwickelt?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain noResponseOptions=\"6\" uid=\"rd1\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">deutlich\n\t\t\t\t\t\t\t#{layout.BREAK}verschlechtert</zofar:title>\n            <zofar:title uid=\"t2\">eher #{layout.BREAK}verschlechtert</zofar:title>\n            <zofar:title uid=\"t3\">nicht #{layout.BREAK}verändert</zofar:title>\n            <zofar:title uid=\"t4\">eher #{layout.BREAK}verbessert</zofar:title>\n            <zofar:title uid=\"t5\">deutlich #{layout.BREAK}verbessert</zofar:title>\n            <zofar:title uid=\"t6\">Kann ich #{layout.BREAK}nicht\n\t\t\t\t\t\t\t#{layout.BREAK}beurteilen</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Die Qualität der Gutachten hat\n\t\t\t\t\t\t\t\tsich in den vergangenen 5 Jahren …</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain uid=\"rd2\" variable=\"v3_7_antrag_begutachtung\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n                <zofar:answerOption uid=\"ao6\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page37.1",
+        "page38.1",
+        "page40.1",
+        "page49.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie hat sich Ihrer Ansicht nach die Qualität der Begutachtung von Förderanträgen in den letzten 5 Jahren entwickelt?,deutlich verschlechtert,eher verschlechtert,nicht verändert,eher verbessert,deutlich verbessert,Kann ich nicht beurteilen,Die Qualität der Gutachten hat sich in den vergangenen 5 Jahren …",
+        "en":"How has the quality of evaluation of funding applications developed in the last 5 years, in your opinion?,clearly declined,rather declined,no change,rather improved,clearly improved,I can not judge,In the last 5 years, the quality of evaluations has ..."
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Wie hat sich Ihrer Ansicht nach die Qualität der Begutachtung von Förderanträgen in den letzten 5 Jahren entwickelt?",
+        "en":"How has the quality of evaluation of funding applications developed in the last 5 years, in your opinion?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":53
+}

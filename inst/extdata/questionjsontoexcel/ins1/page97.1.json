@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page97.1$",
+    "number":"page97.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein\" variable=\"v8_25_arbeitszeit_real\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie viele Stunden arbeiten\n\t\t\t\t\t\tSie\n\t\t\t\t\t\ttatsächlich im Durchschnitt pro Woche?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Anzahl:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page98.1",
+        "page99.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie viele Stunden arbeiten Sie tatsächlich im Durchschnitt pro Woche?,Anzahl:",
+        "en":"How many hours do you actually work per week on average?,Number:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Wie viele Stunden arbeiten Sie tatsächlich im Durchschnitt pro Woche?",
+        "en":"How many hours do you actually work per week on average?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":137
+}

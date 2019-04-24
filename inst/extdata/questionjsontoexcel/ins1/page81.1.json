@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page81.1$",
+    "number":"page81.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Hat Ihr/e\n\t\t\t\t\t\tPromotionsbetreuer/in\n\t\t\t\t\t\tmit Ihnen eine schriftliche\n\t\t\t\t\t\tBetreuungsvereinbarung abgeschlossen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_9_doktorand_betreuungsvereinbarung\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page83.1",
+        "page84.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Hat Ihr/e Promotionsbetreuer/in mit Ihnen eine schriftliche Betreuungsvereinbarung abgeschlossen?,Ja,Nein",
+        "en":"Did your doctoral supervisor complete a written supervision agreement with you?,Yes,No"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Hat Ihr/e Promotionsbetreuer/in mit Ihnen eine schriftliche Betreuungsvereinbarung abgeschlossen?",
+        "en":"Did your doctoral supervisor complete a written supervision agreement with you?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":116
+}

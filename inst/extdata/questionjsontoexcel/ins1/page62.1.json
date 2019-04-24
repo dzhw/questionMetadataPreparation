@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page62.1$",
+    "number":"page62.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Welcher der folgenden\n\t\t\t\t\t\tAussagen über die Exzellenzinitiative stimmen Sie am ehesten zu?</zofar:question>\n        <zofar:introduction uid=\"intro\">Die Exzellenzinitiative war alles in allem...</zofar:introduction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v6_2_fortsetzung_exin\">\n        <zofar:answerOption label=\"...nicht erfolgreich.\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"...teilweise erfolgreich.\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"...sehr erfolgreich.\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Kann ich nicht beurteilen.\" uid=\"ao4\" value=\"4444\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page64.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welcher der folgenden Aussagen über die Exzellenzinitiative stimmen Sie am ehesten zu?,Die Exzellenzinitiative war alles in allem...,...nicht erfolgreich.,...teilweise erfolgreich.,...sehr erfolgreich.,Kann ich nicht beurteilen.",
+        "en":"Which of the following statements about the Excellence Initiative do you agree with most strongly?,All in all, the Excellence Initiative was,...not successful,...partly successful,...very successful,I can't judge"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Welcher der folgenden Aussagen über die Exzellenzinitiative stimmen Sie am ehesten zu?",
+        "en":"Which of the following statements about the Excellence Initiative do you agree with most strongly?"
+    },
+    "introduction.de":"Die Exzellenzinitiative war alles in allem...",
+    "introduction.en":"All in all, the Excellence Initiative was",
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":96
+}
