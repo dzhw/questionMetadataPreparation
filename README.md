@@ -23,6 +23,12 @@ You can install the released version of questionMetadataPreperation from
 devtools::install_github("dzhw/questionMetadataPreperation")
 ```
 
+In case you want to install from a specific feature branch, e.g. "rbirkelbach/issue2018", do this:
+
+``` r
+devtools::install_github("dzhw/questionMetadataPreperation", ref = "rbirkelbach/issue2018")
+```
+
 If you don't have devtools installed do this:
 
 ``` r
@@ -34,6 +40,7 @@ To load the library you need to call
 ``` r
 library(questionMetadataPreperation)
 ```
+
 
 
 ## Having trouble?
