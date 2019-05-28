@@ -32,7 +32,7 @@ install.packages("devtools")
 To load the library you need to call
 
 ``` r
-library("questionMetadataPreperation")
+library(questionMetadataPreperation)
 ```
 
 
