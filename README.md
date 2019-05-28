@@ -23,6 +23,19 @@ You can install the released version of questionMetadataPreperation from
 devtools::install_github("dzhw/questionMetadataPreperation")
 ```
 
+If you don't have devtools installed do this:
+
+``` r
+install.packages("devtools")
+```
+
+To load the library you need to call
+
+``` r
+library("questionMetadataPreperation")
+```
+
+
 ## Having trouble?
 
 Please file an issue in our [issue
