@@ -4,12 +4,13 @@
 #' json files.
 #'
 #' @param in_path Input path, e.g. "./input/questions/ins1"
-#' @param out_file Path to the excel file to be generated, e.g.
+#' @param out_file Path of the excel file to be generated, e.g.
 #'   "./output/projectname.xlsx"
+#' @param instrument_number Numeric
 #' @export
 
 
-question_jsons_to_excel <- function(in_path, out_file){
+question_jsons_to_excel <- function(in_path, out_file, instrument_number){
 files <- dir(in_path, pattern = "*.json")
 
 excel <- data.frame(matrix(ncol = 21, nrow = length(files)))
@@ -42,8 +43,9 @@ for (i in 1:length(files)) {
   json <- jsonlite::fromJSON(paste0(in_path, "/", files[[i]]))
 
   excel$indexInInstrument[i] <- json$indexInInstrument
-  excel$questionNumber[i] <- json$number
-  excel$instrumentNumber[i] <- json$instrumentNumber
+  excel$questionNumber[i] <- gsub(files[[i]],
+    pattern = ".json", replacement = "")
+  excel$instrumentNumber[i] <- instrument_number
   excel$successorNumbers[i] <- ifelse(length(json$successorNumbers) == 0,
     NA_character_, paste0(json$successorNumbers, collapse = ","))
   excel$questionText.de[i] <- ifelse(length(json$questionText$de) == 0,

@@ -4,13 +4,15 @@
 \alias{question_jsons_to_excel}
 \title{Question-metadata jsons to excel}
 \usage{
-question_jsons_to_excel(in_path, out_file)
+question_jsons_to_excel(in_path, out_file, instrument_number)
 }
 \arguments{
 \item{in_path}{Input path, e.g. "./input/questions/ins1"}
 
-\item{out_file}{Path to the excel file to be generated, e.g.
+\item{out_file}{Path of the excel file to be generated, e.g.
 "./output/projectname.xlsx"}
+
+\item{instrument_number}{Numeric}
 }
 \description{
 This script generates a question metadata excel file from question metadata
