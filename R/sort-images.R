@@ -5,7 +5,7 @@
 #' Das Skript ist auszuführen, nachdem die json Dateien erzeugt wurden und die Ordnerstruktur angelegt wurde.
 #' Angepasst werden muss der Pfad an dem die Bilder liegen, der Pfad an dem die Bilder gespeichert werden
 #' sollen und der Pfad an dem die Question Excel Tabelle liegt (+ evtl. Projektname).
-#' Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch m?glich, wenn mehrere Bilder pro Frage vorliegen,
+#' Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch möglich, wenn mehrere Bilder pro Frage vorliegen,
 #' diese richtig einzusortieren.
 #' Ordnerstruktur der Bilder vor dem Einsortieren:
 #' |--ins1
