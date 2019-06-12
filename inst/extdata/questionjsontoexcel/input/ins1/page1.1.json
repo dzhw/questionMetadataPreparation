@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page1.1$",
+    "number":"page1.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\">Bitte nennen Sie uns\n\t\t\t\t\t\tIhre\n\t\t\t\t\t\tderzeitige Beschäftigungsposition.</zofar:question>\n        <zofar:instruction block=\"true\" uid=\"inst\">(Sollten Sie\n\t\t\t\t\t\tbereits\n\t\t\t\t\t\temeritiert bzw. pensioniert sein, markieren Sie bitte Ihre\n\t\t\t\t\t\tletzte\n\t\t\t\t\t\tBeschäftigungsposition.)</zofar:instruction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_1_position\">\n        <zofar:answerOption label=\"Professor/Professorin\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Akademischer Rat/Akademische Rätin\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Wissenschaftlicher Mitarbeiter/Wissenschaftliche Mitarbeiterin\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Derzeit kein Beschäftigungsverhältnis im akademisch-wissenschaftlichen Bereich (inkl. Privatdozenten ohne Beschäftigungsverhältnis)\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"Andere Position im akademisch- wissenschaftlichen Bereich,\" uid=\"ao6\" value=\"88\">\n            <zofar:questionOpen size=\"30\" type=\"text\" uid=\"qo\" variable=\"v1_1a\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l1\">und zwar</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page1.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Bitte nennen Sie uns Ihre derzeitige Beschäftigungsposition.,(Sollten Sie bereits emeritiert bzw. pensioniert sein, markieren Sie bitte Ihre letzte Beschäftigungsposition.),Professor/Professorin,Akademischer Rat/Akademische Rätin,Wissenschaftlicher Mitarbeiter/Wissenschaftliche Mitarbeiterin,Derzeit kein Beschäftigungsverhältnis im akademisch-wissenschaftlichen Bereich (inkl. Privatdozenten ohne Beschäftigungsverhältnis),Andere Position im akademisch- wissenschaftlichen Bereich,,und zwar",
+        "en":"What is your current position of employment?,(If you have already retired, please check your final position.),Professor,Assistant professor (\"Akad. Rat\"),Research assistant,Currently not employed in the academic field (incl. as private lecturer without an employment contract),A different position in the academic field,,please give details"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Bitte nennen Sie uns Ihre derzeitige Beschäftigungsposition.",
+        "en":"What is your current position of employment?"
+    },
+    "instruction.de":"(Sollten Sie bereits emeritiert bzw. pensioniert sein, markieren Sie bitte Ihre letzte Beschäftigungsposition.)",
+    "instruction.en":"(If you have already retired, please check your final position.)",
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":4
+}

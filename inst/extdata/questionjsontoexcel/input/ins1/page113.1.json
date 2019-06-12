@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page113.1$",
+    "number":"page113.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"1995\" minValue=\"1920\" size=\"7\" type=\"number\" uid=\"qo1\" validationMessage=\"Bitte geben Sie eine Zahl zwischen 1920 und 1995 ein\" variable=\"v10_7_gebJahr\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">In welchem Jahr wurden Sie\n\t\t\t\t\t\tgeboren?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l1\">Jahr:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page113.2"
+    ],
+    "additionalQuestionText":{
+        "de":"In welchem Jahr wurden Sie geboren?,Jahr:",
+        "en":"In what year were you born?,Year:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"In welchem Jahr wurden Sie geboren?",
+        "en":"In what year were you born?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":159
+}

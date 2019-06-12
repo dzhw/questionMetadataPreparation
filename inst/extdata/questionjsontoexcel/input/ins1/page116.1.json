@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page116.1$",
+    "number":"page116.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"2016\" minValue=\"1940\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl zwischen 1940 und 2016 ein\" variable=\"v10_10_Jahr_master\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"qq\">In welchem Jahr haben Sie Ihren ersten Hochschulabschluss (Master, Diplom oder vergleichbar) erworben?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Jahr des ersten\n\t\t\t\t\t\tHochschulabschlusses:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page117.1",
+        "page118.1",
+        "page119.1"
+    ],
+    "additionalQuestionText":{
+        "de":"In welchem Jahr haben Sie Ihren ersten Hochschulabschluss (Master, Diplom oder vergleichbar) erworben?,Jahr des ersten Hochschulabschlusses:",
+        "en":"In which year did you gain your first degree (Master's, Diploma or equivalent)?,Year of first university degree:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"In welchem Jahr haben Sie Ihren ersten Hochschulabschluss (Master, Diplom oder vergleichbar) erworben?",
+        "en":"In which year did you gain your first degree (Master's, Diploma or equivalent)?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":164
+}

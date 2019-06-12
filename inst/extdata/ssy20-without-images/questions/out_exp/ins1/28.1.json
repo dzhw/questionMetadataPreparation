@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 44,
+  "instruction": {
+    "en": "Please note: If you have residence at the university, but ususally spend weekends elsewhere (e.g. with partens/partner), please mark in the first column only the university residence.",
+    "de": "Bitte beachten: Sollten Sie z. B. am Hochschulort eine Wohnung/ein Zimmer haben, das Wochenende aber in der Regel woanders verbringen (bei Eltern/Partner/Partnerin), dann kreuzen Sie bitte nur Ihre Wohnform am Hochschulort an."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["28.2"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Where did you live during the Summer Semester 2012?",
+    "de": "Wo wohnen Sie während des Sommersemesters 2012?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "28. Wo wohnen Sie während des Sommersemesters 2012? Bitte beachten: Sollten Sie z. B. am Hochschulort eine Wohnung/ein Zimmer haben, das Wochenende X aber in der Regel woanders verbringen (bei Eltern/Partner/Partnerin), dann kreuzen Sie bitte nur Ihre Wohnform am Hochschulort an. bei den Eltern oder Verwandten ––––––––––––––––––––––––––––––––––––– 1 in einem Studentenwohnheim: · im Einzelzimmer ––––––––––––––––––––––––––––––––––––––––––––––––– 2 · im Einzelzimmer in einer Wohngruppe –––––––––––––––––––––––––––––– 3 · im Einzelappartement –––––––––––––––––––––––––––––––––––––––––––– 4 · in einer MehrzimmerWohnung (für Paare oder Studierende mit Kind)–––––––––– 5 · im Zweibettzimmer ––––––––––––––––––––––––––––––––––––––––––––––– 6 in einer Mietwohnung (ggf. auch Eigentumswohnung): · allein ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 7 · mit (Ehe)Partner(in) und/oder Kind –––––––––––––––––––––––––––––––– 8 · in einer Wohngemeinschaft ––––––––––––––––––––––––––––––––––––––– 9 zur Untermiete bei Privatleuten ––––––––––––––––––––––––––––––––––––– 10"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zur Wohnsituation"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page111.1$",
+    "number":"page111.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Nun möchten wir Sie noch\n\t\t\t\t\t\tum die\n\t\t\t\t\t\tAngabe einiger weniger Informationen zu Ihrer Person\n\t\t\t\t\t\tbitten.\n\t\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\t\tBitte geben Sie Ihr\n\t\t\t\t\t\tGeschlecht\n\t\t\t\t\t\tan.</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain uid=\"rd\" variable=\"v10_5_geschlecht\">\n        <zofar:answerOption label=\"Männlich\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Weiblich\" uid=\"ao2\" value=\"2\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page111.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Nun möchten wir Sie noch um die Angabe einiger weniger Informationen zu Ihrer Person bitten. Bitte geben Sie Ihr Geschlecht an.,Männlich,Weiblich",
+        "en":"Now we would like to ask you for a little more personal information. Please state your gender,Male,Female"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Nun möchten wir Sie noch um die Angabe einiger weniger Informationen zu Ihrer Person bitten. Bitte geben Sie Ihr Geschlecht an.",
+        "en":"Now we would like to ask you for a little more personal information. Please state your gender"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":155
+}

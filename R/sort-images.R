@@ -1,4 +1,4 @@
-#' SORT IMAGES IN DIRECTORY STRUCTURE
+#' Sort images into directory structure
 #'
 #' Dieses Skript unterstützt bei der Einsortierung der Fragenbilder (pngs) in die Ordnerstruktur,
 #' die für den Upload ins Metadatensystem benötigt wird.
@@ -8,13 +8,16 @@
 #' Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch möglich, wenn mehrere Bilder pro Frage vorliegen,
 #' diese richtig einzusortieren.
 #' Ordnerstruktur der Bilder vor dem Einsortieren:
+#' \preformatted{
 #' |--ins1
 #'     |--1.1_1.png
 #'     |--1.1_2.png
 #' |--ins2
 #'     |--1.1.png
 #'     |--1.2.png
+#'  }
 #' Ordnerstruktur nach dem Einsortieren:
+#' \preformatted{
 #' |--ins1
 #'     |--images
 #'         |--1.1
@@ -22,7 +25,8 @@
 #'             |--1.1_2.png
 #'     |--1.1.json
 #'     |--1.2.json
-#'
+#' }
+#' \preformatted{
 #' |--ins2
 #'     |--images
 #'         |--1.1
@@ -30,7 +34,8 @@
 #'         |--1.2
 #'             |--1.2.png
 #'     |--1.1.json
-#'     |--1.2.json
+#'     |--1.2.json}
+#'
 #'
 #' @param pathInImages path containing folders ins1 ins2 etc.
 #' @param pathOutImages path to newly generated json files
@@ -49,15 +54,20 @@ sort_images <- function(pathInImages, pathOutImages, pathXlsxFile){
   for (instrument in dir(pathInImages)) {
     pathPng <- paste0(pathInImages,"/",instrument)
     images <- dir(pathPng, ".png")
+    if (!dir.exists(paste0(pathOutImages, "/", instrument, "/images"))) {
     dir.create(paste0(pathOutImages, "/", instrument, "/images"),
       recursive = TRUE)
+      }
     for (image in images) {
       pngImage <- png::readPNG(paste0(pathPng, "/", image))
       # find image name in excel and get questionNumber
       questionNumber <- excel[excel$instrumentNumber == sub("ins","",
         instrument) & excel$fileName == image,"questionNumber"]
-      dir.create(paste0(pathOutImages, "/", instrument, "/images/",
+      if (!dir.exists(paste0(pathOutImages, "/", instrument, "/images/",
+        questionNumber))) {
+        dir.create(paste0(pathOutImages, "/", instrument, "/images/",
         questionNumber), recursive = TRUE)
+        }
       png::writePNG(pngImage, paste0(pathOutImages,"/",instrument,"/images/",
         questionNumber,"/", image))
     }

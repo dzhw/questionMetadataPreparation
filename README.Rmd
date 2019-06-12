@@ -20,7 +20,9 @@ knitr::opts_chunk$set(
 The goal of questionMetadataPreperation is to help with preparing 
 question-metadata for the 
 [metadatamanagement system](https://metadata.fdz.dzhw.eu) of the research data 
-center of the dzhw. 
+center of the dzhw. If you do not work for the research data center of the dzhw,
+this package will probably be only useful for learning purposes, as it's 
+specifically designed to help with our internal processes.
 
 ## Installation
 

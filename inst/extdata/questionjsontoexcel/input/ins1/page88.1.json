@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page88.1$",
+    "number":"page88.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"2\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie ein Zahl ein\" variable=\"v8_16_anzahl_berufungen\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">In wie vielen\n\t\t\t\t\t\tBerufungskommissionen waren Sie in den letzten 24 Monaten\n\t\t\t\t\t\tMitglied?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Anzahl:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page90_3.1",
+        "page90_4.1",
+        "page92.1"
+    ],
+    "additionalQuestionText":{
+        "de":"In wie vielen Berufungskommissionen waren Sie in den letzten 24 Monaten Mitglied?,Anzahl:",
+        "en":"How many appointment committees were you a member of in the last 24 months?,Number:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"In wie vielen Berufungskommissionen waren Sie in den letzten 24 Monaten Mitglied?",
+        "en":"How many appointment committees were you a member of in the last 24 months?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":126
+}

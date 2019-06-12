@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page87.1$",
+    "number":"page87.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Waren Sie in den letzten 24\n\t\t\t\t\t\tMonaten Mitglied in Berufungskommissionen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_15_mitglied_berufung\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page89.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Waren Sie in den letzten 24 Monaten Mitglied in Berufungskommissionen?,Ja,Nein",
+        "en":"Were you a member of appointment committees in the last 24 months?,Yes,No"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Waren Sie in den letzten 24 Monaten Mitglied in Berufungskommissionen?",
+        "en":"Were you a member of appointment committees in the last 24 months?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":125
+}

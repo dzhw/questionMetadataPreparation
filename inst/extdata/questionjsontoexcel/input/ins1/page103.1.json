@@ -1,0 +1,36 @@
+
+{
+    "id":"que-meisner1-ins1-page103.1$",
+    "number":"page103.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie schätzen Sie\n\t\t\t\t\t\tsich\n\t\t\t\t\t\tpersönlich\n\t\t\t\t\t\tein: Wie risikobereit sind Sie im Allgemeinen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain direction=\"horizontal\" showValues=\"true\" uid=\"rd\" variable=\"v8_31_risikobereit\">\n        <zofar:answerOption label=\"Gar nicht#{layout.BREAK} risikobereit\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"Sehr #{layout.BREAK}risikobereit\" uid=\"ao7\" value=\"7\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page107.1",
+        "page109.1",
+        "page105.1",
+        "page105.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie schätzen Sie sich persönlich ein: Wie risikobereit sind Sie im Allgemeinen?,Gar nicht risikobereit,Sehr risikobereit",
+        "en":"How do you assess yourself: how willing are you to take risks?,Not at all willing to take risks,Very willing to take risks"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wie schätzen Sie sich persönlich ein: Wie risikobereit sind Sie im Allgemeinen?",
+        "en":"How do you assess yourself: how willing are you to take risks?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":145
+}

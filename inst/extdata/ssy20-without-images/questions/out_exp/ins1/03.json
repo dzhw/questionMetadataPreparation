@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 3,
+  "instruction": {
+    "en": "Mark all that apply.",
+    "de": "(Zutreffendes ankreuzen)"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["04.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "According to the official rules of your university, do you conduct your studies as…",
+    "de": "Betreiben Sie Ihr Studium entsprechend der offiziellen Regelung Ihrer Hochschule als …"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "03. Betreiben Sie Ihr Studium entsprechend der offiziellen Regelung Ihrer X Hochschule als ... (Zutreffendes ankreuzen) Vollzeitstudium –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Teilzeitstudium –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Berufsbegleitendes Studium ––––––––––––––––––––––––––––––––––––––––––––––– Duales Studium –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Fernstudium ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

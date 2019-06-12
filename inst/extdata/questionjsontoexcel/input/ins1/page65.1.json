@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page65.1$",
+    "number":"page65.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"100\" rows=\"5\" smallOption=\"false\" type=\"text\" uid=\"qo\" variable=\"v6_5_andere_aenderung\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Gibt es Ihrer Ansicht nach\n\t\t\t\t\t\tweitere Punkte, die bei der Ausgestaltung der zukünftigen\n\t\t\t\t\t\tExzellenzinitiative Beachtung finden sollten?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\"/>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page67.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Gibt es Ihrer Ansicht nach weitere Punkte, die bei der Ausgestaltung der zukünftigen Exzellenzinitiative Beachtung finden sollten?",
+        "en":"In your opinion, are there any other points that should be included in the design of the future Excellence Initiative?"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Gibt es Ihrer Ansicht nach weitere Punkte, die bei der Ausgestaltung der zukünftigen Exzellenzinitiative Beachtung finden sollten?",
+        "en":"In your opinion, are there any other points that should be included in the design of the future Excellence Initiative?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":99
+}

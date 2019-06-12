@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page57.1$",
+    "number":"page57.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wurden bisher alle eingereichten Manuskripte mit Ihrer (Ko-)Autorschaft ohne Änderungswünsche (\"minor\" bzw. \"major revisions\") akzeptiert?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v5_6a_alles_angenommen\">\n        <zofar:answerOption label=\"ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"nein\" uid=\"ao2\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page58.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wurden bisher alle eingereichten Manuskripte mit Ihrer (Ko-)Autorschaft ohne Änderungswünsche (\"minor\" bzw. \"major revisions\") akzeptiert?,ja,nein",
+        "en":"Have all submitted manuscripts of which you are (co-)author been accepted without requiring minor or major revisions?,yes,no"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wurden bisher alle eingereichten Manuskripte mit Ihrer (Ko-)Autorschaft ohne Änderungswünsche (\"minor\" bzw. \"major revisions\") akzeptiert?",
+        "en":"Have all submitted manuscripts of which you are (co-)author been accepted without requiring minor or major revisions?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":90
+}

@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 32,
+  "instruction": {
+    "en": "If you are supported from parents, relatives or partner in addition to the amounts indicated in Question 19 - e.g. pays your rent to your landlord - specify the amount of these contributions in the second column.",
+    "de": "Falls Sie von den Eltern, Verwandten oder dem Partner/der Partnerin zusätzlich zu den bei Frage 19 angegebenen Geldbeträge unterstützt werden, indem diese die Bezahlung einzelner Positionen direkt übernehmen – z. B. die Miete an Ihren Vermieter überweisen – geben Sie die Höhe dieser Leistungen in der zweiten Spalte an."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["21"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "How much money do you spend per month during the summer semester 2012 for the following items?",
+    "de": "Wie viel Geld geben Sie selbst durchschnittlich pro Monat im Sommersemester 2012 für die nachfolgend aufgeführten Positionen aus?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "20. Wie viel Geld geben Sie selbst durchschnittlich pro Monat im Sommerich bezahle selbst Eltern/Verwandte/Partner(in) ZAHL semester 2012 für die nachfolgend aufgeführten Positionen aus? – mit den unter bezahlen für mich – zusätzFrage 19 angegebenen lich zu dem bei Frage 19 Falls Sie von den Eltern, Verwandten oder dem Partner/der Partnerin Einnahmen: angegebenen Betrag (ggf. schätzen): zusätzlich zu den bei Frage 19 angegebenen Geldbeträge unterstützt werden, indem diese die Bezahlung einzelner Positionen direkt übernehmen – z. B. die Miete an Ihren Vermieter überweisen – geben Sie € pro Monat € pro Monat die Höhe dieser Leistungen in der zweiten Spalte an. Miete einschließlich Nebenkosten für Strom, Heizung, Wasser, Müllabfuhr usw. – (falls z. B. der Partner/die Partnerin die gesamte Miete bezahlt, geben Sie nur den Anteil an, den er/sie zu Ihren Gunsten übernimmt) Ernährung –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– (Lebensmittel und Getränke einschl. Mahlzeiten in der Mensa, im Restaurant u. ä.; nicht vergessen: Ausgaben Ihrer Eltern, wenn Sie diese z. B. am Wochenende besuchen) Kleidung ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– (nicht vergessen: Kleidungsgeschenke z. B. der Eltern bitte ggf. umrechnen auf den Durchschnittswert pro Monat) Lernmittel –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– (Fachliteratur, Schreibwaren, Kopien, Chemikalien, Druckerpatronen usw.; aber ni cht: Anschaffungskosten für einen Computer, ein Instrument o. ä.) laufende Ausgaben für ein Auto ––––––––––––––––––––––––––––––––––––––––––– (Versicherungsbeiträge, KfzSteuer und Ausgaben für Kraftstoff/Öl usw. – ggf. umrechnen auf den Durchschnittsbetrag pro Monat) Ausgaben für öffentliche Verkehrsmittel –––––––––––––––––––––––––––––––––––– (für Fahrten zur Hochschule, zu den Eltern, zu Freunden usw. ggf. Beitrag für ein Semesterticket umlegen auf den Durchschnittsbetrag pro Monat) eigene Krankenversicherung (ggf. einschl. Beitrag zur Pflegeversicherung) sowie Arztkosten und Medikamente (soweit sie nicht von der Versicherung getragen werden) ––––––––––– Telefonund Internetkosten, Rundfunkund Fernsehgebühren, Porto ––––––––– Freizeit, Kultur und Sport –––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Finanzielle Situation im Sommersemester 2012"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

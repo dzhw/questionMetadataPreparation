@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page68.1$",
+    "number":"page68.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionOpen uid=\"mqo\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q1\">Wie häufig waren Sie selbst\n\t\t\t\t\t\tin\n\t\t\t\t\t\tden letzten 12 Monaten als Gutachterin/Gutachter in den\n\t\t\t\t\t\tnachfolgenden Bereichen tätig?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"1\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Anzahl</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q1\">Begutachtung von\n\t\t\t\t\t\t\t\tZeitschriftenartikeln</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo1\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_3a_gutachter_zeitschrift\"/>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q2\">Schriftliche Begutachtung von\n\t\t\t\t\t\t\t\tFörderanträgen</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo2\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_3b_gutachter_foederantrag\"/>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q3\">Mitwirkung an\n\t\t\t\t\t\t\t\tEvaluationsverfahren</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo3\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_3c_gutachter_eva\"/>\n        </zofar:item>\n        <zofar:item uid=\"i4\">\n            <zofar:header>\n                <zofar:question uid=\"q4\">Mitwirkung an\n\t\t\t\t\t\t\t\tAkkreditierungsverfahren</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo4\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_3d_gutachter_akkreditierung\"/>\n        </zofar:item>\n        <zofar:item uid=\"i5\">\n            <zofar:header>\n                <zofar:question uid=\"q5\">Begutachtungen im Rahmen von\n\t\t\t\t\t\t\t\tBerufungsverfahren</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo5\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_3e_gutachter_berufung\"/>\n        </zofar:item>\n        <zofar:item uid=\"i6\">\n            <zofar:header>\n                <zofar:question uid=\"q6\">Sonstige:</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo6\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_3f_gutachter_andere\"/>\n            <zofar:attachedOpen uid=\"qo\" variable=\"v7_3f_gutachter_andere_open\"/>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionOpen>"
+    },
+    "successorNumbers":[
+        "page71.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie häufig waren Sie selbst in den letzten 12 Monaten als Gutachterin/Gutachter in den nachfolgenden Bereichen tätig?,Anzahl,Begutachtung von Zeitschriftenartikeln,Schriftliche Begutachtung von Förderanträgen,Mitwirkung an Evaluationsverfahren,Mitwirkung an Akkreditierungsverfahren,Begutachtungen im Rahmen von Berufungsverfahren,Sonstige:",
+        "en":"How often were you yourself involved as an evaluator in the following areas in the past 12 months?,Number,Appraisal of journal articles,Written appraisal of funding applications,Collaboration on appraisal procedures,Collaboration on accreditation procedures,Appraisals in the context of appointment procedures,Other:"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Wie häufig waren Sie selbst in den letzten 12 Monaten als Gutachterin/Gutachter in den nachfolgenden Bereichen tätig?",
+        "en":"How often were you yourself involved as an evaluator in the following areas in the past 12 months?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":102
+}

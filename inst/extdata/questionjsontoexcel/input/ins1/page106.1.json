@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page106.1$",
+    "number":"page106.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Haben Sie persönlich in\n\t\t\t\t\t\tBezug auf\n\t\t\t\t\t\tIhre private Lebensplanung/Lebensführung Nachteile\n\t\t\t\t\t\taufgrund Ihrer\n\t\t\t\t\t\twissenschaftlichen Karriere hinnehmen müssen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v9_1_nachteil_karriere\">\n        <zofar:answerOption label=\"Nein\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Ja\" uid=\"ao2\" value=\"2\"></zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page107.1",
+        "page108.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Haben Sie persönlich in Bezug auf Ihre private Lebensplanung/Lebensführung Nachteile aufgrund Ihrer wissenschaftlichen Karriere hinnehmen müssen?,Nein,Ja",
+        "en":"Have you personally experienced disadvantages to your private plans for the future/the way you live due to your academic career?,No,Yes"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie persönlich in Bezug auf Ihre private Lebensplanung/Lebensführung Nachteile aufgrund Ihrer wissenschaftlichen Karriere hinnehmen müssen?",
+        "en":"Have you personally experienced disadvantages to your private plans for the future/the way you live due to your academic career?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":149
+}

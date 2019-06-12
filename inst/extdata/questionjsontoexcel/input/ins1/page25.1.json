@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page25.1$",
+    "number":"page25.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Haben Sie seit Januar\n\t\t\t\t\t\t2011\n\t\t\t\t\t\tals Haupt- oder Mitantragsteller/Mitantragstellerin einen oder\n\t\t\t\t\t\tmehrere Drittmittelanträge bei einem öffentlichen oder privaten\n\t\t\t\t\t\tFörderer gestellt? Bitte berücksichtigen Sie nur Anträge mit einem jeweiligen Volumen von über 25.000 €.</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v2_1_drm_antragsteller\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein. Ich habe seit 2011 keine Drittmittelanträge über 25.000 € gestellt.\" uid=\"ao1\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page25.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Haben Sie seit Januar 2011 als Haupt- oder Mitantragsteller/Mitantragstellerin einen oder mehrere Drittmittelanträge bei einem öffentlichen oder privaten Förderer gestellt? Bitte berücksichtigen Sie nur Anträge mit einem jeweiligen Volumen von über 25.000 €.,Ja,Nein. Ich habe seit 2011 keine Drittmittelanträge über 25.000 € gestellt.",
+        "en":"Have you submitted one or more third-party funding applications to public or private funding sources as main or joint applicant since January 2011? Please only mention applications for over â¬ 25,000 each.,Yes,No, I have not submitted any applications for third-party funding for over € 25,000 since 2011."
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie seit Januar 2011 als Haupt- oder Mitantragsteller/Mitantragstellerin einen oder mehrere Drittmittelanträge bei einem öffentlichen oder privaten Förderer gestellt? Bitte berücksichtigen Sie nur Anträge mit einem jeweiligen Volumen von über 25.000 €.",
+        "en":"Have you submitted one or more third-party funding applications to public or private funding sources as main or joint applicant since January 2011? Please only mention applications for over â¬ 25,000 each."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":37
+}

@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page22.1$",
+    "number":"page22.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Welche Mindestvertragslaufzeit für Doktorandinnen/Doktoranden sollte Ihrer Ansicht nach nicht unterschritten werden?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" missingSeparated=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v1_22_mindestvlz_phd\">\n        <zofar:answerOption label=\"bitte wählen Sie:\" uid=\"ao\" value=\"0\"/>\n        <zofar:answerOption label=\"unter einem halben Jahr\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"½ Jahr\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"1 Jahr\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"2 Jahre\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"3 Jahre\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"5 Jahre\" uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"6 Jahre\" uid=\"ao7\" value=\"7\"/>\n        <zofar:answerOption label=\"mehr als 6 Jahre\" uid=\"ao8\" value=\"8\"/>\n        <zofar:answerOption label=\"Weiß nicht\" missing=\"true\" uid=\"ao9\" value=\"444\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page25.1",
+        "page24.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welche Mindestvertragslaufzeit für Doktorandinnen/Doktoranden sollte Ihrer Ansicht nach nicht unterschritten werden?,bitte wählen Sie:,unter einem halben Jahr,½ Jahr,1 Jahr,2 Jahre,3 Jahre,5 Jahre,6 Jahre,mehr als 6 Jahre,Weiß nicht",
+        "en":"What should be the minimum contract duration for positions for doctoral candidates, in your opinion?,Please choose,less than six months,1/2 year,1 year,2 years,3 years,5 years,6 years,over 6 years,Don't know"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Welche Mindestvertragslaufzeit für Doktorandinnen/Doktoranden sollte Ihrer Ansicht nach nicht unterschritten werden?",
+        "en":"What should be the minimum contract duration for positions for doctoral candidates, in your opinion?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":34
+}

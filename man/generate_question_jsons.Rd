@@ -12,12 +12,14 @@ Tabellenblättern "question" und "images".
 Angepasst werden muss der Pfad, an dem die Exceltabelle liegt und der Pfad an
 dem die jsons gespeichert werden sollen.}
 \usage{
-generate_question_jsons(projects_root, project_name)
+generate_question_jsons(projects_root, project_name, has_images = TRUE)
 }
 \arguments{
 \item{projects_root}{the root folder where all your projects reside}
 
 \item{project_name}{the name of your project}
+
+\item{has_images}{do the questions have images? default is TRUE}
 }
 \description{
 QUESTIONS: EXCEL TO JSON

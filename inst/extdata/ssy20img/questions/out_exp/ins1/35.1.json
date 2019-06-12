@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 52,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["35.2", "36.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Your family status",
+    "de": "Ihr Familienstand"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "35. Ihr Familienstand X verheiratet/eingetragene Lebenspartnerschaft ––––––––––––––––––––––––––––––– nicht verheiratet in fester Partnerbeziehung –––––––––––––––––––––––––––––––– nicht verheiratet ohne feste Partnerbeziehung ––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

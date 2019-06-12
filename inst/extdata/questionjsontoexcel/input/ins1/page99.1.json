@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page99.1$",
+    "number":"page99.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie hoch ist Ihre\n\t\t\t\t\t\ttatsächliche\n\t\t\t\t\t\tLehrleistung?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_27a_lehre_real\">\n        <zofar:answerOption label=\"Ich unterrichte derzeit nicht\" uid=\"ao1\" value=\"2\"></zofar:answerOption>\n        <zofar:answerOption label=\"Ich unterrichte derzeit.\" uid=\"ao2\" value=\"1\">\n            <zofar:questionOpen maxLength=\"4\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein\" variable=\"v8_27b_lehre_real_stunden\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">Anzahl der tatsächlich\n\t\t\t\t\t\t\t\t\tunterrichteten\n\t\t\t\t\t\t\t\t\tSemesterwochenstunden:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page99.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie hoch ist Ihre tatsächliche Lehrleistung?,Ich unterrichte derzeit nicht,Ich unterrichte derzeit.,Anzahl der tatsächlich unterrichteten Semesterwochenstunden:",
+        "en":"How many hours do you actually teach?,I do not currently teach.,I currently teach.,Number of actually taught semester teaching hours per week:"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wie hoch ist Ihre tatsächliche Lehrleistung?",
+        "en":"How many hours do you actually teach?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":140
+}

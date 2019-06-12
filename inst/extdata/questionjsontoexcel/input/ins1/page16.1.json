@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page16.1$",
+    "number":"page16.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"2016\" minValue=\"1950\" size=\"5\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein(1950-2016)\" variable=\"v1_16_jahr_erste_stelle\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">In welchem Jahr haben Sie\n\t\t\t\t\t\tIhre\n\t\t\t\t\t\terste Stelle als wissenschaftlicher Mitarbeiter/\n\t\t\t\t\t\twissenschaftliche\n\t\t\t\t\t\tMitarbeiterin angetreten?</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page18.1",
+        "page20.1",
+        "page21.1"
+    ],
+    "additionalQuestionText":{
+        "de":"In welchem Jahr haben Sie Ihre erste Stelle als wissenschaftlicher Mitarbeiter/ wissenschaftliche Mitarbeiterin angetreten?",
+        "en":"In which year did you take up your first position as research assistant?"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"In welchem Jahr haben Sie Ihre erste Stelle als wissenschaftlicher Mitarbeiter/ wissenschaftliche Mitarbeiterin angetreten?",
+        "en":"In which year did you take up your first position as research assistant?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":26
+}

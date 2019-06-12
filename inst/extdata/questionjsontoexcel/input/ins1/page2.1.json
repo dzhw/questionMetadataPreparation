@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page2.1$",
+    "number":"page2.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q1\">Um welche Art von Professur\n\t\t\t\t\t\thandelt es sich dabei?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_2_prof\">\n        <zofar:answerOption label=\"„Ordentliche“ Professur\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Außerordentliche Professur (ohne außerplanmäßige Prof.)\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Juniorprofessur\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Vertretungsprofessur\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Gemeinsame Berufung\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"Stiftungsprofessur\" uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"Außerplanmäßige Professur\" uid=\"ao7\" value=\"7\"/>\n        <zofar:answerOption label=\"Honorarprofessur\" uid=\"ao8\" value=\"8\"/>\n        <zofar:answerOption label=\"Emeritiert/Ruhestand\" uid=\"ao9\" value=\"9\"/>\n        <zofar:answerOption label=\"Andere\" uid=\"ao10\" value=\"88\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page2.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Um welche Art von Professur handelt es sich dabei?,„Ordentliche“ Professur,Außerordentliche Professur (ohne außerplanmäßige Prof.),Juniorprofessur,Vertretungsprofessur,Gemeinsame Berufung,Stiftungsprofessur,Außerplanmäßige Professur,Honorarprofessur,Emeritiert/Ruhestand,Andere",
+        "en":"What type of professorship do you hold?,\"Full\" professorship,\"Außerordentliche\" Professur (not \"außerplanmäßge\" Professur),Junior professorship,Temporary professor (\"Vertretungsprofessur\"),Joint professorship (joint appointment with Helmholtz Ass., MPG, Fraunhofer, etc.),Endowed professorship,\"Außerplanmäßige Professur\",Honorary professor,Retired,Other"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Um welche Art von Professur handelt es sich dabei?",
+        "en":"What type of professorship do you hold?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":6
+}

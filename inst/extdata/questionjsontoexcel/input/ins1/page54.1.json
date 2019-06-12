@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page54.1$",
+    "number":"page54.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie stark empfinden Sie\n\t\t\t\t\t\tpersönlich den Druck zu publizieren?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain direction=\"horizontal\" uid=\"rd\" variable=\"v5_3_publikationsdruck\">\n        <zofar:answerOption label=\"Ich empfinde#{layout.BREAK} überhaupt        keinen#{layout.BREAK} Druck\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Ich empfinde#{layout.BREAK} äußerst        starken#{layout.BREAK} Druck\" uid=\"ao5\" value=\"5\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page54.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie stark empfinden Sie persönlich den Druck zu publizieren?,Ich empfinde überhaupt keinen Druck,Ich empfinde äußerst starken Druck",
+        "en":"How great is the pressure to publish in your experience?,I don't experience any pressure,I experience very great pressure"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wie stark empfinden Sie persönlich den Druck zu publizieren?",
+        "en":"How great is the pressure to publish in your experience?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":85
+}

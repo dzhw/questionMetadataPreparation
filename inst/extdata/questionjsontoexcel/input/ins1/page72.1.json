@@ -1,0 +1,36 @@
+
+{
+    "id":"que-meisner1-ins1-page72.1$",
+    "number":"page72.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"100\" rows=\"5\" smallOption=\"false\" uid=\"qo1\" variable=\"v7_7a_schlechte_erfahrung_auf\" visible=\"zofar.asNumber(v7_6a_koop_erfahrung_auf) gt 0 and zofar.asNumber(v7_6a_koop_erfahrung_auf) lt 3\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"qq1\">Kooperationen mit\n\t\t\t\t\t\taußeruniversitären Forschungseinrichtungen</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page74.1",
+        "page77.1",
+        "page87_bewerberauswahl.1",
+        "page77.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Kooperationen mit außeruniversitären Forschungseinrichtungen",
+        "en":"Collaboration with non-university research institutions"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Kooperationen mit außeruniversitären Forschungseinrichtungen",
+        "en":"Collaboration with non-university research institutions"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":105
+}

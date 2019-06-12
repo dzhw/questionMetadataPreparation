@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-index.1$",
+    "number":"index.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\">In welcher Sprache möchten Sie die Befragung durchführen?\n\t\t\t\t\t#{layout.BREAK}#{layout.BREAK}\n\t\t\t\t\tPlease select your preferred language for the survey.</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain uid=\"rd\" variable=\"languageChoice\">\n        <zofar:answerOption label=\"Deutsch\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"English\" uid=\"ao2\" value=\"2\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "startpage.1",
+        "page1.1",
+        "cancel.1"
+    ],
+    "additionalQuestionText":{
+        "de":"In welcher Sprache möchten Sie die Befragung durchführen? Please select your preferred language for the survey.,Deutsch,English",
+        "en":"In welcher Sprache möchten Sie die Befragung durchführen? Please select your preferred language for the survey.,Deutsch,English"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"In welcher Sprache möchten Sie die Befragung durchführen? Please select your preferred language for the survey.",
+        "en":"In welcher Sprache möchten Sie die Befragung durchführen? Please select your preferred language for the survey."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":1
+}

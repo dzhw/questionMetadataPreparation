@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page49.1$",
+    "number":"page49.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Benötigen Sie für Ihre\n\t\t\t\t\t\tForschung\n\t\t\t\t\t\teine besondere Infrastruktur?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"4\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Nein, nie</zofar:title>\n            <zofar:title uid=\"t2\">selten</zofar:title>\n            <zofar:title uid=\"t3\">häufig</zofar:title>\n            <zofar:title uid=\"t4\">permanent</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Technische Geräte (z.B.\n\t\t\t\t\t\t\t\tSpektrographen, Messgeräte, Mikroskope, Telefonlabore,\n\t\t\t\t\t\t\t\tGroßrechner usw.)</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_12a_infra_geraete\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Laborfläche</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_12b_infra_labor\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Zugang zu kostenpflichtigen\n\t\t\t\t\t\t\t\telektronischen Ressourcen wie Datenbanken und Journals</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_12c_infra_elektronische_ressourcen\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i4\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Sonstige,</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_12d_infra_andere\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n            </zofar:responseDomain>\n            <zofar:attachedOpen size=\"20\" uid=\"ao\" variable=\"v4_12\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:attachedOpen>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page51.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Benötigen Sie für Ihre Forschung eine besondere Infrastruktur?,Nein, nie,selten,häufig,permanent,Technische Geräte (z.B. Spektrographen, Messgeräte, Mikroskope, Telefonlabore, Großrechner usw.),Laborfläche,Zugang zu kostenpflichtigen elektronischen Ressourcen wie Datenbanken und Journals,Sonstige,,und zwar:",
+        "en":"Do you require special infrastructure for your research?,No, never,Rarely,Often,All the time,Technical equipment (e.g. spectrographs, measuring equipment, microscopes, telephone labs, large-capacity computers etc.),Lab space,Access to electronic resources for which a fee is charged, such as databases and journals,Other,,Please give details:"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Benötigen Sie für Ihre Forschung eine besondere Infrastruktur?",
+        "en":"Do you require special infrastructure for your research?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":78
+}

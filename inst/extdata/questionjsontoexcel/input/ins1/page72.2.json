@@ -1,0 +1,36 @@
+
+{
+    "id":"que-meisner1-ins1-page72.2$",
+    "number":"page72.2",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"100\" rows=\"5\" smallOption=\"false\" uid=\"qo2\" variable=\"v7_7b_schlechte_erfahrung_wirtschaft\" visible=\"zofar.asNumber(v7_6b_koop_erfahrung_wirtschaft) gt 0 and zofar.asNumber(v7_6b_koop_erfahrung_wirtschaft) lt 3\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"qq2\">Kooperationen mit der\n\t\t\t\t\t\tWirtschaft/Industrie</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page74.1",
+        "page77.1",
+        "page87_bewerberauswahl.1",
+        "page77.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Kooperationen mit der Wirtschaft/Industrie",
+        "en":"Collaboration with business/ industry"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Kooperationen mit der Wirtschaft/Industrie",
+        "en":"Collaboration with business/ industry"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":106
+}

@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 30,
+  "instruction": {
+    "en": "Please do not include direct payments from your partens/partner to third paties (e.g. rent transferred to your landlord). Please state these paymensts in question 20. If you recieve a loan to finance tuition fees, please state this in question 21.",
+    "de": "Bitte berücksichtigen Sie hier nicht, was Ihre Eltern oder andere Verwandte bzw. Ihr Partner/Ihre Partnerin für Sie direkt an Dritte zahlen (z. B. Überweisung der Miete an Ihren Vermieter). Solche Leistungen geben Sie bitte bei Frage 20 an.\nSollten Sie einen speziell zur Finanzierung von Studiengebühren angebotenen Kredit in Anspruch nehmen, geben Sie dies bitte unter „andere Finanzierungsquelle“ an."
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["19.2", "20"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": "If you also support yourself through non-regular work (e.g. holiday work) or previous money earned (e.g. savings, investments) please only state the amount that you on average spent monthly.",
+    "de": "Sollten Sie Ihren Lebensunterhalt auch mit unregelmäßigen Einnahmen (z. B. Verdienst aus Ferienarbeit) oder durch früher erworbenes Geld (Ersparnisse, Vermögen) bestreiten, geben Sie bitte nur den Betrag an, den Sie davon monatlich im Durchschnitt einsetzen."
+  },
+  "questionText": {
+    "en": "How much money do you have available on average during the Summer Semester 2012? Please state the amount for each financial source.",
+    "de": "Wie viel Geld steht Ihnen durchschnittlich im Monat während des Sommersemesters 2012 zur Verfügung? Geben Sie bitte für jede zutreffende Finanzierungsquelle den Betrag an."
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "19. Wie viel Geld steht Ihnen durchschnittlich im Monat während ZAHL des Sommersemesters 2012 zur Verfügung? Geben Sie bitte für jede zutreffende Finanzierungsquelle den Betrag an. Sollten Sie Ihren Lebensunterhalt auch mit unregelmäßigen Einnahmen (z. B. Verdienst aus Ferienarbeit) oder durch früher erworbenes Geld (Ersparnisse, Vermögen) bestreiten, geben Sie bitte nur den Betrag an, den Sie davon monatlich im Durchschnitt einsetzen. € pro Monat Bitte berücksichtigen Sie hier nicht, was Ihre Eltern von den Eltern –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– oder andere Verwandte (bar auf die Hand/per Überweisung auf Ihr Konto) bzw. Ihr Partner/Ihre Partnerin für Sie direkt an vom Partner/von der Partnerin –––––––––––––––––––––––––––––––––––––––––––– Dritte zahlen (z. B. Über(bar auf die Hand/per Überweisung auf Ihr Konto) weisung der Miete an Ihren Vermieter). Solche Leistungen geben Sie bitte von anderen Verwandten (z. B. Großeltern, Geschwister), Bekannten ––––––––––––––––– bei Frage 20 an. (bar auf die Hand/per Überweisung auf Ihr Konto) Ausbildungsförderung nach dem BAföG – aktueller Förderungsbetrag –––––––––– (gleichgültig ob als Zuschuss, unverzinsliches Staatsdarlehen oder als verzinsliches Bankdarlehen gewährt) Bildungskredit ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Sollten Sie einen speziell (beantragt beim Bundesverwaltungsamt, ausgezahlt durch die KfW Bankengruppe) zur Finanzierung von Studiengebühren angeboteStudienkredit von der KfW Bankengruppe ––––––––––––––––––––––––––––––––––– nen Kredit in Anspruch nehmen, geben Sie dies bitte unter „andere FinanKredit zur Studienfinanzierung von einer anderen Bank/Sparkasse ––––––––––––– zierungsquelle“ an. eigener Verdienst aus Tätigkeiten während der Vorlesungszeit und/oder der ––––– vorlesungsfreien Zeit (Bitte den Betrag eintragen, den Sie davon mtl. im Durchschnitt einsetzen.) eigene Mittel, die vor dem Studium erworben/angespart wurden –––––––––––––– (Bitte den Betrag eintragen, den Sie davon monatlich im Durchschnitt einsetzen.) Waisengeld oder Waisenrente–––––––––––––––––––––––––––––––––––––––––––––– ANGAB EN ZUM B AF ÖG Stipendium ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– andere Finanzierungsquelle ––––––––––––––––––––––––––––––––––––––––––––––– und zwar:"
+  },
+  "topic": {
+    "en": null,
+    "de": "Finanzielle Situation im Sommersemester 2012"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

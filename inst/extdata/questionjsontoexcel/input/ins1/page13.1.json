@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page13.1$",
+    "number":"page13.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Ist Ihr gegenwärtiger\n\t\t\t\t\t\tArbeitsvertrag…</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_13_befristet\">\n        <zofar:answerOption label=\"unbefristet?\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"befristet?\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Sonstiges\" uid=\"ao3\" value=\"88\">\n            <zofar:questionOpen size=\"30\" uid=\"qo\" variable=\"v1_13a\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page16.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Ist Ihr gegenwärtiger Arbeitsvertrag…,unbefristet?,befristet?,Sonstiges,und zwar:",
+        "en":"Is your current employment contract...,Permanent?,Temporary?,Other,Please give details:"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Ist Ihr gegenwärtiger Arbeitsvertrag…",
+        "en":"Is your current employment contract..."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":23
+}

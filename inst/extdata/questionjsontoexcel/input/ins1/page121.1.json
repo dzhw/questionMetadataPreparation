@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page121.1$",
+    "number":"page121.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc0\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Haben Sie Kinder?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain uid=\"rd\" variable=\"v10_15a_kinder\">\n        <zofar:answerOption label=\"Nein\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Ja\" uid=\"ao2\" value=\"2\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page123.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Haben Sie Kinder?,Nein,Ja",
+        "en":"Do you have children?,No,Yes"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie Kinder?",
+        "en":"Do you have children?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":170
+}

@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page15.1$",
+    "number":"page15.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"3\" maxValue=\"100\" minValue=\"1\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein (1-100)\" variable=\"v1_15_laufzeit_befristung\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"qo\">Welche Gesamtlaufzeit (in\n\t\t\t\t\t\tMonaten) hat Ihr gegenwärtiger Vertrag?</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page20.1",
+        "page21.1",
+        "page17.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welche Gesamtlaufzeit (in Monaten) hat Ihr gegenwärtiger Vertrag?",
+        "en":"How long (in months) is the duration of your current contract?"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Welche Gesamtlaufzeit (in Monaten) hat Ihr gegenwärtiger Vertrag?",
+        "en":"How long (in months) is the duration of your current contract?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":25
+}

@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page60.1$",
+    "number":"page60.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wann nennen Sie die\n\t\t\t\t\t\tbeteiligten\n\t\t\t\t\t\tFörderer?</zofar:question>\n        <zofar:introduction uid=\"intro\">Ich mache bei\n\t\t\t\t\t\tPublikationen Angaben zu Förderern…</zofar:introduction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n        <zofar:answerOption label=\"…wenn es vom Herausgeber/Herausgeberin der Zeitschrift verlangt wird.\" uid=\"ao1\" variable=\"v5_9a_herausgeber\"/>\n        <zofar:answerOption label=\"…wenn es vom Förderer verlangt wird.\" uid=\"ao2\" variable=\"v5_9b_foederer\"/>\n        <zofar:answerOption label=\"…wenn Koautoren/Koautorinnen ihre Förderer angeben.\" uid=\"ao3\" variable=\"v5_9c_koautor_gibt_an\"/>\n        <zofar:answerOption label=\"…wenn ich von Koautoren/Koautorinnen dazu aufgefordert werde.\" uid=\"ao4\" variable=\"v5_9d_koautor_fordert\"/>\n        <zofar:answerOption label=\"…wenn der Umfang der Förderung dies rechtfertigt.\" uid=\"ao5\" variable=\"v5_9e_umfang\"/>\n        <zofar:answerOption label=\"…weil es in meinem Fachgebiet üblich ist.\" uid=\"ao6\" variable=\"v5_9f_fach\"/>\n        <zofar:answerOption label=\"…weil ich es für selbstverständlich halte, auf diese Weise die Förderung zu honorieren.\" uid=\"ao7\" variable=\"v5_9g_foerderer_honorieren\"/>\n        <zofar:answerOption label=\"…wenn ein solches Feld in der Online-Eingabeform der Zeitschrift existiert.\" uid=\"ao8\" variable=\"v5_9h_eingabefeld\"/>\n        <zofar:answerOption label=\"…wenn im Manuskript bzw. in der Vorlage ein solcher Abschnitt existiert.\" uid=\"ao9\" variable=\"v5_9i_manuskript\"/>\n        <zofar:answerOption label=\"Sonstige Gründe, \" uid=\"ao10\" variable=\"v5_9j_sonstiges\">\n            <zofar:questionOpen size=\"20\" uid=\"ao10\" variable=\"v5_9\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "successorNumbers":[
+        "page62.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wann nennen Sie die beteiligten Förderer?,Ich mache bei Publikationen Angaben zu Förderern…,…wenn es vom Herausgeber/Herausgeberin der Zeitschrift verlangt wird.,…wenn es vom Förderer verlangt wird.,…wenn Koautoren/Koautorinnen ihre Förderer angeben.,…wenn ich von Koautoren/Koautorinnen dazu aufgefordert werde.,…wenn der Umfang der Förderung dies rechtfertigt.,…weil es in meinem Fachgebiet üblich ist.,…weil ich es für selbstverständlich halte, auf diese Weise die Förderung zu honorieren.,…wenn ein solches Feld in der Online-Eingabeform der Zeitschrift existiert.,…wenn im Manuskript bzw. in der Vorlage ein solcher Abschnitt existiert.,Sonstige Gründe,,und zwar:",
+        "en":"When do you mention the funding sources involved?,I mention funding sources in publications...,...when the journal editor demands it.,...when the funding source demands it.,...when co-authors mention their funding sources.,...when co-authors ask me to do so.,...if the funding was on a scale which justifies a mention.,...because it is the usual practice in my subject area.,...because I consider it right to acknowledge the funding in this way.,...when there is a box for this information in the journal's online application form.,...when there is a section for this in the manuscript / the template.,Other reasons,,Please give details:"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Wann nennen Sie die beteiligten Förderer?",
+        "en":"When do you mention the funding sources involved?"
+    },
+    "introduction.de":"Ich mache bei Publikationen Angaben zu Förderern…",
+    "introduction.en":"I mention funding sources in publications...",
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":94
+}

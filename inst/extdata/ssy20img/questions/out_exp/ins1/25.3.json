@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 39,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["26"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "Does the amount of your student loan include a supplement for…",
+    "de": "Ist in Ihrem Förderungsbetrag ein Zuschlag enthalten für …"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Ist in Ihrem Förderungsbetrag ein Zuschlag enthalten für ... nein ja Ihre Krankenund Pflegeversicherung –––––––––––––––––––––––––––––––––––––– die Betreuung Ihres Kindes/Ihrer Kinder ––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum BAföG"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

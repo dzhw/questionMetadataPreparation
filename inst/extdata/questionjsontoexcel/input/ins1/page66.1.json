@@ -1,0 +1,36 @@
+
+{
+    "id":"que-meisner1-ins1-page66.1$",
+    "number":"page66.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wieviel Prozent der für\n\t\t\t\t\t\tIhre\n\t\t\t\t\t\tForschung notwendigen Aufwendungen (Personal und Sachmittel)\n\t\t\t\t\t\tkönnen Sie über Ihre Grundfinanzierung/Grundausstattung\n\t\t\t\t\t\tbestreiten?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v7_1_anteil_grundfinanzierung\">\n        <zofar:answerOption label=\"bitte wählen: \" uid=\"ao0\" value=\"0\"/>\n        <zofar:answerOption label=\"0%\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"10%\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"20%\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"30%\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"40%\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"50%\" uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"60%\" uid=\"ao7\" value=\"7\"/>\n        <zofar:answerOption label=\"70%\" uid=\"ao8\" value=\"8\"/>\n        <zofar:answerOption label=\"80%\" uid=\"ao9\" value=\"9\"/>\n        <zofar:answerOption label=\"90%\" uid=\"ao10\" value=\"10\"/>\n        <zofar:answerOption label=\"100%\" uid=\"ao11\" value=\"11\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page70.1",
+        "page68.1",
+        "page73.1",
+        "page70.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wieviel Prozent der für Ihre Forschung notwendigen Aufwendungen (Personal und Sachmittel) können Sie über Ihre Grundfinanzierung/Grundausstattung bestreiten?,bitte wählen:,0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%",
+        "en":"What percentage of the expenses necessary for your research (personnel and material expenses) can you cover with basic funding/basic equipment?,Please choose:,0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Wieviel Prozent der für Ihre Forschung notwendigen Aufwendungen (Personal und Sachmittel) können Sie über Ihre Grundfinanzierung/Grundausstattung bestreiten?",
+        "en":"What percentage of the expenses necessary for your research (personnel and material expenses) can you cover with basic funding/basic equipment?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":100
+}

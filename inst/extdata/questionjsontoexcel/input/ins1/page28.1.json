@@ -1,0 +1,40 @@
+
+{
+    "id":"que-meisner1-ins1-page28.1$",
+    "number":"page28.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mmc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Warum haben Sie seit Anfang\n\t\t\t\t\t\t2011\n\t\t\t\t\t\tkeinen Drittmittelantrag gestellt?</zofar:question>\n        <zofar:instruction uid=\"instr\">Mehrfachauswahl möglich</zofar:instruction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n        <zofar:answerOption label=\"Ich benötige über die Grundfinanzierung hinaus keine weiteren Mittel für meine Forschung.\" uid=\"ao1\" variable=\"v2_3a_grundm_reichen\"/>\n        <zofar:answerOption label=\"Ich beziehe die für meine Forschung notwendigen Drittmittel im Wesentlichen über Auftragsforschung aus der Industrie/Privatwirtschaft.\" uid=\"ao2\" variable=\"v2_3b_auftragsforschung\"/>\n        <zofar:answerOption label=\"Es gibt für meine Forschung kein passendes Förderangebot.\" uid=\"ao3\" variable=\"v2_3c_kein_angebot\"/>\n        <zofar:answerOption label=\"Meist ist das Ablehnungsrisiko im Verhältnis zum Antragsaufwand zu hoch.\" uid=\"ao4\" variable=\"v2_3d_ablehnungsrisiko\"/>\n        <zofar:answerOption label=\"Mein(e) Chef/Chefin stellt die Anträge für mich.\" uid=\"ao5\" variable=\"v2_3e_chef\"/>\n        <zofar:answerOption label=\"Ich habe keine ausreichende Erfahrung mit der Antragstellung.\" uid=\"ao6\" variable=\"v2_3f_keine_erfahrung\"></zofar:answerOption>\n        <zofar:answerOption label=\"Sonstige Gründe, \" uid=\"ao7\" variable=\"v2_3g_andere\">\n            <zofar:questionOpen uid=\"ao8\" variable=\"v2_1a\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "successorNumbers":[
+        "page30a.1",
+        "page30b.1",
+        "page30c.1",
+        "page31.1",
+        "page31.1",
+        "page32.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Warum haben Sie seit Anfang 2011 keinen Drittmittelantrag gestellt?,Mehrfachauswahl möglich,Ich benötige über die Grundfinanzierung hinaus keine weiteren Mittel für meine Forschung.,Ich beziehe die für meine Forschung notwendigen Drittmittel im Wesentlichen über Auftragsforschung aus der Industrie/Privatwirtschaft.,Es gibt für meine Forschung kein passendes Förderangebot.,Meist ist das Ablehnungsrisiko im Verhältnis zum Antragsaufwand zu hoch.,Mein(e) Chef/Chefin stellt die Anträge für mich.,Ich habe keine ausreichende Erfahrung mit der Antragstellung.,Sonstige Gründe,,und zwar",
+        "en":"Why haven't you applied for third party funding since 2011?,Multiple answers possible,I do not need more funding for my research in addition to the basic funding.,I acquire the third-party funding needed for my research mainly through contract research for industry/private business.,There is no appropriate funding provision for my research.,The risk of refusal is usually too high in relation to the effort of application.,My superior submits the applications for me.,I do not have enough experience with applications.,Other reasons,,please give details"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Warum haben Sie seit Anfang 2011 keinen Drittmittelantrag gestellt?",
+        "en":"Why haven't you applied for third party funding since 2011?"
+    },
+    "instruction.de":"Mehrfachauswahl möglich",
+    "instruction.en":"Multiple answers possible",
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":43
+}

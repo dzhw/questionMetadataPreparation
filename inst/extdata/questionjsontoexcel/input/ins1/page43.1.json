@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page43.1$",
+    "number":"page43.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Uns interessiert im\n\t\t\t\t\t\tFolgenden\n\t\t\t\t\t\tIhre persönliche Einschätzung. Inwieweit stimmen Sie den\n\t\t\t\t\t\tfolgenden\n\t\t\t\t\t\tAussagen zu?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain noResponseOptions=\"6\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">viel zu gering</zofar:title>\n            <zofar:title uid=\"t2\"/>\n            <zofar:title uid=\"t3\"/>\n            <zofar:title uid=\"t4\"/>\n            <zofar:title uid=\"t5\">viel zu hoch</zofar:title>\n        </zofar:header>\n        <zofar:missingHeader>\n            <zofar:title uid=\"t6\">Kann ich nicht beurteilen</zofar:title>\n        </zofar:missingHeader>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">In meinem Fachgebiet ist\n\t\t\t\t\t\t\t\tder\n\t\t\t\t\t\t\t\tEinfluss der Wissenschaftspolitik auf inhaltliche\n\t\t\t\t\t\t\t\tSchwerpunktsetzungen…</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain uid=\"rd\" variable=\"v4_6_fach_einfluss_wisspol\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao6\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page43.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Uns interessiert im Folgenden Ihre persönliche Einschätzung. Inwieweit stimmen Sie den folgenden Aussagen zu?,viel zu gering,viel zu hoch,Kann ich nicht beurteilen,In meinem Fachgebiet ist der Einfluss der Wissenschaftspolitik auf inhaltliche Schwerpunktsetzungen…",
+        "en":"In the following section, we are interested in your personal opinion. How far do you agree with the following statements?,far too low,far too high,I cannot judge this,In my subject area the influence of academic policy on the content focus is..."
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Uns interessiert im Folgenden Ihre persönliche Einschätzung. Inwieweit stimmen Sie den folgenden Aussagen zu?",
+        "en":"In the following section, we are interested in your personal opinion. How far do you agree with the following statements?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":66
+}

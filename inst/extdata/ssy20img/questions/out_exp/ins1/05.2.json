@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 7,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["05.3"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "If you have changed your main subject and / or course of study: In which discipline were you registered for your first matriculation and for which targeted degree?",
+    "de": "Falls Sie das Hauptstudienfach und/oder den Abschluss gewechselt haben: In welchem Fach waren Sie bei der Erstimmatrikulation eingeschrieben und welchen Abschluss strebten Sie damals an?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Falls Sie das Hauptstudienfach und/oder den Abschluss gewechselt haben: In welchem Fach waren Sie bei der Erstimmatrikulation eingeschrieben und welchen Abschluss strebten Sie damals an? Hauptstudienfach bei der Erstimmatrikulation (Nummer aus der Liste der Studienfächer entnehmen und eintragen) –––––––––––––––––––––––– angestrebter Abschluss bei der Erstimmatrikulation (bitte Bezeichnung eintragen): TEXT"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

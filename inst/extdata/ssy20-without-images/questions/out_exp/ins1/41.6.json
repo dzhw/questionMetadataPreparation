@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 71,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["42"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": "In line with the federal data protection act, we explicitly restate that answering this question is optional!",
+    "de": "Dem Bundesdatenschutzgesetz entsprechend, weisen wir explizit darauf hin, dass die Beantwortung auch dieser Frage freiwillig ist!"
+  },
+  "questionText": {
+    "en": "How much money do you spend per month?",
+    "de": "Ggf.: Wie viel Geld geben Sie dafür durchschnittlich pro Monat aus?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Ggf.: Wie viel Geld geben Sie dafür durchschnittlich pro Monat aus? – € pro Monat ZAHL"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

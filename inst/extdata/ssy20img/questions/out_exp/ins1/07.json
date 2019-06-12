@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 13,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["08"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "For how many semesters (incl. Summer Semester 2012) are you currently enrolled?",
+    "de": "Seit wie vielen Semestern (einschl. Sommersemester 2012) sind Sie im derzeitigen Studiengang eingeschrieben?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "07. Seit wie vielen Semestern (einschl. Sommersemester 2012) ZAHL sind Sie im derzeitigen Studiengang eingeschrieben? –––––––––––––––––– Anzahl Fachsemester"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

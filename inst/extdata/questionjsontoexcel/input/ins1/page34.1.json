@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page34.1$",
+    "number":"page34.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Haben Sie eine schriftliche\n\t\t\t\t\t\tBegründung für die Ablehnung mit Auszügen aus den\n\t\t\t\t\t\tGutachterkommentaren erhalten?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_5_begruendung\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"1\"/>\n        <zofar:answerOption label=\"Weiß nicht\" uid=\"ao3\" value=\"4444\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page36.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Haben Sie eine schriftliche Begründung für die Ablehnung mit Auszügen aus den Gutachterkommentaren erhalten?,Ja,Nein,Weiß nicht",
+        "en":"Did you receive a written explanation of the reasons for refusal with excerpts from the evaluators' comments?,Yes,No,Don't know"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie eine schriftliche Begründung für die Ablehnung mit Auszügen aus den Gutachterkommentaren erhalten?",
+        "en":"Did you receive a written explanation of the reasons for refusal with excerpts from the evaluators' comments?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":51
+}

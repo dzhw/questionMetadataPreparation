@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page9.1$",
+    "number":"page9.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"2016\" minValue=\"1950\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein (1950-2016)\" variable=\"v1_9_jahr_habil\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Bitte nennen Sie das Jahr\n\t\t\t\t\t\tIhrer\n\t\t\t\t\t\tHabilitation</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Jahr der Habilitation:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page11.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Bitte nennen Sie das Jahr Ihrer Habilitation,Jahr der Habilitation:",
+        "en":"Please state the year of your habilitation,Year of habilitation:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Bitte nennen Sie das Jahr Ihrer Habilitation",
+        "en":"Please state the year of your habilitation"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":18
+}
