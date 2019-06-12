@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page76.1$",
+    "number":"page76.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"2\" maxValue=\"99\" minValue=\"0\" size=\"7\" uid=\"qo\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v8_4_promovierende_zweitbetreuer\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie viele Promovierende\n\t\t\t\t\t\tbetreuen\n\t\t\t\t\t\tSie als Zweitbetreuer?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Anzahl Promovierende als Zweitbetreuer</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page78.1",
+        "page79.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie viele Promovierende betreuen Sie als Zweitbetreuer?,Anzahl Promovierende als Zweitbetreuer",
+        "en":"How many doctoral candidates are you supervising as co-supervisor?,Number of doctoral candidates as co-supervisor"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Wie viele Promovierende betreuen Sie als Zweitbetreuer?",
+        "en":"How many doctoral candidates are you supervising as co-supervisor?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":110
+}

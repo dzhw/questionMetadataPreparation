@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page19.1$",
+    "number":"page19.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie häufig haben Sie seit\n\t\t\t\t\t\tIhrer\n\t\t\t\t\t\tersten Beschäftigung als wissenschaftlicher\n\t\t\t\t\t\tMitarbeiter/wissenschaftliche Mitarbeiterin die wissenschaftliche\n\t\t\t\t\t\tEinrichtung gewechselt?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n        <zofar:answerOption exclusive=\"true\" label=\"Bisher keine Wechsel\" uid=\"ao1\" variable=\"v1_19a_wechsel_einrichtung\"/>\n        <zofar:answerOption label=\"Freiwilliger Wechsel (trotz Möglichkeit der Vertragsverlängerung)\" uid=\"ao2\" variable=\"v1_19b_wechsel_freiwillig\">\n            <zofar:questionOpen maxLength=\"2\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo1\" validationMessage=\"Bitte geben Sie eine Zahl ein\" variable=\"v1_19b_wechsel_freiwillig_open\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l1\">- Anzahl:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n        <zofar:answerOption label=\"Wechsel wegen Auslaufen des Vertrags/ des Projektes\" uid=\"ao3\" variable=\"v1_19c_wechsel_auslaufen\">\n            <zofar:questionOpen maxLength=\"2\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo2\" validationMessage=\"Bitte geben Sie eine Zahl ein\" variable=\"v1_19c_wechsel_auslaufen_open\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l2\">- Anzahl:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "successorNumbers":[
+        "page19.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie häufig haben Sie seit Ihrer ersten Beschäftigung als wissenschaftlicher Mitarbeiter/wissenschaftliche Mitarbeiterin die wissenschaftliche Einrichtung gewechselt?,Bisher keine Wechsel,Freiwilliger Wechsel (trotz Möglichkeit der Vertragsverlängerung),- Anzahl:,Wechsel wegen Auslaufen des Vertrags/ des Projektes",
+        "en":"How often have you moved to another scientific/academic institution since your first position as research assistant?,No move so far,Voluntary move (despite opportunity to extend contract),- Number:,Move due to end of contract / project"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Wie häufig haben Sie seit Ihrer ersten Beschäftigung als wissenschaftlicher Mitarbeiter/wissenschaftliche Mitarbeiterin die wissenschaftliche Einrichtung gewechselt?",
+        "en":"How often have you moved to another scientific/academic institution since your first position as research assistant?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":30
+}

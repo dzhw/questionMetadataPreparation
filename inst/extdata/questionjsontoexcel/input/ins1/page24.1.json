@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page24.1$",
+    "number":"page24.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Welche der unten\n\t\t\t\t\t\tgenannten\n\t\t\t\t\t\tPositionen entspricht am ehesten Ihrem langfristigen\n\t\t\t\t\t\tKarriereziel?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_24_karriereziel\">\n        <zofar:answerOption label=\"Professur\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Andere Leitungsfunktion in Forschung und Lehre\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Leitungsfunktion im Wissenschaftsmanagement\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Leitungsfunktion in der Wirtschaft/Industrie\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Andere Position, \" uid=\"ao5\" value=\"88\">\n            <zofar:questionOpen size=\"20\" type=\"text\" uid=\"qo\" variable=\"v1_24a\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page26a.1",
+        "page28.1",
+        "cancel.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welche der unten genannten Positionen entspricht am ehesten Ihrem langfristigen Karriereziel?,Professur,Andere Leitungsfunktion in Forschung und Lehre,Leitungsfunktion im Wissenschaftsmanagement,Leitungsfunktion in der Wirtschaft/Industrie,Andere Position,,und zwar:",
+        "en":"Which of the positions listed below corresponds most closely to your long-term career goal?,Professorship,Other management position in research and teaching,Management function in science management,Management function in business/industry,Other position,,Please give details:"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Welche der unten genannten Positionen entspricht am ehesten Ihrem langfristigen Karriereziel?",
+        "en":"Which of the positions listed below corresponds most closely to your long-term career goal?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":36
+}

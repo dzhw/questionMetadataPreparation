@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page8.1$",
+    "number":"page8.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Sind Sie habilitiert?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_8_habilitiert\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao1\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page8.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Sind Sie habilitiert?,Ja,Nein",
+        "en":"Have you gained a habilitation?,Yes,No"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Sind Sie habilitiert?",
+        "en":"Have you gained a habilitation?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":16
+}

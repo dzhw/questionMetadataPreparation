@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page96.1$",
+    "number":"page96.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"4\" maxValue=\"99\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein\" variable=\"v8_24_arbeitszeit_vertrag\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Was ist Ihre vertraglich\n\t\t\t\t\t\tvereinbarte Wochenarbeitszeit?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l1\">Vertraglich vereinbart</zofar:label>\n    </zofar:prefix>\n    <zofar:postfix>\n        <zofar:label uid=\"l2\">Stunden</zofar:label>\n    </zofar:postfix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page98.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Was ist Ihre vertraglich vereinbarte Wochenarbeitszeit?,Vertraglich vereinbart,Stunden",
+        "en":"What is your contracted weekly working time?,Contracted,Hours"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Was ist Ihre vertraglich vereinbarte Wochenarbeitszeit?",
+        "en":"What is your contracted weekly working time?"
+    },
+    "introduction.de":"Im Folgenden geht es noch einmal um Ihren Arbeitsalltag und Ihre Einstellungen zu verschiedenen Aspekten.",
+    "introduction.en":"In the following section, we return to the topic of your everyday work and your attitude to different aspects of it.",
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":136
+}

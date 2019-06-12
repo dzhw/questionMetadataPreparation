@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page79.1$",
+    "number":"page79.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Gibt es an Ihrer Fakultät\n\t\t\t\t\t\tverbindliche Regeln zur Erfassung von Doktoranden?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_7_doktoranden_erfassung\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"1\"/>\n        <zofar:answerOption label=\"Weiß nicht\" uid=\"ao3\" value=\"4444\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page82.1",
+        "page84.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Gibt es an Ihrer Fakultät verbindliche Regeln zur Erfassung von Doktoranden?,Ja,Nein,Weiß nicht",
+        "en":"Does your faculty have binding rules for registering doctoral candidates?,Yes,No,Don't know"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Gibt es an Ihrer Fakultät verbindliche Regeln zur Erfassung von Doktoranden?",
+        "en":"Does your faculty have binding rules for registering doctoral candidates?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":113
+}

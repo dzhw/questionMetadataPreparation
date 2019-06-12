@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page5.1$",
+    "number":"page5.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Sind Sie promoviert?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_5_promoviert\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"3\"></zofar:answerOption>\n        <zofar:answerOption label=\"Nein, aber ich bin Doktorand/in\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein, und ich promoviere (derzeit) auch nicht\" uid=\"ao3\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page5.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Sind Sie promoviert?,Ja,Nein, aber ich bin Doktorand/in,Nein, und ich promoviere (derzeit) auch nicht",
+        "en":"Have you got a doctorate/PhD?,Yes,No, but I am a doctoral candidate,No, and I am not (currently) taking a doctorate"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Sind Sie promoviert?",
+        "en":"Have you got a doctorate/PhD?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":11
+}

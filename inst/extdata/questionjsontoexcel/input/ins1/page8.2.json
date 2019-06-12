@@ -1,0 +1,32 @@
+
+{
+    "id":"que-meisner1-ins1-page8.2$",
+    "number":"page8.2",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"qm\"/>\n    </zofar:header>\n    <zofar:responseDomain uid=\"rd\">\n        <zofar:answerOption label=\"Ja, ich möchte diese Frage überspringen.\" uid=\"ao1\" variable=\"soft_rem_3\"/>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Ja, ich möchte diese Frage überspringen.",
+        "en":"Yes, I would like to skip the question."
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Kein Fragetext vorhanden",
+        "en":"No questiontext available"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":17,
+    "successorNumbers":[
+    ]
+}

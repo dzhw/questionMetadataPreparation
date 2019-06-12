@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page86.1$",
+    "number":"page86.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Konnten für die zu\n\t\t\t\t\t\tbesetzenden\n\t\t\t\t\t\tPositionen Personen mit den gewünschten\n\t\t\t\t\t\tQualifikationsprofilen\n\t\t\t\t\t\tgewonnen werden?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"5\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title block=\"true\" uid=\"t1\">überwiegend\n\t\t\t\t\t\t\t#{layout.BREAK}ja</zofar:title>\n            <zofar:title block=\"true\" uid=\"t2\">teilweise</zofar:title>\n            <zofar:title block=\"true\" uid=\"t3\">überwiegend\n\t\t\t\t\t\t\t#{layout.BREAK}nein</zofar:title>\n        </zofar:header>\n        <zofar:missingHeader>\n            <zofar:title block=\"true\" uid=\"t4\">Es wurden\n\t\t\t\t\t\t\t#{layout.BREAK}noch keine #{layout.BREAK}Stellen besetzt</zofar:title>\n            <zofar:title block=\"true\" uid=\"t5\">Kann ich\n\t\t\t\t\t\t\t#{layout.BREAK}nicht #{layout.BREAK}beurteilen.</zofar:title>\n        </zofar:missingHeader>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">DoktorandInnen</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_14a_geeignet_besetzt_doktorand\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao5\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Promovierte\n\t\t\t\t\t\t\t\tNachwuchswissenschaftlerInnen</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_14b_geeignet_besetzt_postdoc\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao5\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page87_bewerberauswahl.1",
+        "page87.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Konnten für die zu besetzenden Positionen Personen mit den gewünschten Qualifikationsprofilen gewonnen werden?,überwiegend ja,teilweise,überwiegend nein,Es wurden noch keine Stellen besetzt,Kann ich nicht beurteilen.,DoktorandInnen,Promovierte NachwuchswissenschaftlerInnen",
+        "en":"Was it possible to find suitably qualified people to fill these positions?,In most cases yes,Partly,In most cases no,So far no positions have been filled,I can not judge,Doctoral candidates,Young academics with doctorates/PhDs"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Konnten für die zu besetzenden Positionen Personen mit den gewünschten Qualifikationsprofilen gewonnen werden?",
+        "en":"Was it possible to find suitably qualified people to fill these positions?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":122
+}

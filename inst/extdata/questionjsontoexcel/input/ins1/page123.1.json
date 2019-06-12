@@ -1,0 +1,32 @@
+
+{
+    "id":"que-meisner1-ins1-page123.1$",
+    "number":"page123.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"120\" rows=\"5\" smallOption=\"false\" uid=\"qo1\" variable=\"abschlusskommentar\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"qq\">Sie sind nun ans Ende der Befragung gelangt. Abschließend haben Sie die Möglichkeit, uns Kommentare und Anregungen zum\n\t\t\t\t\t\tFragebogen zu hinterlassen:</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "additionalQuestionText":{
+        "de":"Sie sind nun ans Ende der Befragung gelangt. Abschließend haben Sie die Möglichkeit, uns Kommentare und Anregungen zum Fragebogen zu hinterlassen:",
+        "en":"You have now completed the questionnaire. Finally, you have the chance to give your comments and suggestions on the survey:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Sie sind nun ans Ende der Befragung gelangt. Abschließend haben Sie die Möglichkeit, uns Kommentare und Anregungen zum Fragebogen zu hinterlassen:",
+        "en":"You have now completed the questionnaire. Finally, you have the chance to give your comments and suggestions on the survey:"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":172,
+    "successorNumbers":[
+    ]
+}

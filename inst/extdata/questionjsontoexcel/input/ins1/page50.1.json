@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page50.1$",
+    "number":"page50.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Inwieweit haben Sie Zugang\n\t\t\t\t\t\tzu der\n\t\t\t\t\t\tbenötigten Infrastruktur?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"3\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Derzeit kein #{layout.BREAK}Zugang</zofar:title>\n            <zofar:title uid=\"t2\">eingeschränkter #{layout.BREAK}Zugang</zofar:title>\n            <zofar:title uid=\"t3\">Freier #{layout.BREAK}Zugang</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\" visible=\"zofar.asNumber(v4_12a_infra_geraete) gt 1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Besondere technische Geräte\n\t\t\t\t\t\t\t\t(Spektrographen, Messgeräte, Mikroskope, Telefonlabore,\n\t\t\t\t\t\t\t\tGroßrechner usw.)</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_13a_zugang_geraete \">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\" visible=\"zofar.asNumber(v4_12b_infra_labor) gt 1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Laborfläche</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_13b_zugang_labor\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\" visible=\"zofar.asNumber(v4_12c_infra_elektronische_ressourcen) gt 1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Zugang zu besonderen\n\t\t\t\t\t\t\t\t(kostenpflichtigen) Datenbanken/Bibliotheken/Journals</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_13c_zugang_elektronische_ressourcen\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i4\" visible=\"zofar.asNumber(v4_12d_infra_andere) gt 1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Sonstige,</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v4_13d_zugang_andere\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n            </zofar:responseDomain>\n            <zofar:attachedOpen size=\"20\" uid=\"ao\" variable=\"v4_13\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:attachedOpen>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page51.1",
+        "page52.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Inwieweit haben Sie Zugang zu der benötigten Infrastruktur?,Derzeit kein Zugang,eingeschränkter Zugang,Freier Zugang,Besondere technische Geräte (Spektrographen, Messgeräte, Mikroskope, Telefonlabore, Großrechner usw.),Laborfläche,Zugang zu besonderen (kostenpflichtigen) Datenbanken/Bibliotheken/Journals,Sonstige,,und zwar:",
+        "en":"How far do you have access to the necessary infrastructure?,Currently no access,Limited access,Free access,Special technical equipment (e.g. spectrographs, measuring equipment, microscopes, telephone labs, large-capacity computers etc.),Lab space,Access to special electronic resources (for which a fee is charged), such as databases and journals,Other,,Please give details:"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Inwieweit haben Sie Zugang zu der benötigten Infrastruktur?",
+        "en":"How far do you have access to the necessary infrastructure?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":79
+}

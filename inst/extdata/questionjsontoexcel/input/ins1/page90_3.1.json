@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page90_3.1$",
+    "number":"page90_3.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixMultipleChoice uid=\"mmc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Welches waren Ihrer Meinung\n\t\t\t\t\t\tnach\n\t\t\t\t\t\tdie Gründe für Schwierigkeiten bei der Besetzung der Stellen?\n\t\t\t\t\t\tBitte markieren Sie die zutreffenden Gründe.</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"4\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title block=\"true\" uid=\"t3\">Juniorprofessuren</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Mangel an geeigneten\n\t\t\t\t\t\t\t\tKandidatInnen</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18a_geeignete_kandidaten_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Nicht wettbewerbsfähiges\n\t\t\t\t\t\t\t\tGehaltsniveau</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18b_gehalt_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Befristung der Stellen</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18c_befristung_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i4\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Starke Konkurrenz im Fach</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18d_konkurrenz_fach_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i5\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Starke Konkurrenz mit\n\t\t\t\t\t\t\t\tIndustrie</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18e_konkurrenz_industrie_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i6\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Starke internationale\n\t\t\t\t\t\t\t\tKonkurrenz</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18f_konkurrenz_international_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i7\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Bürokratische Hürden</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18g_buerokratie_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i8\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Unattraktiver Standort</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18h_standort_3\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i9\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Sonstiges</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n                <zofar:answerOption uid=\"ao3\" variable=\"v8_18i_anderes_3\"></zofar:answerOption>\n            </zofar:responseDomain>\n            <zofar:attachedOpen uid=\"qao3\" variable=\"v8_18i_anderes_3_open\"/>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixMultipleChoice>"
+    },
+    "successorNumbers":[
+        "page92.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welches waren Ihrer Meinung nach die Gründe für Schwierigkeiten bei der Besetzung der Stellen? Bitte markieren Sie die zutreffenden Gründe.,Juniorprofessuren,Mangel an geeigneten KandidatInnen,Nicht wettbewerbsfähiges Gehaltsniveau,Befristung der Stellen,Starke Konkurrenz im Fach,Starke Konkurrenz mit Industrie,Starke internationale Konkurrenz,Bürokratische Hürden,Unattraktiver Standort,Sonstiges",
+        "en":"In your opinion, what were the reasons for difficulties in filling the positions? Please check the applicable reasons.,Junior professorships,Lack of suitable candidates,Level of remuneration not competitive,Time-limited position,Strong competition in the subject,Strong competition with industry,Strong international competition,Bureaucratic obstacles,Unattractive location,Other"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Welches waren Ihrer Meinung nach die Gründe für Schwierigkeiten bei der Besetzung der Stellen? Bitte markieren Sie die zutreffenden Gründe.",
+        "en":"In your opinion, what were the reasons for difficulties in filling the positions? Please check the applicable reasons."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":130
+}

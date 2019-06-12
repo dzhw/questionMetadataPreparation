@@ -1,0 +1,37 @@
+
+{
+    "id":"que-meisner1-ins1-page7.1$",
+    "number":"page7.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Hatten Sie innerhalb der\n\t\t\t\t\t\tletzten\n\t\t\t\t\t\tfünf Jahre das Amt des Dekans/der Dekanin inne?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_7_dekan\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao1\" value=\"1\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page9.1",
+        "page10.1",
+        "page11.1",
+        "page10.1",
+        "page10.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Hatten Sie innerhalb der letzten fünf Jahre das Amt des Dekans/der Dekanin inne?,Ja,Nein",
+        "en":"Have you been a dean within the last five years?,Yes,No"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Hatten Sie innerhalb der letzten fünf Jahre das Amt des Dekans/der Dekanin inne?",
+        "en":"Have you been a dean within the last five years?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":15
+}

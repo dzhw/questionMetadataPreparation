@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page40.1$",
+    "number":"page40.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Uns interessiert im\n\t\t\t\t\t\tFolgenden\n\t\t\t\t\t\tIhre #{layout.UNDERLINED_START}persönliche\n\t\t\t\t\t\tEinschätzung#{layout.UNDERLINED_END}. Inwieweit stimmen Sie den\n\t\t\t\t\t\tfolgenden\n\t\t\t\t\t\tAussagen zu?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain noResponseOptions=\"6\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Sehr schlecht</zofar:title>\n            <zofar:title uid=\"t2\"/>\n            <zofar:title uid=\"t3\"/>\n            <zofar:title uid=\"t4\"/>\n            <zofar:title uid=\"t5\">Sehr gut</zofar:title>\n        </zofar:header>\n        <zofar:missingHeader>\n            <zofar:title uid=\"t6\">Kann ich nicht beurteilen</zofar:title>\n        </zofar:missingHeader>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">In meinem Fachgebiet sind\n\t\t\t\t\t\t\t\tin\n\t\t\t\t\t\t\t\tDeutschland die Fördermöglichkeiten durch Drittmittel für\n\t\t\t\t\t\t\t\tanspruchsvolle Forschung…</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain uid=\"rd\" variable=\"v4_3_fach_drm\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao6\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page40.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Uns interessiert im Folgenden Ihre persönliche Einschätzung. Inwieweit stimmen Sie den folgenden Aussagen zu?,Sehr schlecht,Sehr gut,Kann ich nicht beurteilen,In meinem Fachgebiet sind in Deutschland die Fördermöglichkeiten durch Drittmittel für anspruchsvolle Forschung…",
+        "en":"In the following section, we are interested in your personal opinion. How far do you agree with the following statements?,Very bad,Very good,I cannot judge this,In my subject area in Germany, the funding opportunities for third-party funding for ambitious research are..."
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Uns interessiert im Folgenden Ihre persönliche Einschätzung. Inwieweit stimmen Sie den folgenden Aussagen zu?",
+        "en":"In the following section, we are interested in your personal opinion. How far do you agree with the following statements?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":60
+}

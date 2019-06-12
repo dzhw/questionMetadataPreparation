@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page75.1$",
+    "number":"page75.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen maxLength=\"3\" maxValue=\"999\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie ein Zahl ein\" variable=\"v8_3_promovierende_erstbetreuer\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie viele Promovierende\n\t\t\t\t\t\tbetreuen\n\t\t\t\t\t\tSie als Erstbetreuer?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Anzahl Promovierende als Erstbetreuer</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "successorNumbers":[
+        "page77.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie viele Promovierende betreuen Sie als Erstbetreuer?,Anzahl Promovierende als Erstbetreuer",
+        "en":"How many doctoral candidates are you supervising as main supervisor?,Number of doctoral candidates as main supervisor"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Wie viele Promovierende betreuen Sie als Erstbetreuer?",
+        "en":"How many doctoral candidates are you supervising as main supervisor?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":109
+}

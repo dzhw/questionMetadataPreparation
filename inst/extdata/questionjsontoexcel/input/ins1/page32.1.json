@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page32.1$",
+    "number":"page32.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Welche der folgenden\n\t\t\t\t\t\tAussagen\n\t\t\t\t\t\ttrifft am besten auf Ihren #{layout.UNDERLINED_START}letzten\n\t\t\t\t\t\tabgelehnten#{layout.UNDERLINED_END}\n\t\t\t\t\t\tDrittmittelantrag\n\t\t\t\t\t\tzu?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v3_3_erneut_einreichen\">\n        <zofar:answerOption label=\"Ich/wir habe/n den Antrag #{layout.BOLD_START}zeitgleich#{layout.BOLD_END} bei mehreren Förderorganisationen eingereicht.\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Nach der Ablehnung habe/n ich/wir den Antrag überarbeitet und bei der gleichen Förderorganisation erneut eingereicht.\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Nach der Ablehnung habe/n ich/wir den Antrag in vergleichbarer Form bei einer anderen Förderorganisation eingereicht\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Ich/wir habe/n den Antrag nicht erneut bei diesem oder einem anderen Förderer eingereicht\" uid=\"ao4\" value=\"4\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page34.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welche der folgenden Aussagen trifft am besten auf Ihren letzten abgelehnten Drittmittelantrag zu?,Ich/wir habe/n den Antrag zeitgleich bei mehreren Förderorganisationen eingereicht.,Nach der Ablehnung habe/n ich/wir den Antrag überarbeitet und bei der gleichen Förderorganisation erneut eingereicht.,Nach der Ablehnung habe/n ich/wir den Antrag in vergleichbarer Form bei einer anderen Förderorganisation eingereicht,Ich/wir habe/n den Antrag nicht erneut bei diesem oder einem anderen Förderer eingereicht",
+        "en":"Which of the following statements applies most closely to your most recently rejected third-party funding application?,I/we submitted the application simultaneously to several funding organisations.,After the rejection I/we revised the application and submitted it again to the same funding organisation.,After the rejection I/we submitted the application in similar form to another funding organisation,I/we did not submit the application again to this or another funding source"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Welche der folgenden Aussagen trifft am besten auf Ihren letzten abgelehnten Drittmittelantrag zu?",
+        "en":"Which of the following statements applies most closely to your most recently rejected third-party funding application?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":49
+}

@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page67.1$",
+    "number":"page67.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionOpen uid=\"mqo\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\">Wie viele Anfragen zur Begutachtung in den nachfolgenden Bereichen haben Sie in den vergangenen 12 Monaten ungefähr erhalten?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"1\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Anzahl</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q1\">Begutachtung von\n\t\t\t\t\t\t\t\tZeitschriftenartikeln</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo1\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_2a_anfragen_zeitschriften\"/>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q2\">Schriftliche Begutachtung von\n\t\t\t\t\t\t\t\tFörderanträgen</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo2\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_2b_anfragen_antraege\"/>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q3\">Mitwirkung an\n\t\t\t\t\t\t\t\tEvaluationsverfahren</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo3\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_2c_anfragen_eval\"/>\n        </zofar:item>\n        <zofar:item uid=\"i4\">\n            <zofar:header>\n                <zofar:question uid=\"q4\">Mitwirkung an\n\t\t\t\t\t\t\t\tAkkreditierungsverfahren</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo4\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_2d_anfragen_akkreditierung\"/>\n        </zofar:item>\n        <zofar:item uid=\"i5\">\n            <zofar:header>\n                <zofar:question uid=\"q5\">Begutachtungen im Rahmen von\n\t\t\t\t\t\t\t\tBerufungsverfahren</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo5\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_2e_anfragen_berufung\"/>\n        </zofar:item>\n        <zofar:item uid=\"i6\">\n            <zofar:header>\n                <zofar:question uid=\"q6\">Sonstige:</zofar:question>\n            </zofar:header>\n            <zofar:question maxLength=\"3\" minValue=\"0\" size=\"7\" type=\"number\" uid=\"qo6\" validationMessage=\"Bitte nur Zahlen eingeben\" variable=\"v7_2f_anfragen_andere\"/>\n            <zofar:attachedOpen uid=\"qo\" variable=\"v7_2f_anfragen_andere_open\"/>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionOpen>"
+    },
+    "successorNumbers":[
+        "page73.1",
+        "page70.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie viele Anfragen zur Begutachtung in den nachfolgenden Bereichen haben Sie in den vergangenen 12 Monaten ungefähr erhalten?,Anzahl,Begutachtung von Zeitschriftenartikeln,Schriftliche Begutachtung von Förderanträgen,Mitwirkung an Evaluationsverfahren,Mitwirkung an Akkreditierungsverfahren,Begutachtungen im Rahmen von Berufungsverfahren,Sonstige:",
+        "en":"Roughly how many inquiries about appraisals in the following areas have you received in the past 12 months?,Number,Appraisal of journal articles,Written appraisal of funding applications,Collaboration on appraisal procedures,Collaboration on accreditation procedures,Appraisals in the context of appointment procedures,Other:"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Wie viele Anfragen zur Begutachtung in den nachfolgenden Bereichen haben Sie in den vergangenen 12 Monaten ungefähr erhalten?",
+        "en":"Roughly how many inquiries about appraisals in the following areas have you received in the past 12 months?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":101
+}

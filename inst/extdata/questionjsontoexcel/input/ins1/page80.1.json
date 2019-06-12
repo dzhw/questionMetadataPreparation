@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page80.1$",
+    "number":"page80.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Mit wie viel Prozent Ihrer\n\t\t\t\t\t\tPromovierenden haben Sie eine schriftliche Betreuungsvereinbarung\n\t\t\t\t\t\tabgeschlossen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v8_8_prof_betreuungsvereinbarung\">\n        <zofar:answerOption label=\"Mit keiner/keinem\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Mit allen\" uid=\"ao2\" value=\"3\"/>\n        <zofar:answerOption label=\"Mit einem Anteil\" uid=\"ao3\" value=\"2\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page80.2"
+    ],
+    "additionalQuestionText":{
+        "de":"Mit wie viel Prozent Ihrer Promovierenden haben Sie eine schriftliche Betreuungsvereinbarung abgeschlossen?,Mit keiner/keinem,Mit allen,Mit einem Anteil",
+        "en":"With what percentage of your doctoral candidates have you completed a written supervision agreement?,With none,With all of them,With a proportion"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Mit wie viel Prozent Ihrer Promovierenden haben Sie eine schriftliche Betreuungsvereinbarung abgeschlossen?",
+        "en":"With what percentage of your doctoral candidates have you completed a written supervision agreement?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":114
+}

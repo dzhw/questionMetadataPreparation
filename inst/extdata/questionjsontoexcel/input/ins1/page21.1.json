@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page21.1$",
+    "number":"page21.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie ist Ihre persönliche\n\t\t\t\t\t\tEinstellung zu befristeten Verträgen für\n\t\t\t\t\t\tWissenschaftler/Wissenschaftlerinnen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"5\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Stimme überhaupt nicht zu</zofar:title>\n            <zofar:title uid=\"t2\"/>\n            <zofar:title uid=\"t3\"/>\n            <zofar:title uid=\"t4\"/>\n            <zofar:title uid=\"t5\">Stimme voll und ganz zu</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Ein möglichst hoher Anteil\n\t\t\t\t\t\t\t\tbefristeter Stellen unterhalb der Professur sichert die\n\t\t\t\t\t\t\t\tnotwendige Flexibilität des Wissenschaftssystems.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_21a_befristung_sichert_flexibilitaet\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Für die Aufrechterhaltung des\n\t\t\t\t\t\t\t\tForschungsbetriebs ist ein gewisser Anteil an unbefristet\n\t\t\t\t\t\t\t\tbeschäftigten wissenschaftlichen Mitarbeitern notwendig.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_21b_befristung_notwendig\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page23.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Wie ist Ihre persönliche Einstellung zu befristeten Verträgen für Wissenschaftler/Wissenschaftlerinnen?,Stimme überhaupt nicht zu,Stimme voll und ganz zu,Ein möglichst hoher Anteil befristeter Stellen unterhalb der Professur sichert die notwendige Flexibilität des Wissenschaftssystems.,Für die Aufrechterhaltung des Forschungsbetriebs ist ein gewisser Anteil an unbefristet beschäftigten wissenschaftlichen Mitarbeitern notwendig.",
+        "en":"What is your personal opinion of temporary contracts for academics?,I do not agree at all,I agree fully,The largest possible proportion of temporary positions below the level of professorship ensures that the academic system has the necessary flexibility.,A certain proportion of permanently employed research assistants is necessary to maintain research activity."
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Wie ist Ihre persönliche Einstellung zu befristeten Verträgen für Wissenschaftler/Wissenschaftlerinnen?",
+        "en":"What is your personal opinion of temporary contracts for academics?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":33
+}

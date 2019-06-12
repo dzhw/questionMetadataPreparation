@@ -1,0 +1,34 @@
+
+{
+    "id":"que-meisner1-ins1-page122.1$",
+    "number":"page122.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Wie viele Kinder haben Sie und\n\t\t\t\t\t\twie alt sind diese?</zofar:question>\n        <zofar:introduction uid=\"intro\">#{layout.UNDERLINED_START}Anzahl\n\t\t\t\t\t\tder Kinder#{layout.UNDERLINED_END}</zofar:introduction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"1\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t\"/>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Im Alter von 0-6 Jahren</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v10_15b_kinder_0_6\">\n                <zofar:answerOption label=\"bitte wählen:\" uid=\"ao0\" value=\"0\"/>\n                <zofar:answerOption label=\"1\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"2\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"3\" uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption label=\"4\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption label=\"5 und mehr\" uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Im Alter von 7-12 Jahren</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v10_15c_kinder_7_12\">\n                <zofar:answerOption label=\"bitte wählen:\" uid=\"ao0\" value=\"0\"/>\n                <zofar:answerOption label=\"1\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"2\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"3\" uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption label=\"4\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption label=\"5 und mehr\" uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Im Alter von 13-17 Jahren</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v10_15d_kinder_13_17\">\n                <zofar:answerOption label=\"bitte wählen:\" uid=\"ao0\" value=\"0\"/>\n                <zofar:answerOption label=\"1\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"2\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"3\" uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption label=\"4\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption label=\"5 und mehr\" uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i4\">\n            <zofar:header>\n                <zofar:question uid=\"q\">18 Jahre und älter</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" type=\"dropdown\" uid=\"rd\" variable=\"v10_15e_kinder_18\">\n                <zofar:answerOption label=\"bitte wählen:\" uid=\"ao0\" value=\"0\"/>\n                <zofar:answerOption label=\"1\" uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption label=\"2\" uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption label=\"3\" uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption label=\"4\" uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption label=\"5 und mehr\" uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Wie viele Kinder haben Sie und wie alt sind diese?,Anzahl der Kinder,Im Alter von 0-6 Jahren,bitte wählen:,1,2,3,4,5 und mehr,Im Alter von 7-12 Jahren,Im Alter von 13-17 Jahren,18 Jahre und älter",
+        "en":"How many children do you have and how old are they?,Number of children,Aged from 0-6 years,Please choose:,1,2,3,4,5 and more,Aged from 7-12 years,Aged from 12-17 years,18 and older"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Wie viele Kinder haben Sie und wie alt sind diese?",
+        "en":"How many children do you have and how old are they?"
+    },
+    "introduction.de":"Anzahl der Kinder",
+    "introduction.en":"Number of children",
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":171,
+    "successorNumbers":[
+    ]
+}

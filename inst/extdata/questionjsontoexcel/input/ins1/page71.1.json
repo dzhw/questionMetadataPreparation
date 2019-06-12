@@ -1,0 +1,35 @@
+
+{
+    "id":"que-meisner1-ins1-page71.1$",
+    "number":"page71.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Welche Erfahrungen haben Sie\n\t\t\t\t\t\tin\n\t\t\t\t\t\tBezug auf Ihre wissenschaftliche Arbeit mit folgenden\n\t\t\t\t\t\tKooperationspartnern gemacht?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" noResponseOptions=\"6\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title block=\"true\" uid=\"t1\">Sehr\n\t\t\t\t\t\t\t#{layout.BREAK}schlechte#{layout.BREAK} Erfahrung</zofar:title>\n            <zofar:title block=\"true\" uid=\"t2\">Eher\n\t\t\t\t\t\t\t#{layout.BREAK}schlechte#{layout.BREAK} Erfahrung</zofar:title>\n            <zofar:title block=\"true\" uid=\"t3\">teils/\n\t\t\t\t\t\t\t#{layout.BREAK}teils</zofar:title>\n            <zofar:title block=\"true\" uid=\"t4\">Eher#{layout.BREAK} gute\n\t\t\t\t\t\t\t#{layout.BREAK}Erfahrung</zofar:title>\n            <zofar:title block=\"true\" uid=\"t5\">Sehr #{layout.BREAK}gute\n\t\t\t\t\t\t\t#{layout.BREAK}Erfahrung</zofar:title>\n        </zofar:header>\n        <zofar:missingHeader>\n            <zofar:title block=\"false\" uid=\"t6\">Bisher\n\t\t\t\t\t\t\t#{layout.BREAK}keine #{layout.BREAK}Erfahrung</zofar:title>\n        </zofar:missingHeader>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Kooperationen mit\n\t\t\t\t\t\t\t\taußeruniversitären Forschungseinrichtungen</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v7_6a_koop_erfahrung_auf\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao6\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Kooperationen mit der\n\t\t\t\t\t\t\t\tWirtschaft/Industrie</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v7_6b_koop_erfahrung_wirtschaft\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n                <zofar:answerOption missing=\"true\" uid=\"ao6\" value=\"4444\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page73.1",
+        "page74.1",
+        "page77.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welche Erfahrungen haben Sie in Bezug auf Ihre wissenschaftliche Arbeit mit folgenden Kooperationspartnern gemacht?,Sehr schlechte Erfahrung,Eher schlechte Erfahrung,teils/ teils,Eher gute Erfahrung,Sehr gute Erfahrung,Bisher keine Erfahrung,Kooperationen mit außeruniversitären Forschungseinrichtungen,Kooperationen mit der Wirtschaft/Industrie",
+        "en":"Please assess your experiences in relation to your academic work with the following collaboration partners.,Very bad experience,Rather bad experience,some good/some bad,Rather good experience,Very good experience,So far no experience,Collaboration with non-university research institutions,Collaboration with business/industry"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Welche Erfahrungen haben Sie in Bezug auf Ihre wissenschaftliche Arbeit mit folgenden Kooperationspartnern gemacht?",
+        "en":"Please assess your experiences in relation to your academic work with the following collaboration partners."
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":104
+}

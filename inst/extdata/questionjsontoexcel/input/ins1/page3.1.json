@@ -1,0 +1,33 @@
+
+{
+    "id":"que-meisner1-ins1-page3.1$",
+    "number":"page3.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc1\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q4\">Welcher Besoldungsstufe ist\n\t\t\t\t\t\tIhre\n\t\t\t\t\t\tProfessur zugeordnet?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"v1_3_sold\">\n        <zofar:answerOption label=\"C2/W1\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"C3/W2\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"C4/W3\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Andere, \" uid=\"ao4\" value=\"88\">\n            <zofar:questionOpen size=\"7\" uid=\"qo3\" variable=\"v1_3a\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l3\">und zwar</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page6.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Welcher Besoldungsstufe ist Ihre Professur zugeordnet?,C2/W1,C3/W2,C4/W3,Andere,,und zwar",
+        "en":"Which salary grade applies to your professorship?,C2/W1,C3/W2,C4/W3,Other,please give details"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Welcher Besoldungsstufe ist Ihre Professur zugeordnet?",
+        "en":"Which salary grade applies to your professorship?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":8
+}

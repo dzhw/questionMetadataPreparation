@@ -1,0 +1,37 @@
+
+{
+    "id":"que-meisner1-ins1-page20.1$",
+    "number":"page20.1",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"q\">Inwieweit stimmen Sie der\n\t\t\t\t\t\tfolgenden Aussage zu?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain noResponseOptions=\"5\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title uid=\"t1\">Stimme überhaupt nicht zu</zofar:title>\n            <zofar:title uid=\"t2\"/>\n            <zofar:title uid=\"t3\"/>\n            <zofar:title uid=\"t4\"/>\n            <zofar:title uid=\"t5\">Stimme voll und ganz zu</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question uid=\"q\">Professuren sollten\n\t\t\t\t\t\t\t\tgrundsätzlich regelmäßig evaluiert und gegebenenfalls neu\n\t\t\t\t\t\t\t\tbesetzt werden können.</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain uid=\"rd\" variable=\"v1_20_prof_eva\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "successorNumbers":[
+        "page20.1",
+        "page24.1",
+        "page25.1",
+        "page22.1",
+        "page22.1"
+    ],
+    "additionalQuestionText":{
+        "de":"Inwieweit stimmen Sie der folgenden Aussage zu?,Stimme überhaupt nicht zu,Stimme voll und ganz zu,Professuren sollten grundsätzlich regelmäßig evaluiert und gegebenenfalls neu besetzt werden können.",
+        "en":"How far do you agree with the following statement?,I do not agree at all,I agree fully,In principle, it should be possible to evaluate professorships regularly and if necessary, to make new appointments."
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Inwieweit stimmen Sie der folgenden Aussage zu?",
+        "en":"How far do you agree with the following statement?"
+    },
+    "instrumentNumber":"1",
+    "dataAcquisitionProjectId":"meisner1",
+    "studyId":"1",
+    "topic":{
+    },
+    "annotations":{
+    },
+    "indexInInstrument":32
+}
