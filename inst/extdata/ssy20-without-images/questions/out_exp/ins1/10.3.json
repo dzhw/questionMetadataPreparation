@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 18,
+  "instruction": {
+    "en": "in Semesters",
+    "de": "Unterbrechung in Semestern"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["11.1"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "For how long did you interrupt your studies?",
+    "de": "Wie lange haben Sie Ihr Studium unterbrochen?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "ZAHL Wie lange haben Sie Ihr Studium unterbrochen? –––––––––––––––––––– Unterbrechung in Semestern"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

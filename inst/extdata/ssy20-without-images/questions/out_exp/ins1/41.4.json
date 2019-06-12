@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 69,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["41.5"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": "In line with the federal data protection act, we explicitly restate that answering this question is optional!",
+    "de": "Dem Bundesdatenschutzgesetz entsprechend, weisen wir explizit darauf hin, dass die Beantwortung auch dieser Frage freiwillig ist!"
+  },
+  "questionText": {
+    "en": "If yes: Mark the degree of impairment.",
+    "de": "Falls ja: Kreuzen Sie bitte den Grad der Beeinträchtigung an."
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Haben Sie Ausgaben für Studienund Kommunikationsassistenzen? X nein ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– ja ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

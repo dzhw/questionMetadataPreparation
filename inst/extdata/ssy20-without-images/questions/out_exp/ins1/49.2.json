@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 80,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["49.3"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "If yes: describe your experience abraod using the table below to provide information.",
+    "de": "Falls ja: Beschreiben Sie Ihre(n) studienbezogenen Auslandsaufenthalt(e) mit den im folgenden Tableau erbetenen Informationen."
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Falls ja: Beschreiben Sie Ihre(n) studienbezogenen Auslandsaufenthalt(e) mit den im folgenden Tableau erbetenen Informationen. Verpflichtender Wurden/ Art des Bestandteil des Werden AuslandsStudiengangs? ECTS angeFalls ja: aufenthaltes? rechnet? Wie viele? entsprechende Entsprechende Beginn? Dauer in chlüsselziffer Schlüsselziffer nein S eintragen: des unten In welchem Land? (Monat/Jahr) Monaten? nein nein ja ja nein ja ja ECTS wiedergegebenen Schlüssels eintragen Schlüssel: 1= Auslandsstudium, 2 = Auslandspraktikum, 3 = Sprachkurs im Ausland, 4 = sonstiger Auslandsaufenthalt"
+  },
+  "topic": {
+    "en": null,
+    "de": "Auslandserfahrungen"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

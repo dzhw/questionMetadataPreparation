@@ -2,7 +2,7 @@
 % Please edit documentation in R/sort-images.R
 \name{sort_images}
 \alias{sort_images}
-\title{SORT IMAGES IN DIRECTORY STRUCTURE}
+\title{Sort images into directory structure}
 \usage{
 sort_images(pathInImages, pathOutImages, pathXlsxFile)
 }
@@ -19,16 +19,19 @@ die für den Upload ins Metadatensystem benötigt wird.
 Das Skript ist auszuführen, nachdem die json Dateien erzeugt wurden und die Ordnerstruktur angelegt wurde.
 Angepasst werden muss der Pfad an dem die Bilder liegen, der Pfad an dem die Bilder gespeichert werden
 sollen und der Pfad an dem die Question Excel Tabelle liegt (+ evtl. Projektname).
-Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch m?glich, wenn mehrere Bilder pro Frage vorliegen,
+Das Tabellenblatt "images" der Exceltabelle muss vorher ausgefüllt werden. Dann ist es auch möglich, wenn mehrere Bilder pro Frage vorliegen,
 diese richtig einzusortieren.
 Ordnerstruktur der Bilder vor dem Einsortieren:
+\preformatted{
 |--ins1
     |--1.1_1.png
     |--1.1_2.png
 |--ins2
     |--1.1.png
     |--1.2.png
+ }
 Ordnerstruktur nach dem Einsortieren:
+\preformatted{
 |--ins1
     |--images
         |--1.1
@@ -37,7 +40,7 @@ Ordnerstruktur nach dem Einsortieren:
     |--1.1.json
     |--1.2.json
 }
-\details{
+\preformatted{
 |--ins2
     |--images
         |--1.1
@@ -45,5 +48,5 @@ Ordnerstruktur nach dem Einsortieren:
         |--1.2
             |--1.2.png
     |--1.1.json
-    |--1.2.json
+    |--1.2.json}
 }

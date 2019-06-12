@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 67,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["41.3"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": "In line with the federal data protection act, we explicitly restate that answering this question is optional!",
+    "de": "Dem Bundesdatenschutzgesetz entsprechend, weisen wir explizit darauf hin, dass die Beantwortung auch dieser Frage freiwillig ist!"
+  },
+  "questionText": {
+    "en": "If yes: Which type of health impairment?",
+    "de": "Falls ja: Welcher Art ist Ihre gesundheitliche Beeinträchtigung?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Falls ja: Welcher Art ist Ihre gesundheitliche Beeinträchtigung? Dem BundesdatenschutzX Mobilitätsund Bewegungsbeeinträchtigung –––––––––––––––––––––––––––––––– gesetz entsprechend, weisen Sehbeeinträchtigung/Blindheit –––––––––––––––––––––––––––––––––––––––––––– wir explizit darauf hin, Hörbeeinträchtigung/Gehörlosigkeit –––––––––––––––––––––––––––––––––––––––– dass die Beantwortung auch Sprachbzw. Sprechbeeinträchtigung –––––––––––––––––––––––––––––––––––––– dieser Frage freiwillig ist! Psychische Beeinträchtigung/Erkrankung (z. B. Psychose, Essstörung, Suchterkrankung) –––– Chronische somatische Krankheit (z. B. Asthma, Diabetes, Rheuma, MS) –––––––––––––––– Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie) –––––––––––––––––––––––––––––––– Sonstige Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus) –––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zu Ihrer Person"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

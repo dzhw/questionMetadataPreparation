@@ -1,6 +1,6 @@
 Package: questionMetadataPreperation
 Title: Prepare question-metadata for https://metadata.fdz.dzhw.eu
-Version: 0.0.0.9000
+Version: 0.1.0.0000
 Authors@R: 
     c(person(given = "Robert",
            family = "Birkelbach",
@@ -31,5 +31,9 @@ BugReports: https://github.com/dzhw/metadatamanagement/issues
 RoxygenNote: 6.1.1
 Suggests: 
     covr,
-    spelling
+    spelling,
+    testthat,
+    knitr,
+    rmarkdown
 Language: en-US
+VignetteBuilder: knitr

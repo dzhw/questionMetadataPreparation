@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 10,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["06.3", "07"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "What were the (provisional) admissions requirement for the Master's course of study?",
+    "de": "Aufgrund welcher Zugangsvoraussetzungen sind Sie in das Masterstudium – ggf. vorläufig – aufgenommen worden?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Aufgrund welcher Zugangsvoraussetzungen sind Sie in das Masterstudium – ggf. vorläufig – aufgenommen worden? erster Studienabschluss (Bachelor, Diplom, Magister, Staatsexamen) –––––––––––– Meisterabschluss oder vergleichbare Fortbildung ––––––––––––––––––––––––––––– abgeschlossene Berufsausbildung, mindestens 3jährige Berufserfahrung und Eignungsfeststellungsprüfung––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

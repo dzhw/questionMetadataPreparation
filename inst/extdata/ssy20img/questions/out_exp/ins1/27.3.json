@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 43,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["28.1"],
+  "type": {
+    "en": "Item Set",
+    "de": "Itembatterie"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "To what extend are the following statements reasons that you earn money during your studies?",
+    "de": "Inwieweit geben die folgenden Aussagen Ihre Gründe wieder, während des Studiums Geld zu verdienen?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Inwieweit geben die folgenden Aussagen Ihre Gründe wieder, X während des Studiums Geld zu verdienen? SKALA Ich verdiene während des Studiums Geld, . . . trifft gar nicht zu trifft völlig zu weil es zur Bestreitung meines Lebensunterhalts unbedingt notwendig ist –––––– damit ich mir etwas mehr leisten kann ––––––––––––––––––––––––––––––––––––– um die Studiengebühren bezahlen zu können ––––––––––––––––––––––––––––––– um praktische Erfahrungen zu sammeln, die mir im späteren Beruf von Nutzen sind –––––––––––––––––––––––––––––––––– um Kontakte für eine mögliche spätere Beschäftigung zu knüpfen ––––––––––––– um finanziell unabhängig von den Eltern zu sein –––––––––––––––––––––––––––– weil ich andere mitfinanzieren muss (Partner/Partnerin, Kind) ––––––––––––––––––––– damit ich später ggf. unabhängig vom Studienabschluss eine Beschäftigung habe ––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Geld verdienen während des Studiums"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

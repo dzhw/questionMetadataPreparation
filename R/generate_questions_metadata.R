@@ -7,14 +7,25 @@
 #' Tabellenblättern "question" und "images".
 #' Angepasst werden muss der Pfad, an dem die Exceltabelle liegt und der Pfad an
 #' dem die jsons gespeichert werden sollen.
+#' Die Ordnerstruktur sollte wie folgt aussehen:
+#' \preformatted{
+#' |--Project root
+#'     |-- gra2005
+#'        |-- questions
+#'          |-- Bilder
+#'          |-- gra2005.xlsx
+#'  }
+
 #'
 #' @param projects_root the root folder where all your projects reside
 #' @param project_name the name of your project
+#' @param has_images do the questions have images? default is TRUE
 #' @export
 
-generate_question_jsons <- function(projects_root, project_name) {
+generate_question_jsons <- function(projects_root, project_name,
+  has_images = TRUE) {
 
-  generate_question_jsons <- function(pathXlsxFile, pathJson) {
+  write_question_jsons <- function(pathXlsxFile, pathJson, has_images) {
 
     # read excel file - sheet questions
     cat("Read excel file: sheet questions\n")
@@ -26,9 +37,10 @@ generate_question_jsons <- function(projects_root, project_name) {
     # -> create new directories for json export if don't exist (e.g. .../json/ins1)
     # -> or delete old jsons from directories if exist
     create_export_directories(pathJson, paste0("ins", unique(excel[["instrumentNumber"]])))
+    if(has_images == TRUE) {
     # and images folder if not existing
     create_export_directories(pathJson, paste0("ins", unique(excel[["instrumentNumber"]]), "/images"))
-
+}
     # for all questions in excel
     for (i in 1:nrow(excel)) {
       que <- new.env(hash = TRUE, parent = emptyenv())
@@ -85,7 +97,7 @@ generate_question_jsons <- function(projects_root, project_name) {
       # nolint end
     }
     cat("Finished writing question jsons\n")
-
+    if(has_images == TRUE) {
     ###
     ### create image jsons (one json per image)
 
@@ -133,7 +145,7 @@ generate_question_jsons <- function(projects_root, project_name) {
       ), file = con)
       close(con)
       # nolint end
-    }
+    }}
     cat("Finished writing image jsons\n")
   }
 
@@ -212,5 +224,7 @@ generate_question_jsons <- function(projects_root, project_name) {
 
   # Export path (path to json files)
   pathJson <- paste0(projects_root, "/", project_name, "/questions", "/out")
-  generate_question_jsons(pathXlsxFile, pathJson)
+  base::dir.create(paste0(projects_root, "/", project_name, "/questions",
+    "/out"), recursive = TRUE)
+  write_question_jsons(pathXlsxFile, pathJson, has_images)
 }

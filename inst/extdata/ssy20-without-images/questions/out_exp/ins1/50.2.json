@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 84,
+  "instruction": {
+    "en": "Multiple possible answers",
+    "de": "Mehrfachnennung möglich"
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["51"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "If yes: Which type of visa do you intend?",
+    "de": "Falls ja: Welche Art von Aufenthalt beabsichtigen Sie?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Falls ja: Welche Art von Aufenthalt beabsichtigen Sie? Mehrfachnennung möglich Studiengang im Ausland (z. B. Masterstudium) ––––––––––––––––––––––––––––––––––– Teilstudium im Ausland (Auslandssemester) ––––––––––––––––––––––––––––––––––––– Praktikum im Ausland –––––––––––––––––––––––––––––––––––––––––––––––––––– Sprachkurs im Ausland ––––––––––––––––––––––––––––––––––––––––––––––––––– weiß ich noch nicht ––––––––––––––––––––––––––––––––––––––––––––––––––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Auslandserfahrungen"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

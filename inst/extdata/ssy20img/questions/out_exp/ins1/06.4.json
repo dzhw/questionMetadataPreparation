@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 12,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["07"],
+  "type": {
+    "en": "Open",
+    "de": "Offen"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "If yes: how many months were you employed?",
+    "de": "Falls ja: Wie viele Monate waren Sie zwischendurch erwerbstätig?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "ZAHL Falls ja: Wie viele Monate waren Sie zwischendurch erwerbstätig? ––––– Monate"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum Studium"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

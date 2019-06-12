@@ -1,0 +1,37 @@
+{
+  "indexInInstrument": 38,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": null,
+    "source": null,
+    "language": null
+  },
+  "successorNumbers": ["25.3"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "In what form will you recieve the student loan?",
+    "de": "In welcher Form erhalten Sie BAföG?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "In welcher Form erhalten Sie BAföG? als Zuschuss und Darlehen (jeweils zur Hälfte) –––––––––––––––––––––––––––––––––– als Zuschuss (infolge einer Behinderung, Schwangerschaft, Pflege/Erziehung eines Kindes) ––––––– als verzinsliches Darlehen (z. B. als Hilfe zum Studienabschluss, für eine weitere Ausbildung) –––––––"
+  },
+  "topic": {
+    "en": null,
+    "de": "Angaben zum BAföG"
+  },
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}
