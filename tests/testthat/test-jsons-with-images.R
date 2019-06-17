@@ -1,20 +1,20 @@
-library(questionMetadataPreperation)
+library(questionMetadataPreparation)
 library(testthat)
 
 testthat::context("test json generation with images")
 
 testthat::setup({
   base::file.copy(from = system.file("extdata", "ssy20img",
-    package = "questionMetadataPreperation"), to = base::tempdir(),
+    package = "questionMetadataPreparation"), to = base::tempdir(),
     recursive = TRUE)
 })
 
 
 test_that("json filenames and content are identical", {
 
-  questionMetadataPreperation::generate_question_jsons(base::tempdir(),
+  questionMetadataPreparation::generate_question_jsons(base::tempdir(),
     "ssy20img", has_images = TRUE)
-  questionMetadataPreperation::sort_images(
+  questionMetadataPreparation::sort_images(
     paste0(base::tempdir(), "/ssy20img/questions/images_unsorted"),
     paste0(base::tempdir(), "/ssy20img/questions/out"),
     paste0(base::tempdir(), "/ssy20img/questions/ssy20img.xlsx"))

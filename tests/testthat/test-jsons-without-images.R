@@ -1,17 +1,17 @@
-library(questionMetadataPreperation)
+library(questionMetadataPreparation)
 library(testthat)
 
 testthat::context("test json generation without images")
 
 testthat::setup({
   base::file.copy(from = system.file("extdata", "ssy20-without-images",
-    package = "questionMetadataPreperation"), to = base::tempdir(),
+    package = "questionMetadataPreparation"), to = base::tempdir(),
     recursive = TRUE)
 })
 
 
 test_that("json filenames and content are identical", {
-  questionMetadataPreperation::generate_question_jsons(base::tempdir(),
+  questionMetadataPreparation::generate_question_jsons(base::tempdir(),
     "ssy20-without-images", has_images = FALSE)
   file_list_generated <- list.files(paste0(base::tempdir(),
     "/ssy20-without-images/questions/out"), recursive = TRUE)

@@ -1,4 +1,4 @@
-Package: questionMetadataPreperation
+Package: questionMetadataPreparation
 Title: Prepare question-metadata for https://metadata.fdz.dzhw.eu
 Version: 0.1.0.0000
 Authors@R: 

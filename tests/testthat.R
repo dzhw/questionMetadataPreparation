@@ -1,4 +1,4 @@
 library(testthat)
-library(questionMetadataPreperation)
+library(questionMetadataPreparation)
 
-test_check("questionMetadataPreperation")
+test_check("questionMetadataPreparation")
