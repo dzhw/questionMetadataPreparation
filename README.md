@@ -22,28 +22,16 @@ You can install the released version of questionMetadataPreparation from
 [Github](https://github.com/dzhw/questionMetadataPreparation) with:
 
 ``` r
+install.packages("remotes", dependencies = TRUE)
+remotes::install_github("dzhw/questionMetadataPreparation")
+```
+
+Developers can use the devtools.
+
+``` r
+install.packages("devtools", dependencies = TRUE)
 devtools::install_github("dzhw/questionMetadataPreparation")
 ```
-
-In case you want to install from a specific feature branch, e.g. "rbirkelbach/issue2018", do this:
-
-``` r
-devtools::install_github("dzhw/questionMetadataPreparation", ref = "rbirkelbach/issue2018")
-```
-
-If you don't have devtools installed do this:
-
-``` r
-install.packages("devtools")
-```
-
-To load the library you need to call
-
-``` r
-library(questionMetadataPreparation)
-```
-
-
 
 ## Having trouble?
 

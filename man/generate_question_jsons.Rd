@@ -10,7 +10,15 @@ Metadatenmanagement-System benötigte Ordnerstruktur an.
 Eingelesen wird die Exceltabelle "projektID.xlsx" mit den beiden
 Tabellenblättern "question" und "images".
 Angepasst werden muss der Pfad, an dem die Exceltabelle liegt und der Pfad an
-dem die jsons gespeichert werden sollen.}
+dem die jsons gespeichert werden sollen.
+Die Ordnerstruktur sollte wie folgt aussehen:
+\preformatted{
+|--Project root
+    |-- gra2005
+       |-- questions
+         |-- Bilder
+         |-- gra2005.xlsx
+ }}
 \usage{
 generate_question_jsons(projects_root, project_name, has_images = TRUE)
 }
@@ -31,4 +39,12 @@ Eingelesen wird die Exceltabelle "projektID.xlsx" mit den beiden
 Tabellenblättern "question" und "images".
 Angepasst werden muss der Pfad, an dem die Exceltabelle liegt und der Pfad an
 dem die jsons gespeichert werden sollen.
+Die Ordnerstruktur sollte wie folgt aussehen:
+\preformatted{
+|--Project root
+    |-- gra2005
+       |-- questions
+         |-- Bilder
+         |-- gra2005.xlsx
+ }
 }

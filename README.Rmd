@@ -29,6 +29,13 @@ specifically designed to help with our internal processes.
 You can install the released version of questionMetadataPreparation from [Github](https://github.com/dzhw/questionMetadataPreparation) with:
 
 ``` r
+install.packages("remotes", dependencies = TRUE)
+remotes::install_github("dzhw/questionMetadataPreparation")
+```
+Developers can use the devtools.
+
+``` r
+install.packages("devtools", dependencies = TRUE)
 devtools::install_github("dzhw/questionMetadataPreparation")
 ```
 
