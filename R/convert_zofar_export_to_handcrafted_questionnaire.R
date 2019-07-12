@@ -49,10 +49,10 @@ copy_image_files <- function(input_directory, output_directory,
   question_image_pngs <- dir(
     file.path(input_directory, "images"), pattern = "*.png",
     recursive = TRUE, full.names = TRUE)
-  for (i in 1:length(question_image_pngs)) {
-    message("Copy image '", question_image_pngs[[i]], "' to directory '",
+  for (png in question_image_pngs) {
+    message("Copy image '", png, "' to directory '",
       images_directory, "'")
-    file.copy(question_image_pngs[[i]], images_directory)
+    file.copy(png, images_directory)
   }
 }
 
@@ -95,7 +95,7 @@ create_questions_sheet <- function(input_directory, instrument_number) {
     nrow = length(question_jsons)))
   colnames(excel_sheet) <- col_names
 
-  for (i in 1:length(question_jsons)) {
+  for (i in seq_along(question_jsons)) {
     message("Read question json: ", question_jsons[[i]])
     json <- jsonlite::fromJSON(
       file.path(input_directory, question_jsons[[i]]))
@@ -169,7 +169,7 @@ create_images_sheet <- function(input_directory, instrument_number) {
     nrow = length(question_image_jsons)))
   colnames(excel_sheet) <- col_names
 
-  for (i in 1:length(question_image_jsons)) {
+  for (i in seq_along(question_image_jsons)) {
     message("Read image json: ", question_image_jsons[[i]])
     json <- jsonlite::fromJSON(file.path(input_directory, "images",
       question_image_jsons[[i]]))
