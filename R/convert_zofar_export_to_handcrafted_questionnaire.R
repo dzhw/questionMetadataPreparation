@@ -22,6 +22,8 @@
 #' @export
 convert_zofar_export_to_handcrafted_questionnaire <- function(input_directory,
   output_directory = file.path(".", "handcrafted", "questions")) {
+  input_directory <- remove_trailing_directory_delimiter(input_directory)
+  output_directory <- remove_trailing_directory_delimiter(output_directory)
   create_empty_directory(output_directory)
 
   instrument_number <- parse_instrument_number(input_directory)
@@ -54,6 +56,11 @@ copy_image_files <- function(input_directory, output_directory,
       images_directory, "'")
     file.copy(png, images_directory)
   }
+}
+
+remove_trailing_directory_delimiter <- function(directory) {
+  return(gsub(directory,
+    pattern = paste0("\\", .Platform$file.sep, "$"), replacement = ""))
 }
 
 create_empty_directory <- function(directory) {

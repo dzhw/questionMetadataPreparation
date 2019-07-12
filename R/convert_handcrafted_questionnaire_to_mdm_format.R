@@ -25,6 +25,10 @@ convert_handcrafted_questionnaires_to_mdm_format <- function(
   input_directory = file.path(".", "questions"),
   output_directory = file.path(".", "mdm", "questions"),
   images_subdirectory = file.path("Bilder", "png")) {
+  input_directory <- remove_trailing_directory_delimiter(input_directory)
+  output_directory <- remove_trailing_directory_delimiter(output_directory)
+  images_subdirectory <- remove_trailing_directory_delimiter(
+    images_subdirectory)
   create_empty_directory(output_directory)
 
   xlsx_file <- dir(input_directory, pattern = "*.xlsx", full.names = TRUE)[[1]]
