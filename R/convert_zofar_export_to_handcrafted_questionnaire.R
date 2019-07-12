@@ -1,6 +1,6 @@
-#' Zofar Converter
+#' zofar converter
 #'
-#' This script takes the export of zofar and converts it into a format wich can
+#' This script takes the export of zofar and converts it into a format which can
 #' be manually edited. The zofar export must have the following structure:
 #' |--ins1
 #'   |--5.json

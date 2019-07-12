@@ -9,16 +9,16 @@
 #'   |--Bilder
 #'     |--png
 #'       |--ins1
-#'         |--5_1.png (must match the fileName in the images excel sheet)
-#'         |--5_2.png (must match the fileName in the images excel sheet)
+#'         |--5_1.png (must match the filename in the images excel sheet)
+#'         |--5_2.png (must match the filename in the images excel sheet)
 #'       |--ins2
-#'         |--5_1.png (must match the fileName in the images excel sheet)
-#'         |--5_2.png (must match the fileName in the images excel sheet)
+#'         |--5_1.png (must match the filename in the images excel sheet)
+#'         |--5_2.png (must match the filename in the images excel sheet)
 #'
 #' @param input_directory Input path, e.g. "./questions"
 #' @param output_directory Output directory, e.g. "./mdm/questions", will
 #' be created if it does not exist or will be overwritten otherwise
-#' @param images_subdirectory Path relativ to input_directory containing the
+#' @param images_subdirectory Path relative to input_directory containing the
 #' images, e.g. "Bilder/png"
 #' @export
 convert_handcrafted_questionnaires_to_mdm_format <- function(
@@ -85,7 +85,7 @@ write_question_jsons <- function(xlsx_file, output_directory) {
     instrument_directory <- file.path(output_directory,
       paste0("ins", excel[i, "instrumentNumber"]))
     if (!dir.exists(instrument_directory)) {
-      dir.create(instrument_directory)
+      dir.create(instrument_directory, recursive = TRUE)
     }
     # json export
     question_json <- file.path(
@@ -118,7 +118,7 @@ write_question_images <- function(xlsx_file, input_directory,
       paste0("ins", excel[i, "instrumentNumber"]),
       "images", excel[i, "questionNumber"])
     if (!dir.exists(images_directory)) {
-      dir.create(images_directory)
+      dir.create(images_directory, recursive = TRUE)
     }
 
     # copy the image file
