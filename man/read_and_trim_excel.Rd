@@ -14,3 +14,4 @@ read_and_trim_excel(path, sheet)
 \description{
 Read excel files and get rid of unwanted whitespace
 }
+\keyword{internal}

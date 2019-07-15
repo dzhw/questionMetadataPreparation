@@ -3,21 +3,23 @@
 %   R/convert_zofar_export_to_handcrafted_questionnaire.R
 \name{convert_zofar_export_to_handcrafted_questionnaire}
 \alias{convert_zofar_export_to_handcrafted_questionnaire}
-\title{Zofar Converter}
+\title{Convert Zofar Export to Handcrafted Questionnaire}
 \usage{
 convert_zofar_export_to_handcrafted_questionnaire(input_directory,
   output_directory = file.path(".", "handcrafted", "questions"))
 }
 \arguments{
-\item{input_directory}{Input path, e.g. "./questions/ins1"}
+\item{input_directory}{Input path, e.g. "./questions/ins1", must contain
+"ins\{number\}"}
 
 \item{output_directory}{Output directory, e.g. "./handcrafted/questions",
 will be created if it does not exist or will be overwritten otherwise}
 }
 \description{
-This script takes the export of zofar and converts it into a format wich can
+This script takes the export of zofar and converts it into a format which can
 be manually edited. The zofar export must have the following structure:
-|--ins1
+\preformatted{
+|--ins1 (must have the pattern "ins\{number\}")
   |--5.json
   |--images
      |--5
@@ -28,6 +30,5 @@ be manually edited. The zofar export must have the following structure:
         |--5_3.png
         |--5_3.json
 }
-\details{
 The output directory will be created or overwritten.
 }

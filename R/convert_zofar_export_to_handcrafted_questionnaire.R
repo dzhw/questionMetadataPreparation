@@ -1,8 +1,9 @@
-#' zofar converter
+#' Convert Zofar Export to Handcrafted Questionnaire
 #'
 #' This script takes the export of zofar and converts it into a format which can
 #' be manually edited. The zofar export must have the following structure:
-#' |--ins1
+#' \preformatted{
+#' |--ins1 (must have the pattern "ins\{number\}")
 #'   |--5.json
 #'   |--images
 #'      |--5
@@ -12,11 +13,11 @@
 #'         |--5_2.json
 #'         |--5_3.png
 #'         |--5_3.json
-#'
+#' }
 #' The output directory will be created or overwritten.
 #'
 #' @param input_directory Input path, e.g. "./questions/ins1", must contain
-#' "ins{number}""
+#' "ins\{number\}"
 #' @param output_directory Output directory, e.g. "./handcrafted/questions",
 #' will be created if it does not exist or will be overwritten otherwise
 #' @export

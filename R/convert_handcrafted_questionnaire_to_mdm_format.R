@@ -2,8 +2,9 @@
 #'
 #' This script converts the handcrafted questionnaires which contains an excel
 #' and many images of several questionnaires into the format which can be
-#' uploaded to the MDM. The handcrafted questionnaire must have the following
-#' format:
+#' uploaded to the MDM. The handcrafted
+#' questionnaire must have the following format:
+#' \preformatted{
 #' |--questions
 #'   |--questions*.xlsx (two sheets, questions and images)
 #'   |--Bilder
@@ -14,7 +15,7 @@
 #'       |--ins2
 #'         |--5_1.png (must match the filename in the images excel sheet)
 #'         |--5_2.png (must match the filename in the images excel sheet)
-#'
+#' }
 #' @param input_directory Input path, e.g. "./questions"
 #' @param output_directory Output directory, e.g. "./mdm/questions", will
 #' be created if it does not exist or will be overwritten otherwise

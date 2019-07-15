@@ -12,3 +12,4 @@ trim_multiple_leading_trailing_ws(x)
 \description{
 Trim multiple leading and trailing whitespace
 }
+\keyword{internal}

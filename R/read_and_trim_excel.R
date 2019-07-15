@@ -2,7 +2,7 @@
 #'
 #' @param path the path to the excel file
 #' @param sheet the sheet that should be edited
-
+#' @keywords internal
 read_and_trim_excel <- function(path, sheet) {
   del_NA_cols_and_rows <- function(excel) {
     NAcol <- stringr::str_detect(colnames(excel), "NA.")

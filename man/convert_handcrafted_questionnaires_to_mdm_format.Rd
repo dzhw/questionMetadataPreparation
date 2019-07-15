@@ -16,22 +16,24 @@
 \item{output_directory}{Output directory, e.g. "./mdm/questions", will
 be created if it does not exist or will be overwritten otherwise}
 
-\item{images_subdirectory}{Path relativ to input_directory containing the
+\item{images_subdirectory}{Path relative to input_directory containing the
 images, e.g. "Bilder/png"}
 }
 \description{
 This script converts the handcrafted questionnaires which contains an excel
 and many images of several questionnaires into the format which can be
-uploaded to the MDM. The handcrafted questionnaire must have the following
-format:
+uploaded to the [MDM](https://metadata.fdz.dzhw.eu). The handcrafted
+questionnaire must have the following format:
+\preformatted{
 |--questions
   |--questions*.xlsx (two sheets, questions and images)
   |--Bilder
     |--png
       |--ins1
-        |--5_1.png (must match the fileName in the images excel sheet)
-        |--5_2.png (must match the fileName in the images excel sheet)
+        |--5_1.png (must match the filename in the images excel sheet)
+        |--5_2.png (must match the filename in the images excel sheet)
       |--ins2
-        |--5_1.png (must match the fileName in the images excel sheet)
-        |--5_2.png (must match the fileName in the images excel sheet)
+        |--5_1.png (must match the filename in the images excel sheet)
+        |--5_2.png (must match the filename in the images excel sheet)
+}
 }
