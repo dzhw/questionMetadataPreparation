@@ -18,8 +18,8 @@ Description: Prepare question-metadata for https://metadata.fdz.dzhw.eu
     This package helps to create question metadata according to the domain model
     of the mdm in json format. Currently there are two formats which are
     supported:
-    Zofar and Handcrafted. The Zofar needs to be converted into the Handcrafted
-    forma for further editing.
+    Zofar and Handcrafted. The Zofar format needs to be converted into the 
+    Handcrafted format for further editing.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

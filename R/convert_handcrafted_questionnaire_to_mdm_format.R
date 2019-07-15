@@ -21,6 +21,7 @@
 #' be created if it does not exist or will be overwritten otherwise
 #' @param images_subdirectory Path relative to input_directory containing the
 #' images, e.g. "Bilder/png"
+#' @example convert_handcrafted_questionnaires_to_mdm_format("./questions")
 #' @export
 convert_handcrafted_questionnaires_to_mdm_format <- function(
   input_directory = file.path(".", "questions"),
@@ -130,7 +131,11 @@ write_question_images <- function(xlsx_file, input_directory,
     question_image <- paste(input_directory, images_subdirectory,
        paste0("ins", excel[i, "instrumentNumber"]), excel[i, "fileName"],
         sep = .Platform$file.sep)
-    message("Copy image file:", question_image)
+    message("Copying image file:", question_image)
+    if (!file.exists(question_image)) {
+      stop("Could not copy file. Check whether you set the correct
+        images_subdirectory")
+    }
     file.copy(
       question_image,
       file.path(output_directory,

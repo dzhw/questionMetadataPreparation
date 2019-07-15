@@ -3,7 +3,7 @@
 %   R/convert_zofar_export_to_handcrafted_questionnaire.R
 \name{convert_zofar_export_to_handcrafted_questionnaire}
 \alias{convert_zofar_export_to_handcrafted_questionnaire}
-\title{Convert Zofar Export to Handcrafted Questionnaire}
+\title{Convert Zofar Export to Handcrafted Questionnaire(s) Metadata}
 \usage{
 convert_zofar_export_to_handcrafted_questionnaire(input_directory,
   output_directory = file.path(".", "handcrafted", "questions"))
