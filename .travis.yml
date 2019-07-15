@@ -4,4 +4,13 @@ language: R
 sudo: false
 cache: packages
 after_success:
+  - Rscript -e 'pkgdown::build_site()'
   - Rscript -e 'covr::codecov()'
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
