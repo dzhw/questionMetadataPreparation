@@ -2,10 +2,10 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation) [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-Question Metadata Preparation
-=============================
+[Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/)
+====================================================================================
 
-The goal of Question Metadata Preparation is to help with preparing question-metadata for the [MDM](https://metadata.fdz.dzhw.eu) of the research data center of the dzhw. If you do not work for the research data center of the dzhw, this package will probably be only useful for learning purposes, as it's specifically designed to help with our internal processes.
+The goal of [Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/) is to help with preparing question-metadata for the [MDM](https://metadata.fdz.dzhw.eu) of the research data center of the dzhw. If you do not work for the research data center of the dzhw, this package will probably be only useful for learning purposes, as it's specifically designed to help with our internal processes.
 
 Installation for Users
 ----------------------
