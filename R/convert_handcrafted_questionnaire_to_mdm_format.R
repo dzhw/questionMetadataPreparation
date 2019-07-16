@@ -2,7 +2,7 @@
 #'
 #' This script converts the handcrafted questionnaires which contains an excel
 #' and many images of several questionnaires into the format which can be
-#' uploaded to the MDM. The handcrafted
+#' uploaded to the [MDM](https://metadata.fdz.dzhw.eu). The handcrafted
 #' questionnaire must have the following format:
 #' \preformatted{
 #' |--questions
