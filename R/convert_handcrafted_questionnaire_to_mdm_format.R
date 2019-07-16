@@ -45,6 +45,10 @@ write_question_jsons <- function(xlsx_file, output_directory) {
   message("Read excel file: sheet questions")
   excel <- read_and_trim_excel(xlsx_file, sheet = "questions")
   # trim later
+  browser()
+  if (!("conceptIds" %in% names(excel))) {
+    message("There's no conceptIds column in the questions sheet.")
+  }
   excel <- trim_list_cols(excel, col1 = "successorNumbers", col2 = "conceptIds")
 
   # for all questions in excel
