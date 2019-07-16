@@ -45,8 +45,13 @@ write_question_jsons <- function(xlsx_file, output_directory) {
   message("Read excel file: sheet questions")
   excel <- read_and_trim_excel(xlsx_file, sheet = "questions")
   # trim later
-  col_is_missing_error_message("conceptIds", "questions", excel)
-  col_is_missing_error_message("successorNumbers", "questions", excel)
+  col_is_missing_error_message(c("instruction.de", "instruction.en",
+    "introduction.de", "introduction.en",
+    "type.de", "type.en", "topic.de", "topic.en",
+    "technicalRepresentation.type", "technicalRepresentation.language",
+    "technicalRepresentation.source", "annotations.de", "annotations.en",
+    "additionalQuestionText.de", "additionalQuestionText.en", "conceptIds"),
+    "questions", excel)
   excel <- trim_list_cols(excel, col1 = "successorNumbers", col2 = "conceptIds")
 
   # for all questions in excel
@@ -121,6 +126,10 @@ write_question_images <- function(xlsx_file, input_directory,
   excel <- read_and_trim_excel(xlsx_file, sheet = "images")
 
   # for all images in excel
+  col_is_missing_error_message(c("fileName", "questionNumber",
+    "instrumentNumber", "language", "containsAnnotations", "indexInQuestion",
+    "resolution.widthX", "resolution.heightY"), "images", excel)
+
   for (i in rownames(excel)) {
     images_directory <- file.path(output_directory,
       paste0("ins", excel[i, "instrumentNumber"]),
@@ -153,13 +162,10 @@ write_question_images <- function(xlsx_file, input_directory,
     image[["indexInQuestion"]] <- jsonlite::unbox(
       as.numeric(excel[i, "indexInQuestion"])
     )
-    col_is_missing_error_message("resolution.widthX", "images", excel)
-    col_is_missing_error_message("resolution.heightY", "images", excel)
     image[["resolution"]] <- new.resolution(
       excel[i, "resolution.widthX"],
       excel[i, "resolution.heightY"]
     )
-
     # json export
     question_image_json <- file.path(output_directory,
       paste0("ins", excel[i, "instrumentNumber"]),
@@ -234,10 +240,23 @@ nested_env_as_list <- function(env) {
 
 col_is_missing_error_message <- function(col_name_in_excel_sheet, sheet_name,
   check_in_this_dataframe) {
-  if (!(col_name_in_excel_sheet %in% names(check_in_this_dataframe))) {
-    message(paste("There's no ", col_name_in_excel_sheet,
-      " column in the ", sheet_name, " sheet."))
-    stop()
+  variable_is_in_df <- col_name_in_excel_sheet %in%
+    names(check_in_this_dataframe)
+  if (!all(variable_is_in_df)) {
+    if (sum(!variable_is_in_df) == 1) {
+      message(paste("There's no ",
+        col_name_in_excel_sheet[!variable_is_in_df],
+        " column in the ", sheet_name, " sheet."))
+      stop()
+      } else {
+      if (sum(!variable_is_in_df) > 1) {
+        message(paste("In the ", sheet_name,
+          " sheet the following columns are missing:"))
+        message(paste(col_name_in_excel_sheet[!variable_is_in_df],
+          collapse = ", "))
+        stop()
+      }
+    }
   }
 }
 
