@@ -47,6 +47,7 @@ write_question_jsons <- function(xlsx_file, output_directory) {
   # trim later
   if (!("conceptIds" %in% names(excel))) {
     message("There's no conceptIds column in the questions sheet.")
+    stop()
   }
   excel <- trim_list_cols(excel, col1 = "successorNumbers", col2 = "conceptIds")
 
