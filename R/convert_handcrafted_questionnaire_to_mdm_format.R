@@ -45,15 +45,8 @@ write_question_jsons <- function(xlsx_file, output_directory) {
   message("Read excel file: sheet questions")
   excel <- read_and_trim_excel(xlsx_file, sheet = "questions")
   # trim later
-  col_is_missing_error_message <- function(col_name_in_excel_sheet) {
-    if (!(col_name_in_excel_sheet %in% names(excel))) {
-      message(paste("There's no ", col_name_in_excel_sheet,
-        " column in the questions sheet."))
-      stop()
-    }
-  }
-  col_is_missing_error_message("conceptIds")
-  col_is_missing_error_message("successorNumbers")
+  col_is_missing_error_message("conceptIds", "questions", excel)
+  col_is_missing_error_message("successorNumbers", "questions", excel)
   excel <- trim_list_cols(excel, col1 = "successorNumbers", col2 = "conceptIds")
 
   # for all questions in excel
@@ -160,6 +153,8 @@ write_question_images <- function(xlsx_file, input_directory,
     image[["indexInQuestion"]] <- jsonlite::unbox(
       as.numeric(excel[i, "indexInQuestion"])
     )
+    col_is_missing_error_message("resolution.widthX", "images", excel)
+    col_is_missing_error_message("resolution.heightY", "images", excel)
     image[["resolution"]] <- new.resolution(
       excel[i, "resolution.widthX"],
       excel[i, "resolution.heightY"]
@@ -236,3 +231,13 @@ nested_env_as_list <- function(env) {
   lapply(out, function(x) if (is.environment(x) ||
     is.list(x)) nested_env_as_list(x) else x)
 }
+
+col_is_missing_error_message <- function(col_name_in_excel_sheet, sheet_name,
+  check_in_this_dataframe) {
+  if (!(col_name_in_excel_sheet %in% names(check_in_this_dataframe))) {
+    message(paste("There's no ", col_name_in_excel_sheet,
+      " column in the ", sheet_name, " sheet."))
+    stop()
+  }
+}
+
