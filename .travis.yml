@@ -1,4 +1,6 @@
 language: R
+r:
+  - 3.6.1
 sudo: false
 cache: packages
 after_success:
