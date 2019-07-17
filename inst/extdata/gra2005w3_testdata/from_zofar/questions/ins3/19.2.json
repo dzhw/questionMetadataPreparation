@@ -1,0 +1,30 @@
+
+{
+    "id":"que-gra2005-ins3-19.2$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Welche zusätzlichen\n\t\t\t\t\t\tGehaltsbestandteile bekommen Sie?</zofar:question>\n        <zofar:instruction block=\"true\" uid=\"ins\">(Mehrfachnennung\n\t\t\t\t\t\tmöglich)</zofar:instruction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n        <zofar:answerOption label=\"Weniger als ein 13. Monatsgehalt\" uid=\"ao1\" variable=\"c3zu13wge\"/>\n        <zofar:answerOption label=\"Ein 13. Monatsgehalt\" uid=\"ao2\" variable=\"c3zu13ge\"/>\n        <zofar:answerOption label=\"Mehr als ein 13. Monatsgehalt\" uid=\"ao3\" variable=\"c3zu13mge\"/>\n        <zofar:answerOption label=\"Variable Gehaltszulage\" uid=\"ao4\" variable=\"c3zuvarge\">\n            <zofar:questionOpen size=\"10\" type=\"number\" uid=\"ao\" validationMessage=\"bitte Gehaltszulage in Nummern angeben.\" variable=\"c3zueurge\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">ca. Euro/Jahr:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n        <zofar:answerOption label=\"#{layout.UNDERLINED_START}Keinerlei#{layout.UNDERLINED_END} zusätzliche Gehaltsbestandteile\" uid=\"ao5\" variable=\"c3zunoge\"/>\n        <zofar:answerOption exclusive=\"true\" label=\"Trifft für mich nicht zu, da ich vollständig auftrags- bzw. erfolgsabhängig arbeite\" uid=\"ao6\" variable=\"c3zuaufge\"/>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Welche zusätzlichen Gehaltsbestandteile bekommen Sie?,(Mehrfachnennung möglich),Weniger als ein 13. Monatsgehalt,Ein 13. Monatsgehalt,Mehr als ein 13. Monatsgehalt,Variable Gehaltszulage,ca. Euro/Jahr:,Keinerlei zusätzliche Gehaltsbestandteile,Trifft für mich nicht zu, da ich vollständig auftrags- bzw. erfolgsabhängig arbeite"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Welche zusätzlichen Gehaltsbestandteile bekommen Sie?"
+    },
+    "instruction":{
+        "de":"(Mehrfachnennung möglich)"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":26,
+    "successorNumbers":[
+        "21.1"
+    ]
+}

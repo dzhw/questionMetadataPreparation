@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-22.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:matrixQuestionSingleChoice uid=\"msc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Würden Sie sagen, dass\n\t\t\t\t\t\tSie Ihrer Hochschulqualifikation entsprechend beschäftigt sind?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain isShowValues=\"true\" itemClasses=\"true\" noResponseOptions=\"5\" uid=\"rd\">\n        <zofar:header>\n            <zofar:title block=\"true\" uid=\"t1\">ja, auf\n\t\t\t\t\t\t\t#{layout.BREAK}jeden Fall</zofar:title>\n            <zofar:title uid=\"t2\"/>\n            <zofar:title uid=\"t3\"/>\n            <zofar:title uid=\"t4\"/>\n            <zofar:title block=\"true\" uid=\"t5\">nein, auf\n\t\t\t\t\t\t\t#{layout.BREAK}keinen Fall</zofar:title>\n        </zofar:header>\n        <zofar:item uid=\"i1\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q1\">Hinsichtlich der\n\t\t\t\t\t\t\t\tberuflichen Position</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd1\" variable=\"c3qualpos\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i2\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q2\">Hinsichtlich des\n\t\t\t\t\t\t\t\tNiveaus der Arbeitsaufgaben</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd2\" variable=\"c3qualniv\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n        <zofar:item uid=\"i3\">\n            <zofar:header>\n                <zofar:question block=\"true\" uid=\"q3\">Hinsichtlich der\n\t\t\t\t\t\t\t\tfachlichen Qualifikation (Studienfachrichtung)</zofar:question>\n            </zofar:header>\n            <zofar:responseDomain itemClasses=\"true\" uid=\"rd3\" variable=\"c3qualqua\">\n                <zofar:answerOption uid=\"ao1\" value=\"1\"/>\n                <zofar:answerOption uid=\"ao2\" value=\"2\"/>\n                <zofar:answerOption uid=\"ao3\" value=\"3\"/>\n                <zofar:answerOption uid=\"ao4\" value=\"4\"/>\n                <zofar:answerOption uid=\"ao5\" value=\"5\"/>\n            </zofar:responseDomain>\n        </zofar:item>\n    </zofar:responseDomain>\n</zofar:matrixQuestionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Würden Sie sagen, dass Sie Ihrer Hochschulqualifikation entsprechend beschäftigt sind?,ja, auf jeden Fall,nein, auf keinen Fall,Hinsichtlich der beruflichen Position,Hinsichtlich des Niveaus der Arbeitsaufgaben,Hinsichtlich der fachlichen Qualifikation (Studienfachrichtung)"
+    },
+    "type":{
+        "de":"Matrix",
+        "en":"Grid"
+    },
+    "questionText":{
+        "de":"Würden Sie sagen, dass Sie Ihrer Hochschulqualifikation entsprechend beschäftigt sind?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":28,
+    "successorNumbers":[
+        "23.1"
+    ]
+}

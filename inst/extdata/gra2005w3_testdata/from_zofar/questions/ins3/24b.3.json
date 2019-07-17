@@ -1,0 +1,28 @@
+
+{
+    "id":"que-gra2005-ins3-24b.3$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"next2\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question uid=\"questionText\">Haben Sie weitere berufliche\n\t\t\t\t\t\t\t\tTätigkeiten ausgeübt?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain showValues=\"false\" type=\"radio\" uid=\"rd\" variable=\"next2\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"2\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Haben Sie weitere berufliche Tätigkeiten ausgeübt?,Ja,Nein"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie weitere berufliche Tätigkeiten ausgeübt?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":38,
+    "successorNumbers":[
+        "24c.1",
+        "25.1"
+    ]
+}

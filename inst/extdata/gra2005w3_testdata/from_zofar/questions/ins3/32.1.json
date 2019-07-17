@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-32.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Möchten Sie in Zukunft\n\t\t\t\t\t\tKinder haben bzw. ein weiteres Kind/weitere Kinder haben?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"k3weitkind\">\n        <zofar:answerOption label=\"Ja, in der nächsten Zeit\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Ja, später einmal\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Ja, aber es gibt Gründe, die dagegen sprechen\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Das kann ich zurzeit nicht sagen\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao5\" value=\"5\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Möchten Sie in Zukunft Kinder haben bzw. ein weiteres Kind/weitere Kinder haben?,Ja, in der nächsten Zeit,Ja, später einmal,Ja, aber es gibt Gründe, die dagegen sprechen,Das kann ich zurzeit nicht sagen,Nein"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Möchten Sie in Zukunft Kinder haben bzw. ein weiteres Kind/weitere Kinder haben?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":74,
+    "successorNumbers":[
+        "33.1"
+    ]
+}

@@ -1,0 +1,24 @@
+
+{
+    "id":"que-gra2005-ins3-33.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen columns=\"110\" rows=\"5\" smallOption=\"false\" uid=\"qo2\" variable=\"frage33_open\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\">#{layout.BREAK}#{layout.BREAK}#{layout.BREAK}Haben\n\t\t\t\t\t\tSie noch\n\t\t\t\t\t\tAnregungen, Kritik oder Vorschläge zu unserer\n\t\t\t\t\t\tBefragung?#{layout.BREAK}\n\t\t\t\t\t\tWir freuen uns, wenn Sie uns Ihre Meinung\n\t\t\t\t\t\tmitteilen.#{layout.BREAK}\n\t\t\t\t\t\tVielen Dank!#{layout.BREAK}</zofar:question>\n    </zofar:header>\n</zofar:questionOpen>"
+    },
+    "additionalQuestionText":{
+        "de":"Haben Sie noch Anregungen, Kritik oder Vorschläge zu unserer Befragung? Wir freuen uns, wenn Sie uns Ihre Meinung mitteilen. Vielen Dank!"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Haben Sie noch Anregungen, Kritik oder Vorschläge zu unserer Befragung? Wir freuen uns, wenn Sie uns Ihre Meinung mitteilen. Vielen Dank!"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":75
+}

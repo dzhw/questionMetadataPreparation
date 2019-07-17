@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-17.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Sind Sie im\n\t\t\t\t\t\töffentlichen Dienst bzw. in einem dem öffentlichen Dienst\n\t\t\t\t\t\ttariflich angeglichenen Arbeitsverhältnis beschäftigt?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"c3oeffdi\">\n        <zofar:answerOption label=\"Ja\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Nein\" uid=\"ao2\" value=\"2\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Sind Sie im öffentlichen Dienst bzw. in einem dem öffentlichen Dienst tariflich angeglichenen Arbeitsverhältnis beschäftigt?,Ja,Nein"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Sind Sie im öffentlichen Dienst bzw. in einem dem öffentlichen Dienst tariflich angeglichenen Arbeitsverhältnis beschäftigt?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":23,
+    "successorNumbers":[
+        "18.1"
+    ]
+}

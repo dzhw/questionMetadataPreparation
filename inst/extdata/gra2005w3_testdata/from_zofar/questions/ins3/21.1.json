@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-21.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Arbeiten Sie in einer\n\t\t\t\t\t\tPosition, in der ...</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"c3pos\">\n        <zofar:answerOption label=\"ein Hochschulabschluss zwingend erforderlich ist (z. B. Ärztin/Arzt, Lehrerin/Lehrer)?\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"ein Hochschulabschluss die Regel ist?\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"ein Hochschulabschluss nicht die Regel, aber von Vorteil ist?\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"ein Hochschulabschluss keine Bedeutung hat?\" uid=\"ao4\" value=\"4\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Arbeiten Sie in einer Position, in der ...,ein Hochschulabschluss zwingend erforderlich ist (z. B. Ärztin/Arzt, Lehrerin/Lehrer)?,ein Hochschulabschluss die Regel ist?,ein Hochschulabschluss nicht die Regel, aber von Vorteil ist?,ein Hochschulabschluss keine Bedeutung hat?"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Arbeiten Sie in einer Position, in der ..."
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":27,
+    "successorNumbers":[
+        "22.1"
+    ]
+}

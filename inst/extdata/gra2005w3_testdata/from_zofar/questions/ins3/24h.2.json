@@ -1,0 +1,28 @@
+
+{
+    "id":"que-gra2005-ins3-24h.2$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\"/>\n    </zofar:header>\n    <zofar:responseDomain uid=\"rd\">\n        <zofar:answerOption label=\"läuft noch\" uid=\"ao1\" variable=\"c3job9nloc\"/>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"läuft noch"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Kein Fragetext vorhanden",
+        "en":"No questiontext available"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":55,
+    "successorNumbers":[
+        "25.1"
+    ]
+}

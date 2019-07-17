@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-29.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Sind Sie zurzeit ...</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"k3famstand\">\n        <zofar:answerOption label=\"ohne feste(n) Partner(in)?\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"in fester Partnerschaft?\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"verheiratet?\" uid=\"ao3\" value=\"3\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Sind Sie zurzeit ...,ohne feste(n) Partner(in)?,in fester Partnerschaft?,verheiratet?"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Sind Sie zurzeit ..."
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":71,
+    "successorNumbers":[
+        "30.1"
+    ]
+}

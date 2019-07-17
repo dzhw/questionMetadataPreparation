@@ -1,0 +1,30 @@
+
+{
+    "id":"que-gra2005-ins3-27.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Wer übernahm ggf.\n\t\t\t\t\t\tangefallene Kosten aller Fort- und Weiterbildungen der letzten 12\n\t\t\t\t\t\tMonate?</zofar:question>\n        <zofar:instruction block=\"true\" uid=\"ins\">(Mehrfachnennung\n\t\t\t\t\t\tmöglich)</zofar:instruction>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\">\n        <zofar:answerOption label=\"Keine Kosten angefallen\" uid=\"ao1\" variable=\"e3wbfkein\"/>\n        <zofar:answerOption label=\"Kostenübernahme durch meinen Arbeitgeber\" uid=\"ao2\" variable=\"e3wbfarg\"/>\n        <zofar:answerOption label=\"Eigenfinanzierung (inkl. Partner(in) oder Verwandte)\" uid=\"ao3\" variable=\"e3wbfverm\"/>\n        <zofar:answerOption label=\"Sonstige Finanzierung\" uid=\"ao4\" variable=\"e3wbfsons\"/>\n    </zofar:responseDomain>\n</zofar:multipleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Wer übernahm ggf. angefallene Kosten aller Fort- und Weiterbildungen der letzten 12 Monate?,(Mehrfachnennung möglich),Keine Kosten angefallen,Kostenübernahme durch meinen Arbeitgeber,Eigenfinanzierung (inkl. Partner(in) oder Verwandte),Sonstige Finanzierung"
+    },
+    "type":{
+        "de":"Mehrfachnennung",
+        "en":"Multiple Choice"
+    },
+    "questionText":{
+        "de":"Wer übernahm ggf. angefallene Kosten aller Fort- und Weiterbildungen der letzten 12 Monate?"
+    },
+    "instruction":{
+        "de":"(Mehrfachnennung möglich)"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":64,
+    "successorNumbers":[
+        "28.1"
+    ]
+}

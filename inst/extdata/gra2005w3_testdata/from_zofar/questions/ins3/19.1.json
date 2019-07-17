@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-19.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionOpen minValue=\"0\" size=\"10\" type=\"number\" uid=\"qo\" validationMessage=\"Bitte geben Sie eine Zahl ein.\" variable=\"c3brutto\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Wie hoch ist Ihr\n\t\t\t\t\t\t#{layout.UNDERLINED_START}Brutto#{layout.UNDERLINED_END}-Monatseinkommen?</zofar:question>\n    </zofar:header>\n    <zofar:prefix>\n        <zofar:label uid=\"l\">Euro/Monat:</zofar:label>\n    </zofar:prefix>\n</zofar:questionOpen>"
+    },
+    "additionalQuestionText":{
+        "de":"Wie hoch ist Ihr Brutto-Monatseinkommen?,Euro/Monat:"
+    },
+    "type":{
+        "de":"Offen",
+        "en":"Open"
+    },
+    "questionText":{
+        "de":"Wie hoch ist Ihr Brutto-Monatseinkommen?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":25,
+    "successorNumbers":[
+        "19.2"
+    ]
+}

@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-16.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">Welcher der folgenden\n\t\t\t\t\t\tBetriebsgrößen ist Ihr Betrieb/Ihre Dienststelle zuzuordnen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"c3betrgr\">\n        <zofar:answerOption label=\"Über 1000 Mitarbeiter(innen)\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Über 500 bis 1000 Mitarbeiter(innen)\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Über 249 bis 500 Mitarbeiter(innen)\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Über 100 bis 249 Mitarbeiter(innen)\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Über 20 bis 100 Mitarbeiter(innen)\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"5 bis 20 Mitarbeiter(innen)\" uid=\"ao6\" value=\"6\"/>\n        <zofar:answerOption label=\"Weniger als 5 Mitarbeiter(innen)\" uid=\"ao7\" value=\"7\"/>\n        <zofar:answerOption label=\"Freischaffend, ohne Mitarbeiter(innen)\" uid=\"ao8\" value=\"8\"/>\n        <zofar:answerOption label=\"Sonstiges\" uid=\"ao9\" value=\"9\">\n            <zofar:questionOpen uid=\"ao\" variable=\"c3betrs\">\n                <zofar:prefix>\n                    <zofar:label uid=\"l\">und zwar:</zofar:label>\n                </zofar:prefix>\n            </zofar:questionOpen>\n        </zofar:answerOption>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Welcher der folgenden Betriebsgrößen ist Ihr Betrieb/Ihre Dienststelle zuzuordnen?,Über 1000 Mitarbeiter(innen),Über 500 bis 1000 Mitarbeiter(innen),Über 249 bis 500 Mitarbeiter(innen),Über 100 bis 249 Mitarbeiter(innen),Über 20 bis 100 Mitarbeiter(innen),5 bis 20 Mitarbeiter(innen),Weniger als 5 Mitarbeiter(innen),Freischaffend, ohne Mitarbeiter(innen),Sonstiges,und zwar:"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Welcher der folgenden Betriebsgrößen ist Ihr Betrieb/Ihre Dienststelle zuzuordnen?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":22,
+    "successorNumbers":[
+        "17.1"
+    ]
+}
