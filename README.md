@@ -20,7 +20,7 @@ remotes::install_github("dzhw/questionMetadataPreparation")
 In order to convert a Zofar export into a format which can be manually edited, you have to run:
 
 ``` r
-convert_zofar_export_to_handcrafted_questionnaire("./questions/inst")
+convert_zofar_export_to_handcrafted_questionnaire("./questions/ins1")
 ```
 
 The output will be written to `"./handcrafted/questions"`.

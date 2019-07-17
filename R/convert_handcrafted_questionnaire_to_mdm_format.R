@@ -16,12 +16,19 @@
 #'         |--5_1.png (must match the filename in the images excel sheet)
 #'         |--5_2.png (must match the filename in the images excel sheet)
 #' }
+#' The format of the excel sheets is defined [here](https://metadatamanagement.readthedocs.io/de/latest/questions.html#questions-manuell-bzw-handcrafted).
 #' @param input_directory Input path, e.g. "./questions"
 #' @param output_directory Output directory, e.g. "./mdm/questions", will
 #' be created if it does not exist or will be overwritten otherwise
 #' @param images_subdirectory Path relative to input_directory containing the
 #' images, e.g. "Bilder/png"
-#' @example convert_handcrafted_questionnaires_to_mdm_format("./questions")
+#' @examples
+#' # All examples do exactly the same. They convert everything under "./questions"
+#' # into the MDM format and write the output in "./mdm/questions". Images will be
+#' # searched in "./questions/Bilder/png".
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions")
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
 #' @export
 convert_handcrafted_questionnaires_to_mdm_format <- function(
   input_directory = file.path(".", "questions"),
@@ -45,13 +52,13 @@ write_question_jsons <- function(xlsx_file, output_directory) {
   message("Read excel file: sheet questions")
   excel <- read_and_trim_excel(xlsx_file, sheet = "questions")
   # trim later
-  col_is_missing_error_message(c("instruction.de", "instruction.en",
+  check_missing_columns(c("instruction.de", "instruction.en",
     "introduction.de", "introduction.en",
     "type.de", "type.en", "topic.de", "topic.en",
     "technicalRepresentation.type", "technicalRepresentation.language",
     "technicalRepresentation.source", "annotations.de", "annotations.en",
     "additionalQuestionText.de", "additionalQuestionText.en", "conceptIds"),
-    "questions", excel)
+    excel, "questions")
   excel <- trim_list_cols(excel, col1 = "successorNumbers", col2 = "conceptIds")
 
   # for all questions in excel
@@ -126,9 +133,9 @@ write_question_images <- function(xlsx_file, input_directory,
   excel <- read_and_trim_excel(xlsx_file, sheet = "images")
 
   # for all images in excel
-  col_is_missing_error_message(c("fileName", "questionNumber",
+  check_missing_columns(c("fileName", "questionNumber",
     "instrumentNumber", "language", "containsAnnotations", "indexInQuestion",
-    "resolution.widthX", "resolution.heightY"), "images", excel)
+    "resolution.widthX", "resolution.heightY"), excel, "images")
 
   for (i in rownames(excel)) {
     images_directory <- file.path(output_directory,
@@ -238,25 +245,24 @@ nested_env_as_list <- function(env) {
     is.list(x)) nested_env_as_list(x) else x)
 }
 
-col_is_missing_error_message <- function(col_name_in_excel_sheet, sheet_name,
-  check_in_this_dataframe) {
-  variable_is_in_df <- col_name_in_excel_sheet %in%
-    names(check_in_this_dataframe)
+check_missing_columns <- function(expected_column_names, dataframe,
+  sheet_name) {
+  variable_is_in_df <- expected_column_names %in%
+    names(dataframe)
   if (!all(variable_is_in_df)) {
     if (sum(!variable_is_in_df) == 1) {
       message(paste("There's no ",
-        col_name_in_excel_sheet[!variable_is_in_df],
+        expected_column_names[!variable_is_in_df],
         " column in the ", sheet_name, " sheet."))
       stop()
       } else {
       if (sum(!variable_is_in_df) > 1) {
         message(paste("In the ", sheet_name,
           " sheet the following columns are missing:"))
-        message(paste(col_name_in_excel_sheet[!variable_is_in_df],
+        message(paste(expected_column_names[!variable_is_in_df],
           collapse = ", "))
         stop()
       }
     }
   }
 }
-
