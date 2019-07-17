@@ -1,4 +1,4 @@
-#' Convert Zofar Export to Handcrafted Questionnaire(s) Metadata
+#' Convert Zofar Export to Handcrafted Questionnaire Format
 #'
 #' This script takes the export of zofar and converts it into a format which can
 #' be manually edited. The zofar export must have the following structure:

@@ -1,4 +1,4 @@
-#' Convert handcrafted questionnaires to MDM format
+#' Convert Handcrafted Questionnaires to MDM Format
 #'
 #' This script converts the handcrafted questionnaires which contains an excel
 #' and many images of several questionnaires into the format which can be

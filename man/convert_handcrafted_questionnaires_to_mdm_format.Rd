@@ -3,7 +3,7 @@
 %   R/convert_handcrafted_questionnaire_to_mdm_format.R
 \name{convert_handcrafted_questionnaires_to_mdm_format}
 \alias{convert_handcrafted_questionnaires_to_mdm_format}
-\title{Convert handcrafted questionnaires to MDM format}
+\title{Convert Handcrafted Questionnaires to MDM Format}
 \usage{
 
   convert_handcrafted_questionnaires_to_mdm_format(input_directory = file.path(".",
