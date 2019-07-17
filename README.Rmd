@@ -37,14 +37,14 @@ remotes::install_github("dzhw/questionMetadataPreparation")
 
 In order to convert a Zofar export into a format which can be manually edited,
 you have to run:
-```{r, eval = FALSE}
+``` r
 convert_zofar_export_to_handcrafted_questionnaire("./questions/ins1")
 ```
 The output will be written to ```"./handcrafted/questions"```.
 
 A set of handcrafted questionnaires can be manually converted into the MDM format
 by running
-```{r, eval = FALSE}
+``` r
 convert_handcrafted_questionnaires_to_mdm_format("./questions")
 ```
 The output will be written to ```"./mdm/questions"```.
