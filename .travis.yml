@@ -1,17 +1,20 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 language: R
 sudo: false
 cache: packages
 after_success:
-  - Rscript -e 'rmarkdown::render("README.Rmd")'
-  - Rscript -e 'pkgdown::build_site()'
-  - Rscript -e 'covr::codecov()'
+- Rscript -e 'rmarkdown::render("README.Rmd")'
+- Rscript -e 'pkgdown::build_site()'
+- Rscript -e 'covr::codecov()'
 deploy:
   provider: pages
   skip_cleanup: true
   local_dir: docs
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: "$GITHUB_TOKEN"
   keep_history: true
   on:
     branch: master
+notifications:
+  email:
+    recipients:
+      - secure: k19sD+eTL78RPShrybrqU8OAwVxn9KdORp91uCIBlsWTtBDVULfaL96aTgpxcwm79/Ux8f9MJUqdiE0oJf77q5f32bJoFVlGuFKW6jiDn+v4hJQNV3+OuK6soAe4ONPItXpsyzzSgLUok1IUwu6i1Ewxmh5XgYbSFQor810ug4McwZr3MKiRwQoIxSVRTkiFEgT603dK3p4rKtFojj5+t+piWKRJT6jCbDmHh9OMkDqisEt0gGgrMBmrEp5iDorKr+IxJEMKlUoNzd76/FzQDJEutkJsbHKNCFNqnL+CVrwpw6xEMsWDXjRtnCAEFxEdacm4jWB0pKokv+NRHTpu3SWP9NPWZAnwN8VqwtPiV9EJg9sGUZDSYuyfRHIkG9iD930Qpwehj1KI+kgh9gRdZkP0Au3FwFWpr//501tTs/0zPFUCcgPleVEXBmtSo827EJAX9B5dnk0eAJAPN4y1J9ynfPql5ftsKqRo5XQMa7YIjk397thG+1orNR2uwVoYYzxHPxni6otA6r8z3XDAg/YCOLtoMe9PfkF2DjEjnkFjhB4W7TkxVsViBD2qrkCLrhfT/ZDL6sZ3iUEzRrA+AILGCBEWWO1LSCf6rBRHIgVhF0Gz+OR05Tbn8TRs3l0EBeVwWeXdV63W3uxbK6ZR9w06C98JJNfU4NtXemaxzn0=
+      - secure: X+FWaBVUp0RgdFuuphUz6JxnOcn1sg1z1K01JRBBHjL8IknKapoRpt2+0RKbzh7RaEKExF8T5ZD1UHwydAGYnMebYUcM3YxJUvb1I0R0hsRlXOM0UDfxWx9+08qPxiA6P+jhVRa8zEOSlPZw+ekPK9F+mHhWVgNjgSVpcnMaD5Cwfz//CSJhFDb2V8r/u6yP7k+DMmxalwa6mXZw+Xi0fTJwfESa9cHELnfTh2hYuKS0EX52HKw89ZEvA1NViV7SQmSrH0zoODm1QQyuZGs+cTHK2KvGo5802f7SktW0HkdNIYGBssdSRfcDEISKF/ypykEC8sFC2xom3IcQLA6wxefYOKUq9XVD2aNNoPUd5Mgg39u5IXIB4+4LsuOSTzXJId3Xa/bs/o2raz8q1RU4M9Ija/rAxfa9H83632I855wVEZ8WWZIhaMWJLQCe7mWcbbBe8Z+plINu9yEOxenk5pTOWnx1EO7FxIj8fNyi2NQ+d1VZsDpSNAqSNXsHH3zHmF+LMqiHJb0t51A9MgjrbQ8KEVG1kbSbfpA3gl3K7azswhsetqzsv8IR/JNIUB7u7qSkUN6COGUtz/zilRgjNIauwBmgNCHgBmcZVt2EduK4fjlco1LVe1/XFbOsbPRah1NaglaUtOUVQgGa6aUbvI1Z+brWub9vZKVLCwBUvCc=
