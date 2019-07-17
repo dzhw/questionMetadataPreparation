@@ -1,23 +1,38 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation) [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-[Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/)
-====================================================================================
+<!-- badges: start -->
 
-The goal of [Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/) is to help with preparing question-metadata for the [MDM](https://metadata.fdz.dzhw.eu) of the research data center of the dzhw. If you do not work for the research data center of the dzhw, this package will probably be only useful for learning purposes, as it's specifically designed to help with our internal processes.
+[![Travis build
+status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation)
+[![Coverage
+status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+<!-- badges: end -->
 
-Installation for Users
-----------------------
+# [Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/)
 
-You can install the released version of questionMetadataPreparation from [Github](https://github.com/dzhw/questionMetadataPreparation) with:
+The goal of [Question Metadata
+Preparation](https://dzhw.github.io/questionMetadataPreparation/) is to
+help with preparing question-metadata for the
+[MDM](https://metadata.fdz.dzhw.eu) of the research data center of the
+dzhw. If you do not work for the research data center of the dzhw, this
+package will probably be only useful for learning purposes, as it’s
+specifically designed to help with our internal processes.
+
+## Installation for Users
+
+You can install the released version of questionMetadataPreparation from
+[Github](https://github.com/dzhw/questionMetadataPreparation) with:
 
 ``` r
 install.packages("remotes", dependencies = TRUE)
 remotes::install_github("dzhw/questionMetadataPreparation")
 ```
 
-In order to convert a Zofar export into a format which can be manually edited, you have to run:
+In order to convert a Zofar export into a format which can be manually
+edited, you have to run:
 
 ``` r
 convert_zofar_export_to_handcrafted_questionnaire("./questions/ins1")
@@ -25,7 +40,8 @@ convert_zofar_export_to_handcrafted_questionnaire("./questions/ins1")
 
 The output will be written to `"./handcrafted/questions"`.
 
-A set of handcrafted questionnaires can be manually converted into the MDM format by running
+A set of handcrafted questionnaires can be manually converted into the
+MDM format by running
 
 ``` r
 convert_handcrafted_questionnaires_to_mdm_format("./questions")
@@ -33,8 +49,7 @@ convert_handcrafted_questionnaires_to_mdm_format("./questions")
 
 The output will be written to `"./mdm/questions"`.
 
-Development
------------
+## Development
 
 Developers need to setup the R devtools on their machine.
 
@@ -61,7 +76,7 @@ Before pushing to Github (and thus kicking of CI) you should run
 R CMD check *tar.gz
 ```
 
-Having trouble?
----------------
+## Having trouble?
 
-Please file an issue in our [issue tracker](https://github.com/dzhw/metadatamanagement/issues)
+Please file an issue in our [issue
+tracker](https://github.com/dzhw/metadatamanagement/issues)
