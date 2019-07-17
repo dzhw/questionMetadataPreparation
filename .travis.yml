@@ -5,7 +5,7 @@ sudo: false
 cache: packages
 after_success:
   - Rscript -e 'rmarkdown::render("README.Rmd")'
-  - Rscript -e 'pkgdown::build_site(examples = FALSE)'
+  - Rscript -e 'pkgdown::build_site()'
   - Rscript -e 'covr::codecov()'
 deploy:
   provider: pages

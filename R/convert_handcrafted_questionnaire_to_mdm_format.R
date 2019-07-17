@@ -23,12 +23,14 @@
 #' @param images_subdirectory Path relative to input_directory containing the
 #' images, e.g. "Bilder/png"
 #' @examples
+#' \dontrun{
 #' # All examples do exactly the same. They convert everything under "./questions"
 #' # into the MDM format and write the output in "./mdm/questions". Images will be
 #' # searched in "./questions/Bilder/png".
 #' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions")
 #' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
 #' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
+#' }
 #' @export
 convert_handcrafted_questionnaires_to_mdm_format <- function(
   input_directory = file.path(".", "questions"),
