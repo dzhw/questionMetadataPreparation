@@ -39,10 +39,12 @@ questionnaire must have the following format:
 The format of the excel sheets is defined \href{https://metadatamanagement.readthedocs.io/de/latest/questions.html#questions-manuell-bzw-handcrafted}{here}.
 }
 \examples{
+\dontrun{
 # All examples do exactly the same. They convert everything under "./questions"
 # into the MDM format and write the output in "./mdm/questions". Images will be
 # searched in "./questions/Bilder/png".
 convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions")
 convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
 convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
+}
 }

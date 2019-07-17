@@ -33,8 +33,10 @@ be manually edited. The zofar export must have the following structure:
 The output directory will be created or overwritten.
 }
 \examples{
+\dontrun{
 # All examples do exactly the same. They convert everything under "./ins1"
 # into the handcrafted format and write the output in "./handcrafted/questions".
 convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1")
 convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/questions")
+}
 }
