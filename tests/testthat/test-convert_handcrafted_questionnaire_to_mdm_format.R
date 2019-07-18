@@ -64,22 +64,19 @@ test_that("conversion handcrafted to mdm works", {
         "/mdm_error_wrong_images_subdirectory"),
       images_subdirectory = "/Bilder")
   )
-expect_error(questionMetadataPreparation:::check_missing_columns(
-  c("column1", "column2", "column3"),
-  dataframe  = data.frame("column1" = c(1, 2, 3), "column2" = c(1, 2, 3),
-    "column3" = c(1, 2, 3)),
-  sheet_name = "images"), NA
-)
+  expect_error(questionMetadataPreparation:::check_missing_columns(
+    c("column1", "column2", "column3"),
+    dataframe  = data.frame("column1" = c(1, 2, 3), "column2" = c(1, 2, 3),
+      "column3" = c(1, 2, 3)),
+    sheet_name = "images"), NA)
   expect_error(questionMetadataPreparation:::check_missing_columns(
     c("column1", "column2", "column3"),
     dataframe  = data.frame("column1" = c(1, 2, 3), "column2" = c(1, 2, 3)),
-    sheet_name = "images")
-  )
+    sheet_name = "images"))
   expect_error(questionMetadataPreparation:::check_missing_columns(
     c("column1", "column2", "column3"),
     dataframe  = data.frame("column1" = c(1, 2, 3)),
-    sheet_name = "images")
-  )
+    sheet_name = "images"))
 })
 testthat::teardown(
   unlink(paste0(base::tempdir(), "/handcrafted"), recursive = TRUE)
