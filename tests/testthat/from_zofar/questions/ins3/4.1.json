@@ -1,0 +1,30 @@
+
+{
+    "id":"que-gra2005-ins3-4.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q1\">Haben Sie vor, sich\n\t\t\t\t\t\tberuflich selbständig zu machen?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd1\" variable=\"f3selbvor\">\n        <zofar:answerOption label=\"Ja, ich erwäge es ernsthaft\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Nein, weil derzeit einiges dagegen spricht\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Nein, kommt für mich gar nicht in Frage\" uid=\"ao3\" value=\"3\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"Haben Sie vor, sich beruflich selbständig zu machen?,Ja, ich erwäge es ernsthaft,Nein, weil derzeit einiges dagegen spricht,Nein, kommt für mich gar nicht in Frage"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"Haben Sie vor, sich beruflich selbständig zu machen?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":6,
+    "successorNumbers":[
+        "4.1",
+        "5.1",
+        "5.1",
+        "6.1"
+    ]
+}
