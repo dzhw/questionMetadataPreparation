@@ -1,6 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation) [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation) [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable) <!-- badges: end -->
 
 [Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/)
 ====================================================================================

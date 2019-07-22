@@ -1,0 +1,27 @@
+
+{
+    "id":"que-gra2005-ins3-5.1$",
+    "technicalRepresentation":{
+        "type":"QML",
+        "language":"XML",
+        "source":"<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <zofar:header>\n        <zofar:question block=\"true\" uid=\"q\">In welcher Form sind\n\t\t\t\t\t\tSie als Selbständige(r) tätig bzw. beabsichtigen Sie, tätig zu\n\t\t\t\t\t\tsein?</zofar:question>\n    </zofar:header>\n    <zofar:responseDomain itemClasses=\"true\" uid=\"rd\" variable=\"f3selbform\">\n        <zofar:answerOption label=\"Als Freiberufler(in) durch Übernahme (z. B. einer Praxis) oder Eintritt (z. B. in eine Kanzlei)\" uid=\"ao1\" value=\"1\"/>\n        <zofar:answerOption label=\"Als Freiberufler(in) durch Gründung (z. B. einer Praxis)\" uid=\"ao2\" value=\"2\"/>\n        <zofar:answerOption label=\"Durch Übernahme einer Firma\" uid=\"ao3\" value=\"3\"/>\n        <zofar:answerOption label=\"Durch Gründung einer Firma\" uid=\"ao4\" value=\"4\"/>\n        <zofar:answerOption label=\"Als sonstige(r) Selbständige(r) (z. B. auf Basis von Werkverträgen oder Honoraren)\" uid=\"ao5\" value=\"5\"/>\n        <zofar:answerOption label=\"Das ist noch unklar\" uid=\"ao6\" value=\"6\"/>\n    </zofar:responseDomain>\n</zofar:questionSingleChoice>"
+    },
+    "additionalQuestionText":{
+        "de":"In welcher Form sind Sie als Selbständige(r) tätig bzw. beabsichtigen Sie, tätig zu sein?,Als Freiberufler(in) durch Übernahme (z. B. einer Praxis) oder Eintritt (z. B. in eine Kanzlei),Als Freiberufler(in) durch Gründung (z. B. einer Praxis),Durch Übernahme einer Firma,Durch Gründung einer Firma,Als sonstige(r) Selbständige(r) (z. B. auf Basis von Werkverträgen oder Honoraren),Das ist noch unklar"
+    },
+    "type":{
+        "de":"Einfachnennung",
+        "en":"Single Choice"
+    },
+    "questionText":{
+        "de":"In welcher Form sind Sie als Selbständige(r) tätig bzw. beabsichtigen Sie, tätig zu sein?"
+    },
+    "dataAcquisitionProjectId":"gra2005",
+    "studyId":"5,9",
+    "annotations":{
+    },
+    "indexInInstrument":8,
+    "successorNumbers":[
+        "6.1"
+    ]
+}
