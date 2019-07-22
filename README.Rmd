@@ -21,16 +21,14 @@ knitr::opts_chunk$set(
 ```
 # [Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/)
 
-The goal of [Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/) is to help with preparing
-question-metadata for the
-[MDM](https://metadata.fdz.dzhw.eu) of the research data
-center of the dzhw. If you do not work for the research data center of the dzhw,
-this package will probably be only useful for learning purposes, as it's
-specifically designed to help with our internal processes.
+This [R](https://www.r-project.org/about.html) package ([Question Metadata Preparation](https://dzhw.github.io/questionMetadataPreparation/)) helps preparing question-metadata for the [MDM](https://metadata.fdz.dzhw.eu) of
+the research data center of the dzhw. If you do not work for the research data
+center of the dzhw, this package will probably be only useful for learning purposes,
+as it is specifically designed to help with our internal processes.
 
 ## Installation for Users
 
-You can install the released version of questionMetadataPreparation from [Github](https://github.com/dzhw/questionMetadataPreparation) with:
+You can install the released version of questionMetadataPreparation from [Github](https://github.com/dzhw/questionMetadataPreparation) within your [R](https://www.r-project.org/about.html) session:
 
 ``` r
 install.packages("remotes", dependencies = TRUE)
