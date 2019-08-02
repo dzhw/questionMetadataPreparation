@@ -19,28 +19,28 @@ knitr::opts_chunk$set(
 The R library questionMetadataPreparation serves as the set of tools to prepare
 question metadata in a format suitable for https://metadata.fdz.dzhw.eu.
 
-The destination format is called *mdm*, which consists of question-JSONs, 
-question-images (in png format) and, question-image-jsons. In order to generate 
+The destination format is called *mdm*, which consists of question-JSONs,
+question-images (in png format) and, question-image-jsons. In order to generate
 metadata in this format, one first needs to work in the *handcrafted* format.
-The *handcrafted* format consists of an excel file and possibly question-image files. If the study was conducted with the DZHW's online survey application 
-*zofar*, they can be transformed to the *handcrafted* format. It is planned to 
-implement conversion routines from other survey tools to the *handcrafted* 
+The *handcrafted* format consists of an excel file and possibly question-image files. If the study was conducted with the DZHW's online survey application
+*zofar*, they can be transformed to the *handcrafted* format. It is planned to
+implement conversion routines from other survey tools to the *handcrafted*
 format.
 
 # Workflow
 
-In the following we'll describe the workflow in a first step from  
+In the following we'll describe the workflow in a first step from
 *handcrafted* format to the *mdm* format because this step will always be performed. Afterwards we will explain how to arrive at the *mdm* format from metadata in the *zofar* format.
 
 # manually/ handcrafted question metadata
 
-In order to generate question metadata in the *mdm* format, you first need to 
-fill an excel spreadsheet. The excel spreadsheet contains two sheets: questions 
-and images. You find the column names and the directions to fill the sheet 
+In order to generate question metadata in the *mdm* format, you first need to
+fill an excel spreadsheet. The excel spreadsheet contains two sheets: questions
+and images. You find the column names and the directions to fill the sheet
 correctly in the next subsection.
 
-In addition, each question can have one or more images -- however it is not 
-mandatory anymore to have images. 
+In addition, each question can have one or more images -- however it is not
+mandatory anymore to have images.
 A tutorial to extract question images from ragtime files can be found [here](https://metadatamanagement.readthedocs.io/de/latest/bilderfassung_ragtime.html).
 If you need to extract question images from pdfs, you find the tutorial
 [here](https://metadatamanagement.readthedocs.io/de/latest/bilderfassung_pdf.html).
@@ -48,8 +48,8 @@ If you need to extract question images from pdfs, you find the tutorial
 ## Excel-spreadsheet
 
 In order to use the convert_handcrafted_questionnaires_to_mdm_format function,
-you need to fill in the file *questions.xlsx*, which contains the sheets 
-*questions* and *images*. You can enter all questions from all instruments in a 
+you need to fill in the file *questions.xlsx*, which contains the sheets
+*questions* and *images*. You can enter all questions from all instruments in a
 single excel file.
 
 How to fill in the excel sheet "questions"
@@ -119,7 +119,7 @@ How to fill in the excel sheet "questions"
 | topic.de/en            | no                    | Theme block in which   |
 |                        |                       | the question is        |
 |                        |                       | arranged in the        |
-|                        |                       | instrument (ideally, it| 
+|                        |                       | instrument (ideally, it|
 |                        |                       | can be taken directly  |
 |                        |                       | from the instrument).  |
 +------------------------+-----------------------+------------------------+
@@ -161,11 +161,11 @@ How to fill in the excel sheet "questions"
 
 [typelink]: https://github.com/dzhw/metadatamanagement/files/1421895/Anleitung_Vergabe_Fragetypen.docx
 
-x\* = mandatory only, if technicalRepresentation present (it's provided by 
+x\* = mandatory only, if technicalRepresentation present (it's provided by
 zofar)
 
-You need to fill the images spreadsheet only if there are images. 
-However, the columns need to be present always. 
+You need to fill the images spreadsheet only if there are images.
+However, the columns need to be present always.
 
 +------------------------+----------------------+-----------------------+
 | **Excel sheet   2:                                                    |
@@ -208,13 +208,13 @@ However, the columns need to be present always.
 | resolution.widthX      | no                   | Resolution of the     |
 |                        |                      | image in pixels       |
 +------------------------+----------------------+-----------------------+
-| resolution.heightY     | no                   | Resolution of the     | 
-|                        |                      | image in pixels       | 
+| resolution.heightY     | no                   | Resolution of the     |
+|                        |                      | image in pixels       |
 +------------------------+----------------------+-----------------------+
 
 .. _639-1: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
-In case you have question images, you need to fill the second sheet of the excel 
+In case you have question images, you need to fill the second sheet of the excel
 file. The images have to be PNG files and need to be put in the subdirectory
 "./Bilder/png/ins{instrumentNumber}".
 
@@ -237,12 +237,12 @@ The files need to be stored as follows:
 ## Generating the mdm format JSON and images files using R
 
 As mentioned above, you need to have R installed (at least version 3.6.1).
-You find the documentation for installing the R package 
+You find the documentation for installing the R package
 [here](https://dzhw.github.io/questionMetadataPreparation/).
 
 Then you need to load the R package using the following command:
 
-```{r}
+```{r, eval = FALSE}
 library(questionMetadataPreparation)
 ```
 
@@ -259,7 +259,7 @@ You could also specify an output directory:
 convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
 ```
 
-And if you'd like to specify it as well, you can specify the images directory as 
+And if you'd like to specify it as well, you can specify the images directory as
 well:
 
 ```{r, eval = FALSE}
@@ -269,19 +269,18 @@ convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions"
 
 # Questions (Zofar)
 
-If the data was collected using DZHW's online questionnaire tool zofar, the 
-metadata (JSONs and pngs) can be extracted automatically. However, they need to 
+If the data was collected using DZHW's online questionnaire tool zofar, the
+metadata (JSONs and pngs) can be extracted automatically. However, they need to
 be translated to the *handcrafted* format first. After the conversion, they need
 to be adapted, because zofar cannot extract all necessary information.
 
-In order to convert the metadata from the *zofar* format to the *handcrafted* 
+In order to convert the metadata from the *zofar* format to the *handcrafted*
 format, you need to run the following function:
 
 ```{r, eval = FALSE}
 convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/questions")
 ```
 
-You just need to specify the input_directory parameter and if you'd like the 
-output_directory parameter. Afterwards, call the function 
+You just need to specify the input_directory parameter and if you'd like the
+output_directory parameter. Afterwards, call the function
 convert_handcrafted_questionnaires_to_mdm_format as explained above.
-
