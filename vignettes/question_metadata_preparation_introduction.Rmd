@@ -275,7 +275,7 @@ be translated to the *handcrafted* format first. After the conversion, they need
 to be adapted, because zofar cannot extract all necessary information.
 
 In order to convert the metadata from the *zofar* format to the *handcrafted* 
-format, you need to run the following function:
+format, you need to use the data provided in the *pages* directory, not the data in the *questions* directory and then run the following function:
 
 ```{r, eval = FALSE}
 convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/questions")
