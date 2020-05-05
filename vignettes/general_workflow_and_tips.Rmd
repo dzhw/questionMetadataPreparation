@@ -1,0 +1,44 @@
+---
+title: "Surrounding Workflow and Hints&Tips"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Surrounding Workflow and Tips}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Receiving Metadata from Zofar
+
+As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. 
+Keep in mind that Zofar works in sprints and which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be higher).
+
+You will want to use the metadata in the pages-directory, as this corresponds to our model of a question. They will nevertheless also ship a pages directory, which contains questions that are built up from multiple parts (e.g. a single choice item and a free form answer) that are split up into their individual parts.
+
+The Zofar team needs to know the following (example in brackets):
+
+- `dataAcquisitionProjectId`	(nac2018)
+- `studyId`	(stu-nac2018)
+- `instrumentIds`	(ins1 (ins-nac2018-ins1))
+- `dataSetIds`	(ds1 (dat-nac2018-ds1))
+
+# In what order do I need to use the R functions?
+
+As it came up often: You always need to transform the handcrafted format to the mdm format. If you get questionMetadata from Zofar, you first need to transform the metadata from the Zofar format to the handcrafted format and then to the mdm format.
+
+# What do I always need to check if I get metadata from Zofar?
+
+- conceptIds
+
+# Some hints for new R users
+
+- Check if your R version and the libraries are up to date.
+- Check whether you have the appropriate version or Rtools installed and whether R can find it.
+- You could change the working directory using `setwd()`. If you are unsure what your working directory is, use `getwd()`
+- However, usually you *don't* want to use `getwd()` but work in a project manner. You'll need the package/library `here`, as this makes the code independent of your computers directory structure. For more details and background, see [here](https://github.com/jennybc/here_here).
+- If you use windows, install the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and check that you use the version that corresponds to your R version.
+
+# Usefull links, further documentation
+
+- [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
+- [Github repository](https://dzhw.github.io/questionMetadataPreparation/index.html) and the - [introduction how to use questionMetadata Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)
