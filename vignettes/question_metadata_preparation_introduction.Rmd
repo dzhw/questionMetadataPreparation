@@ -266,6 +266,7 @@ well:
 convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
 ```
 
+After this is done, you still need to import the questions to the mdm. For this, go into the project cockpit and click on the upload button in the questions card.
 
 # Questions (Zofar)
 
@@ -284,4 +285,5 @@ convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", ou
 You just need to specify the input_directory parameter and if you'd like the 
 output_directory parameter. Afterwards, call the function 
 convert_handcrafted_questionnaires_to_mdm_format as explained above.
+
 

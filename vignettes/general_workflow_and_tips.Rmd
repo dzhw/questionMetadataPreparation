@@ -28,15 +28,69 @@ As it came up often: You always need to transform the handcrafted format to the 
 
 # What do I always need to check if I get metadata from Zofar?
 
-- conceptIds
+- conceptIds,
+- InstrumentNumbers
+- SurveryNumbers
+
+# I cannot work with an excel file from Zofar
+
+Sometimes the chararacters are not escaped properly. 
+This needs to be altered on a case to case basis. Look out for special characters (ä,ö,ü,ß, brackets etc).
+
+# Allowed formats (images)
+
+Only png is allowed.
+
+# What do I need to check after importing the metadata?
+
+## RDC-researcher
+
+- Can you import the metadata in the mdm? If not understand the error messages and fix what is wrong. If you cannot make sense of it, ask for help. 
+- If there are questions which should not be imported in the mdm, check whether these are truly not imported.
+- Check the question types.
+- Check whether the `conceptIds` are present.
+
+## RDC-student employee
+
+- Click through the mdm to see whether the appropriate images are shown and whether the content is correct (the latter could also be checked in the excel file). Double check with the screenshot document (English and German).
+- If there are fields which are not displayed (`additionalQuestionText.de`, `additionalQuestionText.en`), you can check them by clicking on the curly braces button in the mdm. Double check with the excel file `questions-insX.xlsx`.
+- If question metadata were not delivered by Zofar, please double check spelling.
+- Make sure questions and variables are linked correctly.
+- Make sure the order in the MDM is the same as in the questionnaire.
+
+Do *not* edit the jsons that are imported, but edit the *handcrafted* xlx file.
+
+# Entering data manually (only questionnaires available)
+
+It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the lines or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different. Adobe Acrobat PRO is a commonly used option. 
+
+# Preload variables
+
+As it stands now, we do not edit preload variables.
 
 # Some hints for new R users
 
 - Check if your R version and the libraries are up to date.
+- If you use windows, install the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and check that you use the version that corresponds to your R version.
 - Check whether you have the appropriate version or Rtools installed and whether R can find it.
 - You could change the working directory using `setwd()`. If you are unsure what your working directory is, use `getwd()`
 - However, usually you *don't* want to use `getwd()` but work in a project manner. You'll need the package/library `here`, as this makes the code independent of your computers directory structure. For more details and background, see [here](https://github.com/jennybc/here_here).
-- If you use windows, install the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and check that you use the version that corresponds to your R version.
+- Paths on windows need to be escaped, ie. `\` becomes `\\`. To make it easier, here's an Rscript for that. Simply copy the path to your clipboard (ctrl + c) and then run the function as `pathPrep()`. Source: https://stackoverflow.com/a/8425591]
+
+```{r}
+pathPrep <- function(path = "clipboard") {
+    y <- if (path == "clipboard") {
+        readClipboard()
+    } else {
+        cat("Please enter the path:\n\n")
+        readline()
+    }
+    x <- chartr("\\", "/", y)
+    writeClipboard(x)
+    return(x)
+}
+```
+Or you could replace `\` with `/`
 
 # Usefull links, further documentation
 
