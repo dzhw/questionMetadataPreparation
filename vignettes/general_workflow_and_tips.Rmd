@@ -45,7 +45,9 @@ The images need to look like the participants of the study saw the study.
 Images should be available for all languages.
 Check that the images fit to the json -- there was a case once where one image was repeatedly present for multiple questions.
 
-While it's not strictly part of the workflow for preparing the question metadata, please check whether the instruments file provided by Zofar looks like the participants saw it. Meaning that buttons, headers and all languages etc are present. 
+#### Further checks, not strictly related to questions
+
+While it's not strictly part of the workflow for preparing the question metadata, please check whether the instruments file provided by Zofar looks like the participants saw it. Meaning that buttons, headers and all languages etc are present. Also check whether all mandatory fields in the variables file are filled out.
 
 ## Copy files and use questionMetadataPreparation
 
