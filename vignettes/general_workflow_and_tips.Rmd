@@ -45,7 +45,7 @@ You need to run the function `convert_zofar_export_to_handcrafted_questionnaire`
 
 Please refer to the explanation in the [vignette](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html#manually-handcrafted-question-metadata). Besides filling out the excel spreadsheet, you  need to provide the question image png files (no other formats are allowed). 
 
-It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the lines or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different. Adobe Acrobat PRO is a commonly used option. 
+It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the lines or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different and give different results. Adobe Acrobat PRO is a commonly used option. 
 
 
 ## Importing the data in the metadata management system
