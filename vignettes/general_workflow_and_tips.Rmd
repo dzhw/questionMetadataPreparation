@@ -27,13 +27,27 @@ The Zofar team needs to know the following (example in brackets):
 - `instrumentIds`	(ins1 (ins-nac2018-ins1))
 - `dataSetIds`	(ds1 (dat-nac2018-ds1))
 
-### Check jsons 
+### Check jsons and images
 
-After they send you the metadata, you need to have a look at the following variables and possibly edit them:
+After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there's something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
+
+The following variables deserve special attention:
 
 - conceptIds,
 - InstrumentNumbers/InstrumentIds
 - SurveryNumbers/SurveyIds
+- Question_number 
+
+- You need to check whether everything that was multilingual is present in all languages that were shown to the respondent.
+- Check that all mandatory fields are filled in. (See the other [vignette](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html#excel-spreadsheet))
+
+The images need to look like the participants of the study saw the study. 
+Images should be available for all languages.
+Check that the images fit to the json -- there was a case once where one image was repeatedly present for multiple questions.
+
+While it's not strictly part of the workflow for preparing the question metadata, please check whether the instruments file provided by Zofar looks like the participants saw it. Meaning that buttons, headers and all languages etc are present. 
+
+## Copy files and use questionMetadataPreparation
 
 Copy the files into the project directory on Faust.
 
@@ -81,6 +95,7 @@ As it came up often: You *always* need to transform the handcrafted format to th
 
 ## I cannot open an excel file from Zofar
 
+Check that you use utf-8.
 Sometimes the chararacters are not escaped properly. 
 This needs to be altered on a case to case basis. Look out for special characters (ä,ö,ü,ß, brackets etc).
 
