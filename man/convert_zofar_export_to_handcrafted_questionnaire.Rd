@@ -5,12 +5,14 @@
 \alias{convert_zofar_export_to_handcrafted_questionnaire}
 \title{Convert Zofar Export to Handcrafted Questionnaire Format}
 \usage{
-convert_zofar_export_to_handcrafted_questionnaire(input_directory,
-  output_directory = file.path(".", "handcrafted", "questions"))
+convert_zofar_export_to_handcrafted_questionnaire(
+  input_directory,
+  output_directory = file.path(".", "handcrafted", "questions")
+)
 }
 \arguments{
 \item{input_directory}{Input path, e.g. "./questions/ins1", must contain
-"ins{number}"}
+"ins\{number\}"}
 
 \item{output_directory}{Output directory, e.g. "./handcrafted/questions",
 will be created if it does not exist or will be overwritten otherwise}

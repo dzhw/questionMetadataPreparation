@@ -7,8 +7,13 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+# First steps
 
-# Receiving Metadata from Zofar
+Do you need question-metadata from Zofar or not?
+
+## Need Metadata from Zofar
+
+### Request Metadata from Zofar
 
 As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. 
 Keep in mind that Zofar works in sprints and which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be higher).
@@ -22,26 +27,32 @@ The Zofar team needs to know the following (example in brackets):
 - `instrumentIds`	(ins1 (ins-nac2018-ins1))
 - `dataSetIds`	(ds1 (dat-nac2018-ds1))
 
-# In what order do I need to use the R functions?
+### Check jsons 
 
-As it came up often: You always need to transform the handcrafted format to the mdm format. If you get questionMetadata from Zofar, you first need to transform the metadata from the Zofar format to the handcrafted format and then to the mdm format.
-
-# What do I always need to check if I get metadata from Zofar?
+After they send you the metadata, you need to have a look at the following variables and possibly edit them:
 
 - conceptIds,
-- InstrumentNumbers
-- SurveryNumbers
+- InstrumentNumbers/InstrumentIds
+- SurveryNumbers/SurveyIds
 
-# I cannot work with an excel file from Zofar
+Copy the files into the project directory on Faust.
 
-Sometimes the chararacters are not escaped properly. 
-This needs to be altered on a case to case basis. Look out for special characters (ä,ö,ü,ß, brackets etc).
+Now it's time for a coffee, because now you will use `questionMetadataPreparation`.
 
-# Allowed formats (images)
+You need to run the function `convert_zofar_export_to_handcrafted_questionnaire`. Please refer to the [documentation of the function](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html). Afterwards, you need to run the function [`convert_handcrafted_questionnaires_to_mdm_format`](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html). The whole R workflow is described in the [vignette "Introduction to preparing question metadata for the MDM"](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html).
 
-Only png is allowed.
+## I do not have jsons from Zofar
 
-# What do I need to check after importing the metadata?
+Please refer to the explanation in the [vignette](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html#manually-handcrafted-question-metadata). Besides filling out the excel spreadsheet, you  need to provide the question image png files (no other formats are allowed). 
+
+It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the lines or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different. Adobe Acrobat PRO is a commonly used option. 
+
+
+## Importing the data in the metadata management system
+
+In order to import question metadata in the mdm, go into the project cockpit and click the upload button in the questions card.
+
+# What do I need to check after importing the metadata in the mdm?
 
 ## RDC-researcher
 
@@ -60,9 +71,18 @@ Only png is allowed.
 
 Do *not* edit the jsons that are imported, but edit the *handcrafted* xlx file.
 
-# Entering data manually (only questionnaires available)
 
-It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the lines or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different. Adobe Acrobat PRO is a commonly used option. 
+# FAQ/Troubleshooting
+
+## In what order do I need to use the R functions?
+
+As it came up often: You *always* need to transform the handcrafted format to the mdm format. If you get questionMetadata from Zofar, you first need to transform the metadata from the Zofar format to the handcrafted format and then to the mdm format.
+
+
+## I cannot open an excel file from Zofar
+
+Sometimes the chararacters are not escaped properly. 
+This needs to be altered on a case to case basis. Look out for special characters (ä,ö,ü,ß, brackets etc).
 
 # Preload variables
 
