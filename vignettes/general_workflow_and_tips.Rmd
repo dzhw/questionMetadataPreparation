@@ -27,9 +27,9 @@ The Zofar team needs to know the following (example in brackets):
 - `instrumentIds`	(ins1 (ins-nac2018-ins1))
 - `dataSetIds`	(ds1 (dat-nac2018-ds1))
 
-### Check jsons and images
+### Check JSONs and images
 
-After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there's something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
+After they send you the metadata, you need to have a look at the following variables inside the question JSONs and have a look at the question images. If there's something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
 
 The following variables deserve special attention:
 
@@ -43,7 +43,7 @@ The following variables deserve special attention:
 
 The images need to look like the participants of the study saw the study. 
 Images should be available for all languages.
-Check that the images fit to the json -- there was a case once where one image was repeatedly present for multiple questions.
+Check that the images fit to the JSON -- there was a case once where one image was repeatedly present for multiple questions.
 
 #### Further checks, not strictly related to questions
 
@@ -57,7 +57,7 @@ Now it's time for a coffee, because now you will use `questionMetadataPreparatio
 
 You need to run the function `convert_zofar_export_to_handcrafted_questionnaire`. Please refer to the [documentation of the function](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html). Afterwards, you need to run the function [`convert_handcrafted_questionnaires_to_mdm_format`](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html). The whole R workflow is described in the [vignette "Introduction to preparing question metadata for the MDM"](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html).
 
-## I do not have jsons from Zofar
+## I do not have JSONs from Zofar
 
 Please refer to the explanation in the [vignette](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html#manually-handcrafted-question-metadata). Besides filling out the excel spreadsheet, you  need to provide the question image png files (no other formats are allowed). 
 
@@ -85,7 +85,7 @@ In order to import question metadata in the mdm, go into the project cockpit and
 - Make sure questions and variables are linked correctly.
 - Make sure the order in the MDM is the same as in the questionnaire.
 
-Do *not* edit the jsons that are imported, but edit the *handcrafted* xlx file.
+Do *not* edit the JSONs that are imported, but edit the *handcrafted* xlx file.
 
 
 # FAQ/Troubleshooting
