@@ -1,0 +1,38 @@
+{
+  "indexInInstrument": 4,
+  "instruction": {
+    "en": null,
+    "de": "auch gemeint sind Selbständigkeiten mit Werkvertrag"
+  },
+  "technicalRespresentation": {
+    "type": "QML",
+    "source": "<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<zofar:header>\n<zofar:question block=\"true\" uid=\"q1\">Waren Sie nach\nStudienabschluss schon einmal beruflich selbständig?<\/zofar:question>\n<zofar:instruction uid=\"int1\">auch gemeint sind\nSelbständigkeiten mit Werkvertrag<\/zofar:instruction>\n<\/zofar:header>\n<zofar:responseDomain itemClasses=\"true\" uid=\"rd1\" variable=\"f3selbwar\">\n<zofar:answerOption label=\"Ja, ich bin zurzeit selbständig\" uid=\"ao1\" value=\"1\"/>\n<zofar:answerOption label=\"Ja, ich war früher einmal selbständig\" uid=\"ao2\" value=\"2\"/>\n<zofar:answerOption label=\"Nein\" uid=\"ao3\" value=\"3\"/>\n<\/zofar:responseDomain>\n<\/zofar:questionSingleChoice>",
+    "language": "XML"
+  },
+  "successorNumbers": ["3.1", "4.1", "4.1", "5.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": null,
+    "de": "Waren Sie nach Studienabschluss schon einmal beruflich selbständig?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Waren Sie nach Studienabschluss schon einmal beruflich selbständig?,auch gemeint sind Selbständigkeiten mit Werkvertrag,Ja, ich bin zurzeit selbständig,Ja, ich war früher einmal selbständig,Nein"
+  },
+  "topic": {
+    "en": null,
+    "de": null
+  },
+  "conceptIds": null,
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

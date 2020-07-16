@@ -182,91 +182,96 @@ Zofar)
 
 It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out diﬀerent OCR tools, as many of them are slightly diﬀerent and give different results. Adobe Acrobat PRO is a commonly used option.
 
+### How to ﬁll in the excel sheet "images"
 
+You need to fill the images spreadsheet only if there are images. 
+However, the columns need to be present always. 
 
++------------------------+----------------------+-----------------------+
+| **Excel sheet   2:                                                    |
+| images**                                                              |
++========================+======================+=======================+
+| You can enter more than                                               |
+| one image, one image                                                  |
+| per row                                                               |
++------------------------+----------------------+-----------------------+
+| **Columnheading**      | **Is it mandatory?   | **What do I need to \ |
+|                        |                      | fill in?**            |
++------------------------+----------------------+-----------------------+
+| fileName               | yes                  | File name of the image|
+|                        |                      | (e.g. "1.1_1.png") The|
+|                        |                      | image is then expected|
+|                        |                      | in "./Bilder/png/ins" |
+|                        |                      |+ "{instrumentNumber}/"|
++------------------------+----------------------+-----------------------+
+| questionNumber         | yes                  | Question number       |
+|                        |                      | assigned to the image |
++------------------------+----------------------+-----------------------+
+| instrumentNumber       | yes                  | Number of the         |
+|                        |                      | instrument belonging  |
+|                        |                      | to the image          |
++------------------------+----------------------+-----------------------+
+| language               | yes                  | Language of the image |
+|                        |                      |                       |
+|                        |                      | *Please abbreviate    |
+|                        |                      | according to          |
+|                        |                      | ISO [639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes):          |
+|                        |                      | e.g. "de", "en"       |
++------------------------+----------------------+-----------------------+
+| indexInQuestion        | yes                  | How many pictures of  |
+|                        |                      | the question does the |
+|                        |                      | line refer to? (If    |
+|                        |                      | there is only one     |
+|                        |                      | picture per question, |
+|                        |                      | this is always 1)     |
++------------------------+----------------------+-----------------------+
+| resolution.widthX      | no                   | Resolution of the     |
+|                        |                      | image in pixels       |
++------------------------+----------------------+-----------------------+
+| resolution.heightY     | no                   | Resolution of the     | 
+|                        |                      | image in pixels       | 
++------------------------+----------------------+-----------------------+
 
+In case you have question images, you need to fill the second sheet of the excel 
+file. The images have to be PNG files and need to be put in the subdirectory
+"./Bilder/png/ins{instrumentNumber}".
 
+The files need to be stored as follows:
 
+```
+|--questions
+  |--questions*.xlsx (two sheets, questions and images)
+  |--Bilder
+    |--png
+      |--ins1
+        |--5_1.png (must match the filename in the images excel sheet)
+        |--5_2.png (must match the filename in the images excel sheet)
+      |--ins2
+        |--5_1.png (must match the filename in the images excel sheet)
+        |--5_2.png (must match the filename in the images excel sheet)
+```
 
-# First steps
+# Check Question Metadata and images
 
-Do you need question-metadata from Zofar or not?
+The easiest ways to check the question metadata are either to check them at the handcrafted stage or after they are uploaded to the mdm. If there's something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar if the issue was not caused by us so that it does not happen in future metadata deliveries again.
 
-## Need Metadata from Zofar
+RDC-researcher: \
 
-### Request Metadata from Zofar
+ - If there are questions which should not be imported in the mdm, check whether these are truly not imported.
+ - Check the question types.
+ - Check whether the conceptIds are present.
 
-As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. 
-Keep in mind that Zofar works in sprints and which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be higher).
+RDC-student employee: \
 
-You will want to use the metadata in the pages-directory, as this corresponds to our model of a question. They will nevertheless also ship a pages directory, which contains questions that are built up from multiple parts (e.g. a single choice item and a free form answer) that are split up into their individual parts.
-
-The Zofar team needs to know the following (example in brackets):
-
-- `dataAcquisitionProjectId`	(nac2018)
-- `studyId`	(stu-nac2018)
-- `instrumentIds`	(ins1 (ins-nac2018-ins1))
-- `dataSetIds`	(ds1 (dat-nac2018-ds1))
-
-### Check JSONs and images
-
-After they send you the metadata, you need to have a look at the following variables inside the question JSONs and have a look at the question images. If there's something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
-
-The following variables deserve special attention:
-
-- conceptIds,
-- InstrumentNumbers/InstrumentIds
-- SurveryNumbers/SurveyIds
-- Question_number 
-
-- You need to check whether everything that was multilingual is present in all languages that were shown to the respondent.
-- Check that all mandatory fields are filled in. (See the other [vignette](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html#excel-spreadsheet))
-
-The images need to look like the participants of the study saw the study. 
-Images should be available for all languages.
-Check that the images fit to the JSON -- there was a case once where one image was repeatedly present for multiple questions.
-
-#### Further checks, not strictly related to questions
-
-While it's not strictly part of the workflow for preparing the question metadata, please check whether the instruments file provided by Zofar looks like the participants saw it. Meaning that buttons, headers and all languages etc are present. Also check whether all mandatory fields in the variables file are filled out.
-
-## Copy files and use questionMetadataPreparation
-
-Copy the files into the project directory on Faust.
-
-Now it's time for a coffee, because now you will use `questionMetadataPreparation`.
-
-You need to run the function `convert_zofar_export_to_handcrafted_questionnaire`. Please refer to the [documentation of the function](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html). Afterwards, you need to run the function [`convert_handcrafted_questionnaires_to_mdm_format`](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html). The whole R workflow is described in the [vignette "Introduction to preparing question metadata for the MDM"](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html).
-
-## I do not have JSONs from Zofar
-
-Please refer to the explanation in the [vignette](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html#manually-handcrafted-question-metadata). Besides filling out the excel spreadsheet, you  need to provide the question image png files (no other formats are allowed). 
-
-It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the lines or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different and give different results. Adobe Acrobat PRO is a commonly used option. 
-
-
-## Importing the data in the metadata management system
-
-In order to import question metadata in the mdm, go into the project cockpit and click the upload button in the questions card.
-
-# What do I need to check after importing the metadata in the mdm?
-
-## RDC-researcher
-
-- Can you import the metadata in the mdm? If not understand the error messages and fix what is wrong. If you cannot make sense of it, ask for help. 
-- If there are questions which should not be imported in the mdm, check whether these are truly not imported.
-- Check the question types.
-- Check whether the `conceptIds` are present.
-
-## RDC-student employee
-
-- Click through the mdm to see whether the appropriate images are shown and whether the content is correct (the latter could also be checked in the excel file). Double check with the screenshot document (English and German).
-- If there are fields which are not displayed (`additionalQuestionText.de`, `additionalQuestionText.en`), you can check them by clicking on the curly braces button in the mdm. Double check with the excel file `questions-insX.xlsx`.
-- If question metadata were not delivered by Zofar, please double check spelling.
-- Make sure questions and variables are linked correctly.
-- Make sure the order in the MDM is the same as in the questionnaire.
-
-Do *not* edit the JSONs that are imported, but edit the *handcrafted* xlx file.
+ - Click through the mdm to see whether the appropriate images are shown and whether the content is correct (the latter could also be checked in the excel ﬁle). Double check with the screenshot document (English and German).
+ - If there are ﬁelds which are not displayed (additionalQuestionText.de, additionalQuestionText.en), you can check them by clicking on the curly braces button in the mdm. Double check with the excel ﬁle questions-insX.xlsx.
+ - If question metadata were not delivered by Zofar, please double check spelling.
+ - Make sure questions and variables are linked correctly.
+ - Make sure the order in the MDM is the same as in the questionnaire.
+ - Do not edit the jsons that are imported, but edit the handcrafted xlx ﬁle
+ - The images need to look like the participants of the study saw the study. 
+ - Images should be available for all languages.
+ - Check whether questions that were deleted (if any) are really deleted
 
 
 # FAQ/Troubleshooting

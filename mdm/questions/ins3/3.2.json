@@ -1,0 +1,38 @@
+{
+  "indexInInstrument": 5,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": "QML",
+    "source": "<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<zofar:header>\n<zofar:question uid=\"qm\"/>\n<\/zofar:header>\n<zofar:responseDomain uid=\"rd\">\n<zofar:answerOption label=\"Ja, ich möchte diese Frage überspringen.\" uid=\"ao1\" variable=\"flag1\"/>\n<\/zofar:responseDomain>\n<\/zofar:multipleChoice>",
+    "language": "XML"
+  },
+  "successorNumbers": ["3.1", "4.1", "4.1", "5.1"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": "No questiontext available",
+    "de": "Kein Fragetext vorhanden"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Ja, ich möchte diese Frage überspringen."
+  },
+  "topic": {
+    "en": null,
+    "de": null
+  },
+  "conceptIds": null,
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}

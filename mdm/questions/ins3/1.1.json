@@ -1,0 +1,38 @@
+{
+  "indexInInstrument": 2,
+  "instruction": {
+    "en": null,
+    "de": "(Mehrfachnennung möglich, bitte Zutreffendes ankreuzen.)"
+  },
+  "technicalRespresentation": {
+    "type": "QML",
+    "source": "<zofar:multipleChoice uid=\"mc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<zofar:header>\n<zofar:question block=\"true\" uid=\"q1\">Welche der folgenden\nTätigkeiten üben Sie derzeit aus?<\/zofar:question>\n<zofar:instruction block=\"true\" uid=\"ins\">(Mehrfachnennung\nmöglich, bitte Zutreffendes ankreuzen.)<\/zofar:instruction>\n<\/zofar:header>\n<zofar:responseDomain itemClasses=\"true\" uid=\"rd1\">\n<zofar:unit uid=\"u1\">\n<zofar:header>\n<zofar:title block=\"true\" uid=\"t1\">#{layout.BOLD_START}Ich\nbin zurzeit ...#{layout.BOLD_END}<\/zofar:title>\n<\/zofar:header>\n<\/zofar:unit>\n<zofar:answerOption label=\"erwerbstätig\" uid=\"ao1\" variable=\"i3zzterw\"/>\n<zofar:answerOption label=\"in kurzfristiger Beschäftigung (Jobben)\" uid=\"ao2\" variable=\"i3zztjob\"/>\n<zofar:answerOption label=\"in einem Volontariat\" uid=\"ao3\" variable=\"i3zztvol\"/>\n<zofar:answerOption label=\"Referendar(in), Inspektorenanwärter(in) (inklusive Anerkennungspraktikum u. Ä.)\" uid=\"ao4\" variable=\"i3zztref\"/>\n<zofar:answerOption label=\"in einem Praktikum\" uid=\"ao5\" variable=\"i3zztprakt\"/>\n<zofar:answerOption label=\"in Berufsausbildung\" uid=\"ao6\" variable=\"i3zztberum\"/>\n<zofar:answerOption label=\"im Studium\" uid=\"ao7\" variable=\"i3zztstudi\"/>\n<zofar:answerOption label=\"Doktorand(in)\" uid=\"ao8\" variable=\"i3zztpromo\"/>\n<zofar:answerOption label=\"Juniorprofessor(in), Habilitand(in)\" uid=\"ao9\" variable=\"i3zzthabil\"/>\n<zofar:answerOption label=\"in akademischer Weiterbildung nach der Promotion („Post-Doc“)\" uid=\"ao10\" variable=\"i3zztpodoc\"/>\n<zofar:answerOption label=\"auf der Suche nach einer (neuen) Erwerbstätigkeit\" uid=\"ao11\" variable=\"i3zztsuche\"/>\n<zofar:answerOption label=\"in Elternzeit\" uid=\"ao12\" variable=\"i3zzterzie\"/>\n<zofar:answerOption label=\"Hausfrau/Hausmann\" uid=\"ao13\" variable=\"i3zzthaus\"/>\n<zofar:answerOption label=\"in einer Umschulung\" uid=\"ao14\" variable=\"i3zztumsch\"/>\n<zofar:answerOption label=\"in einer Fort- bzw. Weiterbildung\" uid=\"ao15\" variable=\"i3zztfortb\"/>\n<zofar:answerOption label=\"arbeitslos\" uid=\"ao16\" variable=\"i3zztablos\"/>\n<zofar:answerOption label=\"anderweitig nicht erwerbstätig\" uid=\"ao17\" variable=\"i3zztnierw\"/>\n<zofar:answerOption label=\"Sonstiges\" uid=\"ao18\" variable=\"i3zztsonst\">\n<zofar:questionOpen size=\"25\" uid=\"ao1\" variable=\"i3zztsonstx\">\n<zofar:prefix>\n<zofar:label uid=\"l1\">und zwar<\/zofar:label>\n<\/zofar:prefix>\n<\/zofar:questionOpen>\n<\/zofar:answerOption>\n<\/zofar:responseDomain>\n<\/zofar:multipleChoice>",
+    "language": "XML"
+  },
+  "successorNumbers": ["2.1"],
+  "type": {
+    "en": "Multiple Choice",
+    "de": "Mehrfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": null,
+    "de": "Welche der folgenden Tätigkeiten üben Sie derzeit aus?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Welche der folgenden Tätigkeiten üben Sie derzeit aus?,(Mehrfachnennung möglich, bitte Zutreffendes ankreuzen.),Ich bin zurzeit ...,erwerbstätig,in kurzfristiger Beschäftigung (Jobben),in einem Volontariat,Referendar(in), Inspektorenanwärter(in) (inklusive Anerkennungspraktikum u. Ä.),in einem Praktikum,in Berufsausbildung,im Studium,Doktorand(in),Juniorprofessor(in), Habilitand(in),in akademischer Weiterbildung nach der Promotion („Post-Doc“),auf der Suche nach einer (neuen) Erwerbstätigkeit,in Elternzeit,Hausfrau/Hausmann,in einer Umschulung,in einer Fort- bzw. Weiterbildung,arbeitslos,anderweitig nicht erwerbstätig,Sonstiges,und zwar"
+  },
+  "topic": {
+    "en": null,
+    "de": null
+  },
+  "conceptIds": null,
+  "annotations": {
+    "en": null,
+    "de": "# H1\n[hurz](https://google.com) *emph*"
+  }
+}

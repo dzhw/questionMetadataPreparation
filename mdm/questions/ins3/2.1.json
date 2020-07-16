@@ -1,0 +1,38 @@
+{
+  "indexInInstrument": 3,
+  "instruction": {
+    "en": null,
+    "de": null
+  },
+  "technicalRespresentation": {
+    "type": "QML",
+    "source": "<zofar:questionSingleChoice uid=\"sc\" xmlns:zofar=\"http://www.his.de/zofar/xml/questionnaire\" xmlns:display=\"http://www.dzhw.eu/zofar/xml/display\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n<zofar:header>\n<zofar:question block=\"true\" uid=\"q1\">Wie würden Sie Ihre\nderzeitige Tätigkeit bzw. Situation bezeichnen?<\/zofar:question>\n<\/zofar:header>\n<zofar:responseDomain itemClasses=\"true\" uid=\"rd1\" variable=\"i3tatpersp\">\n<zofar:answerOption label=\"Als kurzfristige Übergangssituation\" uid=\"ao1\" value=\"1\"/>\n<zofar:answerOption label=\"Als Situation, die voraussichtlich mittelfristig Bestand haben wird\" uid=\"ao2\" value=\"2\"/>\n<zofar:answerOption label=\"Als Situation, die vermutlich langfristig stabil sein wird\" uid=\"ao3\" value=\"3\"/>\n<\/zofar:responseDomain>\n<\/zofar:questionSingleChoice>",
+    "language": "XML"
+  },
+  "successorNumbers": ["3.1"],
+  "type": {
+    "en": "Single Choice",
+    "de": "Einfachnennung"
+  },
+  "introduction": {
+    "en": null,
+    "de": null
+  },
+  "questionText": {
+    "en": null,
+    "de": "Wie würden Sie Ihre derzeitige Tätigkeit bzw. Situation bezeichnen?"
+  },
+  "additionalQuestionText": {
+    "en": null,
+    "de": "Wie würden Sie Ihre derzeitige Tätigkeit bzw. Situation bezeichnen?,Als kurzfristige Übergangssituation,Als Situation, die voraussichtlich mittelfristig Bestand haben wird,Als Situation, die vermutlich langfristig stabil sein wird"
+  },
+  "topic": {
+    "en": null,
+    "de": null
+  },
+  "conceptIds": null,
+  "annotations": {
+    "en": null,
+    "de": null
+  }
+}
