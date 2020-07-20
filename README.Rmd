@@ -6,7 +6,7 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
-  [![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation)
+  [![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg)](https://travis-ci.org/dzhw/questionMetadataPreparation)
   [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Documentation](https://img.shields.io/badge/documentation--brightgreen)](https://dzhw.github.io/questionMetadataPreparation/)
