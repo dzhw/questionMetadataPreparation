@@ -6,7 +6,7 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
-  [![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg?branch=master)](https://travis-ci.org/dzhw/questionMetadataPreparation)
+  [![Travis build status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg)](https://travis-ci.org/dzhw/questionMetadataPreparation)
   [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Documentation](https://img.shields.io/badge/documentation--brightgreen)](https://dzhw.github.io/questionMetadataPreparation/)
@@ -28,6 +28,8 @@ center of the dzhw, this package will probably be only useful for learning purpo
 as it is specifically designed to help with our internal processes.
 
 ## Installation for Users
+
+If you are a Windows user you might need to install the [Rtools](https://cran.r-project.org/bin/windows/Rtools/), in case one of the dependencies is not available as a binary. Make sure to use the correct -- matching to the version of your R installation -- version, not necessarily the newest version.
 
 You can install the released version of questionMetadataPreparation from [Github](https://github.com/dzhw/questionMetadataPreparation) within your [R](https://www.r-project.org/about.html) session:
 
@@ -72,6 +74,12 @@ Before pushing to Github (and thus kicking of CI) you should run
 ``` bash
 R CMD check *tar.gz
 ```
+
+# Usefull links, further documentation
+
+- [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
+- [Github repository documentation](https://dzhw.github.io/questionMetadataPreparation/index.html) and the - [introduction how to use questionMetadata Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)
+- [Further Documentation/FAQ](https://dzhw.github.io/questionMetadataPreparation/articles/general_workflow_and_tips.html)
 
 ## Having trouble?
 

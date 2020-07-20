@@ -5,10 +5,11 @@
 \alias{convert_handcrafted_questionnaires_to_mdm_format}
 \title{Convert Handcrafted Questionnaires to MDM Format}
 \usage{
-
-  convert_handcrafted_questionnaires_to_mdm_format(input_directory = file.path(".",
-  "questions"), output_directory = file.path(".", "mdm", "questions"),
-  images_subdirectory = file.path("Bilder", "png"))
+convert_handcrafted_questionnaires_to_mdm_format(
+  input_directory = file.path(".", "questions"),
+  output_directory = file.path(".", "mdm", "questions"),
+  images_subdirectory = file.path("Bilder", "png")
+)
 }
 \arguments{
 \item{input_directory}{Input path, e.g. "./questions"}

@@ -7,3 +7,4 @@ docs/
 .here
 *.Rcheck
 *.tar.gz
+.DS_Store
