@@ -137,7 +137,7 @@ The excel file `questions.xlsx` contains the sheets "questions" and "images".
 | topic.de/en            | no                    | Theme block in which   |
 |                        |                       | the question is        |
 |                        |                       | arranged in the        |
-|                        |                       | instrument (ideally, it| 
+|                        |                       | instrument (ideally, it|
 |                        |                       | can be taken directly  |
 |                        |                       | from the instrument).  |
 +------------------------+-----------------------+------------------------+
@@ -228,8 +228,8 @@ However, the columns need to be present always.
 | resolution.widthX      | no                   | Resolution of the     |
 |                        |                      | image in pixels       |
 +------------------------+----------------------+-----------------------+
-| resolution.heightY     | no                   | Resolution of the     | 
-|                        |                      | image in pixels       | 
+| resolution.heightY     | no                   | Resolution of the     |
+|                        |                      | image in pixels       |
 +------------------------+----------------------+-----------------------+
 
 In case you have question images, you need to fill the second sheet of the excel 

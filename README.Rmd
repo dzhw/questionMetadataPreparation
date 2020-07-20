@@ -33,29 +33,40 @@ If you are a Windows user you might need to install the [Rtools](https://cran.r-
 
 You can install the released version of questionMetadataPreparation from [Github](https://github.com/dzhw/questionMetadataPreparation) within your [R](https://www.r-project.org/about.html) session:
 
-``` r
+```{r, eval = FALSE}
 install.packages("remotes", dependencies = TRUE)
 remotes::install_github("dzhw/questionMetadataPreparation")
 ```
 
+### After updating to a newer R version
+
+In case you update R, first make sure to have the appropriate [Rtools](https://cran.r-project.org/bin/windows/Rtools/) version 
+installed. Recently for example, R 4.0.0 was released, so you have to make sure 
+to use `rtools40-x86_64.exe`. Afterwards, perform the installation process from above again. In 
+case there's an error that the package/library `$X` is not available, 
+install this package manually: `install.packages("$X", type="source")` and replace `$X`
+with the package that caused the error (e.g. `backports`). It might be required to run
+`update.packages(repos='http://cran.rstudio.com/', ask=FALSE, checkBuilt=TRUE)`.
+
+# Basic Workflow
 In order to convert a Zofar export into a format which can be manually edited,
 you have to run:
-``` r
+```{r, eval = FALSE}
 convert_zofar_export_to_handcrafted_questionnaire("./questions/ins1")
 ```
 The output will be written to ```"./handcrafted/questions"```.
 
 A set of handcrafted questionnaires can be manually converted into the MDM format
 by running
-``` r
+```{r, eval = FALSE}
 convert_handcrafted_questionnaires_to_mdm_format("./questions")
 ```
 The output will be written to ```"./mdm/questions"```.
 
-## Development
+## Installation of development version
 
 Developers need to setup the R devtools on their machine.
-``` r
+```{r, eval = FALSE}
 install.packages("devtools", dependencies = TRUE)
 devtools::install_github("dzhw/questionMetadataPreparation")
 ```
