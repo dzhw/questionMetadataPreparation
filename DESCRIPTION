@@ -1,6 +1,6 @@
 Package: questionMetadataPreparation
 Title: Prepare Question Metadata for https://metadata.fdz.dzhw.eu
-Version: 1.0.91
+Version: 1.0.100
 Authors@R:
     c(person(given = "Robert",
            family = "Birkelbach",
@@ -31,7 +31,7 @@ Imports:
     openxlsx (>= 4.1.0)
 URL: https://github.com/dzhw/questionMetadataPreparation
 BugReports: https://github.com/dzhw/metadatamanagement/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)
 Suggests:
     covr,

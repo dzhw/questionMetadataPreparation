@@ -1,58 +1,76 @@
 ---
-title: "Introduction to preparing question metadata for the MDM"
+title: "Surrounding Workflow and Hints&Tips"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to preparing question metadata for the MDM}
+  %\VignetteIndexEntry{Surrounding Workflow and Tips}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
 # Introduction
 
-The R library questionMetadataPreparation serves as the set of tools to prepare
-question metadata in a format suitable for https://metadata.fdz.dzhw.eu.
+The destination format of question metadata consists of question JSONs, question-images (in png format) and, question image JSONs. Since this is the question metadata in the format needed for uploading it to the [metadata management system](https://metadata.fdz.dzhw.eu) (abbreviated mdm), it is called "mdm" format.
+In order to generate metadata in this format, one ﬁrst needs to work in the "handcrafted format". The handcrafted format can either be generated from scratch or if the data was collected using DZHW's online questionnaire tool `Zofar`, `questionMetadataPreparation` contains a routine to transform
+metadata extracted by `Zofar` to the *handcrafted* format.
+In any case, the files have to be converted from the handcrafted format to the mdm format.
+After uploading to the metadata management system, the metadata must be checked.
 
-The destination format is called *mdm*, which consists of question-JSONs, 
-question-images (in png format) and, question-image-jsons. In order to generate 
-metadata in this format, one first needs to work in the *handcrafted* format.
-The *handcrafted* format consists of an excel file and possibly question-image files. If the study was conducted with the DZHW's online survey application 
-*zofar*, they can be transformed to the *handcrafted* format. It is planned to 
-implement conversion routines from other survey tools to the *handcrafted* 
-format.
+# From *Zofar* to *handcrafted*
 
-# Workflow
+*Skip this section if the data was not collected using Zofar.*
 
-In the following we'll describe the workflow in a first step from  
-*handcrafted* format to the *mdm* format because this step will always be performed. Afterwards we will explain how to arrive at the *mdm* format from metadata in the *zofar* format.
+## Request Metadata from Zofar
+As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. Keep in mind that Zofar works in sprints, which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be of higher priority).
+The Zofar team needs to know the following (example in brackets):
+ - `dataAcquisitionProjectId` (`nac2018`)
+ - `studyId` (`stu-nac2018`)
+ - `instrumentIds` (`ins1` (`ins-nac2018-ins1`))
+ - `dataSetIds` (`ds1` (`dat-nac2018-ds1`))
 
-# manually/ handcrafted question metadata
+## Check and prepare metadata for transforming them from Zofar format to handcrafted format
 
-In order to generate question metadata in the *mdm* format, you first need to 
-fill an excel spreadsheet. The excel spreadsheet contains two sheets: questions 
-and images. You find the column names and the directions to fill the sheet 
-correctly in the next subsection.
+After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there’s something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
+The following variables deserve special attention:
+ - conceptIds (need to be added by you and cannot be delivered by Zofar)
+ - instrumentNumbers/instrumentIds
+ - surveryNumbers/surveyIds
+ - questionNumber
+ 
+You need to check whether everything that was multilingual is present in all languages that were shown to the respondent.
+Check that all mandatory ﬁelds are filled in.
+The images need to look like the participants of the study saw the study. Images should be available for all languages. Check that the images fit to the json - there was a case once where one image was repeatedly present for multiple questions.
 
-In addition, each question can have one or more images -- however it is not 
-mandatory anymore to have images. 
-A tutorial to extract question images from ragtime files can be found [here](https://metadatamanagement.readthedocs.io/de/latest/bilderfassung_ragtime.html).
-If you need to extract question images from pdfs, you find the tutorial
-[here](https://metadatamanagement.readthedocs.io/de/latest/bilderfassung_pdf.html).
+## File management and use of `questionMetadataPreparation`
 
-## Excel-spreadsheet
+The question metadata in the Zofar format needs to *always* be transformed into the handcrafted format.
 
-In order to use the convert_handcrafted_questionnaires_to_mdm_format function,
-you need to fill in the file *questions.xlsx*, which contains the sheets 
-*questions* and *images*. You can enter all questions from all instruments in a 
-single excel file.
+Copy the ﬁles into the project directory on Faust.
+In order to convert the metadata from the *Zofar* format to the *handcrafted format* which can be manually edited, you can use the R package `questionMetadataPreparation`.
 
-How to fill in the excel sheet "questions"
+You need to use the metadata from the `pages` directory and *not* from the `questions` directory. The data in the `pages` directory corresponds to our model of a question. Zofar will nevertheless also ship a `questions` directory, which contains questions that are built up from multiple parts (e.g. a single choice item and a free form answer) that are split up into their individual parts.
+
+In order to convert the questionmetadata from the handcrafted format to the Zofar format, you need to use the following function
+
+```{r, eval = FALSE}
+convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
+```
+
+For further information on this function please refer to the section in the [manual](https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html).
+
+After the conversion from the Zofar format to the handcrafted format, they need to be adapted manually (hence the name handcrafted), because Zofar does not have all required information in advance.
+
+
+# From *handcrafted* format to *mdm* format
+
+*You will always have to follow the following steps*
+
+The `handcrafted` format consists of an excel file and possibly question-image files which are not mandatory. 
+
+## Excel file
+
+The excel file `questions.xlsx` contains the sheets "questions" and "images".
+
+### Filling out the `questions` sheet
 
 +------------------------+-----------------------+------------------------+
 | **Sheet 1: questions**                                                  |
@@ -73,19 +91,19 @@ How to fill in the excel sheet "questions"
 |                        |                       | ideally self           |
 |                        |                       | explanatory; derived   |
 |                        |                       | from the instrument    |
-|                        |                       | (e.g. 1.1              |
-|                        |                       | 1.1). Format: 0-9,     |
+|                        |                       | (e.g. 1.1)             |
+|                        |                       | Format: 0-9,           |
 |                        |                       | a-z, umlauts, ß, ., -  |
 +------------------------+-----------------------+------------------------+
 | instrumentNumber       | yes                   | Number of the          |
-|                        |                       | instrument             |
+|                        |                       | [instrument](https://metadatamanagement.readthedocs.io/de/latest/metadatenabgabe.html#erhebungsinstrumente-instruments)             |
 +------------------------+-----------------------+------------------------+
 | successorNumbers       | no                    | questionNumbers of the |
 |                        |                       | following question(s)  |
 |                        |                       | (one row, comma        |
 |                        |                       | separated)             |
 +------------------------+-----------------------+------------------------+
-| questionsText.de/en    | yes                   | „Overarching“          |
+| questionsText.de/en    | yes                   | "Overarching"          |
 |                        |                       | question text if       |
 |                        |                       | there's a battery of   |
 |                        |                       | items; introducing     |
@@ -102,19 +120,19 @@ How to fill in the excel sheet "questions"
 |                        |                       | introductory text of   |
 |                        |                       | the question           |
 +------------------------+-----------------------+------------------------+
-| type.de/en             | yes                   | de: „Einfachnennung“,  |
-|                        |                       | „Offen“,               |
-|                        |                       | „Mehrfachnennung“,     |
-|                        |                       | „Itembatterie“ oder    |
-|                        |                       | „Matrix“ (a manual of  |
+| type.de/en             | yes                   | de: "Einfachnennung",  |
+|                        |                       | "Offen",               |
+|                        |                       | "Mehrfachnennung",     |
+|                        |                       | "Itembatterie" oder    |
+|                        |                       | "Matrix" (a manual of  |
 |                        |                       | the different types    |
 |                        |                       | can be found           |
 |                        |                       | [here][typelink])      |
 |                        |                       |                        |
-|                        |                       | en: „Single Choice“,   |
-|                        |                       | „Open“, „Multiple      |
-|                        |                       | Choice“, „Item Set“    |
-|                        |                       | or „Grid“.             |
+|                        |                       | en: "Single Choice",   |
+|                        |                       | "Open", "Multiple      |
+|                        |                       | Choice", "Item Set"    |
+|                        |                       | or "Grid".             |
 +------------------------+-----------------------+------------------------+
 | topic.de/en            | no                    | Theme block in which   |
 |                        |                       | the question is        |
@@ -159,10 +177,12 @@ How to fill in the excel sheet "questions"
 |                        |                       | separated on one line  |
 +------------------------+-----------------------+------------------------+
 
-[typelink]: https://github.com/dzhw/metadatamanagement/files/1421895/Anleitung_Vergabe_Fragetypen.docx
-
 x\* = mandatory only, if technicalRepresentation present (it's provided by 
-zofar)
+Zofar)
+
+It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out diﬀerent OCR tools, as many of them are slightly diﬀerent and give different results. Adobe Acrobat PRO is a commonly used option.
+
+### How to ﬁll in the excel sheet "images"
 
 You need to fill the images spreadsheet only if there are images. 
 However, the columns need to be present always. 
@@ -195,8 +215,8 @@ However, the columns need to be present always.
 |                        |                      |                       |
 |                        |                      | *Please abbreviate    |
 |                        |                      | according to          |
-|                        |                      | ISO 639-1_*:          |
-|                        |                      | e.g. „de“, „en“       |
+|                        |                      | ISO [639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes):          |
+|                        |                      | e.g. "de", "en"       |
 +------------------------+----------------------+-----------------------+
 | indexInQuestion        | yes                  | How many pictures of  |
 |                        |                      | the question does the |
@@ -211,8 +231,6 @@ However, the columns need to be present always.
 | resolution.heightY     | no                   | Resolution of the     | 
 |                        |                      | image in pixels       | 
 +------------------------+----------------------+-----------------------+
-
-.. _639-1: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
 In case you have question images, you need to fill the second sheet of the excel 
 file. The images have to be PNG files and need to be put in the subdirectory
@@ -233,55 +251,71 @@ The files need to be stored as follows:
         |--5_2.png (must match the filename in the images excel sheet)
 ```
 
+# Check Question Metadata and images
 
-## Generating the mdm format JSON and images files using R
+The easiest ways to check the question metadata are either to check them at the handcrafted stage or after they are uploaded to the mdm. If there's something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar if the issue was not caused by us so that it does not happen in future metadata deliveries again.
 
-As mentioned above, you need to have R installed (at least version 3.6.1).
-You find the documentation for installing the R package 
-[here](https://dzhw.github.io/questionMetadataPreparation/).
+RDC-researcher: \
 
-Then you need to load the R package using the following command:
+ - If there are questions which should not be imported in the mdm, check whether these are truly not imported.
+ - Check the question types.
+ - Check whether the conceptIds are present.
+
+RDC-student employee: \
+
+ - Click through the mdm to see whether the appropriate images are shown and whether the content is correct (the latter could also be checked in the excel ﬁle). Double check with the screenshot document (English and German).
+ - If there are ﬁelds which are not displayed (additionalQuestionText.de, additionalQuestionText.en), you can check them by clicking on the curly braces button in the mdm. Double check with the excel ﬁle questions-insX.xlsx.
+ - If question metadata were not delivered by Zofar, please double check spelling.
+ - Make sure questions and variables are linked correctly.
+ - Make sure the order in the MDM is the same as in the questionnaire.
+ - Do not edit the jsons that are imported, but edit the handcrafted xlx ﬁle
+ - The images need to look like the participants of the study saw the study. 
+ - Images should be available for all languages.
+ - Check whether questions that were deleted (if any) are really deleted
+
+
+# FAQ/Troubleshooting
+
+## In what order do I need to use the R functions?
+
+As it came up often: You *always* need to transform the handcrafted format to the mdm format. If you get questionMetadata from Zofar, you first need to transform the metadata from the Zofar format to the handcrafted format and then to the mdm format.
+
+
+## I cannot open an excel file from Zofar
+
+Check that you use utf-8.
+Sometimes the chararacters are not escaped properly. 
+This needs to be altered on a case to case basis. Look out for special characters (ä,ö,ü,ß, brackets etc).
+
+# Preload variables
+
+As it stands now, we do not edit preload variables.
+
+# Some hints for new R users
+
+- Check if your R version and the libraries are up to date.
+- If you use windows, install the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and check that you use the version that corresponds to your R version.
+- Check whether you have the appropriate version or Rtools installed and whether R can find it.
+- You could change the working directory using `setwd()`. If you are unsure what your working directory is, use `getwd()`
+- However, usually you *don't* want to use `getwd()` but work in a project manner. You'll need the package/library `here`, as this makes the code independent of your computers directory structure. For more details and background, see [here](https://github.com/jennybc/here_here).
+- Paths on windows need to be escaped, ie. `\` becomes `\\`. To make it easier, here's an Rscript for that. Simply copy the path to your clipboard (ctrl + c) and then run the function as `pathPrep()`. Source: https://stackoverflow.com/a/8425591]
 
 ```{r}
-library(questionMetadataPreparation)
+pathPrep <- function(path = "clipboard") {
+    y <- if (path == "clipboard") {
+        readClipboard()
+    } else {
+        cat("Please enter the path:\n\n")
+        readline()
+    }
+    x <- chartr("\\", "/", y)
+    writeClipboard(x)
+    return(x)
+}
 ```
+Or you could replace `\` with `/`
 
-If all necessary files are stored according to this tutorial, you just need to
-specify the input directory:
+# Usefull links, further documentation
 
-```{r, eval = FALSE}
-convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions")
-```
-
-You could also specify an output directory:
-
-```{r, eval = FALSE}
-convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
-```
-
-And if you'd like to specify it as well, you can specify the images directory as 
-well:
-
-```{r, eval = FALSE}
-convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
-```
-
-
-# Questions (Zofar)
-
-If the data was collected using DZHW's online questionnaire tool zofar, the 
-metadata (JSONs and pngs) can be extracted automatically. However, they need to 
-be translated to the *handcrafted* format first. After the conversion, they need
-to be adapted, because zofar cannot extract all necessary information.
-
-In order to convert the metadata from the *zofar* format to the *handcrafted* 
-format, you need to use the data provided in the *pages* directory, not the data in the *questions* directory and then run the following function:
-
-```{r, eval = FALSE}
-convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/questions")
-```
-
-You just need to specify the input_directory parameter and if you'd like the 
-output_directory parameter. Afterwards, call the function 
-convert_handcrafted_questionnaires_to_mdm_format as explained above.
-
+- [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
+- [Github repository](https://dzhw.github.io/questionMetadataPreparation/index.html) and the - [introduction how to use questionMetadata Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)
