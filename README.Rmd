@@ -38,6 +38,15 @@ install.packages("remotes", dependencies = TRUE)
 remotes::install_github("dzhw/questionMetadataPreparation")
 ```
 
+### After updating to a newer R version
+
+In case you update R, first make sure to have the appropriate [Rtools](https://cran.r-project.org/bin/windows/Rtools/) version 
+installed. Recently for example, R 4.0.0 was released, so you have to make sure 
+to use `rtools40-x86_64.exe`. Afterwards, perform the installation process from above again. In 
+case there's an error that the package/library `$X` is not available, 
+install this package manually: `install.packages("$X", type="source")`
+
+# Basic Workflow
 In order to convert a Zofar export into a format which can be manually edited,
 you have to run:
 ```{r, eval = FALSE}
@@ -52,7 +61,7 @@ convert_handcrafted_questionnaires_to_mdm_format("./questions")
 ```
 The output will be written to ```"./mdm/questions"```.
 
-## Development
+## Installation of development version
 
 Developers need to setup the R devtools on their machine.
 ```{r, eval = FALSE}
