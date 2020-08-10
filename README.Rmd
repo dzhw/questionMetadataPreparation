@@ -44,7 +44,9 @@ In case you update R, first make sure to have the appropriate [Rtools](https://c
 installed. Recently for example, R 4.0.0 was released, so you have to make sure 
 to use `rtools40-x86_64.exe`. Afterwards, perform the installation process from above again. In 
 case there's an error that the package/library `$X` is not available, 
-install this package manually: `install.packages("$X", type="source")`
+install this package manually: `install.packages("$X", type="source")` and replace `$X`
+with the package that caused the error (e.g. `backports`). It might be required to run
+`update.packages(repos='http://cran.rstudio.com/', ask=FALSE, checkBuilt=TRUE)`.
 
 # Basic Workflow
 In order to convert a Zofar export into a format which can be manually edited,

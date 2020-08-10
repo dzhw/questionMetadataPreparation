@@ -51,7 +51,8 @@ You need to use the metadata from the `pages` directory and *not* from the `ques
 
 In order to convert the questionmetadata from the handcrafted format to the Zofar format, you need to use the following function
 
-```{r, eval = FALSE}
+
+```r
 convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
 ```
 
@@ -180,7 +181,7 @@ The excel file `questions.xlsx` contains the sheets "questions" and "images".
 x\* = mandatory only, if technicalRepresentation present (it's provided by 
 Zofar)
 
-It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out different OCR tools, as many of them are slightly diﬀerent and give different results. Adobe Acrobat PRO is a commonly used option.
+It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out diﬀerent OCR tools, as many of them are slightly diﬀerent and give different results. Adobe Acrobat PRO is a commonly used option.
 
 ### How to ﬁll in the excel sheet "images"
 
@@ -300,7 +301,8 @@ As it stands now, we do not edit preload variables.
 - However, usually you *don't* want to use `getwd()` but work in a project manner. You'll need the package/library `here`, as this makes the code independent of your computers directory structure. For more details and background, see [here](https://github.com/jennybc/here_here).
 - Paths on windows need to be escaped, ie. `\` becomes `\\`. To make it easier, here's an Rscript for that. Simply copy the path to your clipboard (ctrl + c) and then run the function as `pathPrep()`. Source: https://stackoverflow.com/a/8425591]
 
-```{r}
+
+```r
 pathPrep <- function(path = "clipboard") {
     y <- if (path == "clipboard") {
         readClipboard()
@@ -315,7 +317,7 @@ pathPrep <- function(path = "clipboard") {
 ```
 Or you could replace `\` with `/`
 
-# Useful links, further documentation
+# Usefull links, further documentation
 
 - [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
 - [Github repository](https://dzhw.github.io/questionMetadataPreparation/index.html) and the - [introduction how to use questionMetadata Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)
