@@ -293,6 +293,7 @@ As it stands now, we do not edit preload variables.
 
 # Some hints for new R users
 
+- Load the library using `library(questionMetadataPreparation)`
 - Check if your R version and the libraries are up to date.
 - If you use windows, install the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and check that you use the version that corresponds to your R version.
 - Check whether you have the appropriate version or Rtools installed and whether R can find it.
