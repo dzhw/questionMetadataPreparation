@@ -55,6 +55,13 @@ checkBuilt=TRUE)`.
 
 # Basic Workflow
 
+Load the library and set the working directory
+
+``` r
+library(questionMetadataPreparation)
+setwd("/yourworkingdirectory")
+```
+
 In order to convert a Zofar export into a format which can be manually
 edited, you have to run:
 

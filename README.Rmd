@@ -49,6 +49,11 @@ with the package that caused the error (e.g. `backports`). It might be required 
 `update.packages(repos='http://cran.rstudio.com/', ask=FALSE, checkBuilt=TRUE)`.
 
 # Basic Workflow
+Load the library and set the working directory
+```{r, eval = FALSE}
+library(questionMetadataPreparation)
+setwd("/yourworkingdirectory")
+```
 In order to convert a Zofar export into a format which can be manually edited,
 you have to run:
 ```{r, eval = FALSE}
