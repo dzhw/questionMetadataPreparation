@@ -92,7 +92,6 @@ write_question_jsons <- function(xlsx_file, output_directory) {
     que[["annotations"]] <- new.i18n_string(
       excel[i, "annotations.de"], excel[i, "annotations.en"]
     )
-    if(i>2){browser()}
     que[["successorNumbers"]] <- list_attribute(
       excel[i, "successorNumbers"]
     )
