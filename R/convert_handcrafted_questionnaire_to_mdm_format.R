@@ -92,6 +92,7 @@ write_question_jsons <- function(xlsx_file, output_directory) {
     que[["annotations"]] <- new.i18n_string(
       excel[i, "annotations.de"], excel[i, "annotations.en"]
     )
+    if(i>2){browser()}
     que[["successorNumbers"]] <- list_attribute(
       excel[i, "successorNumbers"]
     )
@@ -206,7 +207,7 @@ trim_list_cols <- function(excel, ...) {
 }
 
 list_attribute <- function(str_attr) {
-  attr <- unlist(strsplit(str_attr, ",", fixed = TRUE))
+  attr <- unlist(strsplit(str_attr, "[,;-]+", fixed = FALSE))
   if (length(attr) > 1 || is.na(attr) == FALSE) {
     return(attr)
   }
