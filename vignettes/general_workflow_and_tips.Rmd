@@ -100,8 +100,8 @@ The excel file `questions.xlsx` contains the sheets "questions" and "images".
 +------------------------+-----------------------+------------------------+
 | successorNumbers       | no                    | questionNumbers of the |
 |                        |                       | following question(s)  |
-|                        |                       | (one row, comma        |
-|                        |                       | separated)             |
+|                        |                       | (one row, separated by |
+|                        |                       | `,`, `;`, or whitespace|
 +------------------------+-----------------------+------------------------+
 | questionsText.de/en    | yes                   | "Overarching"          |
 |                        |                       | question text if       |
