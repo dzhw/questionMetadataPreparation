@@ -87,8 +87,8 @@ test_that("different delimiters are allowed", {
          instrumentNumber = c("3", "3", "3", "3", "3", "3", "3"),
          successorNumbers = c("2.1", "3.1",
                               "3.1;4.1,4.1,5.1",
-                              "3.1-4.1,4.1,5.1",
-                              "4.1;5-1,5.1,6.1",
+                              "3.1;4.1,4.1,5.1",
+                              "4.1;5 1,5.1,6.1",
                               "4.1,5.1,5.1,6.1",
                               "6.1"),
          questionText.de = c("Welche der folgenden Tätigkeiten üben Sie derzeit aus?",  #nolint

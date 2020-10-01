@@ -206,7 +206,7 @@ trim_list_cols <- function(excel, ...) {
 }
 
 list_attribute <- function(str_attr) {
-  attr <- unlist(strsplit(str_attr, "[,;-]+", fixed = FALSE))
+  attr <- unlist(strsplit(str_attr, "[,;[:space:]]+", fixed = FALSE))
   if (length(attr) > 1 || is.na(attr) == FALSE) {
     return(attr)
   }
