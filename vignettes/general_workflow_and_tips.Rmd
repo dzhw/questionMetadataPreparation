@@ -180,7 +180,7 @@ The excel file `questions.xlsx` contains the sheets "questions" and "images".
 x\* = mandatory only, if technicalRepresentation present (it's provided by 
 Zofar)
 
-It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out different OCR tools, as many of them are slightly diﬀerent and give different results. Adobe Acrobat PRO is a commonly used option.
+It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different and give different results. Adobe Acrobat PRO is a commonly used option.
 
 ### How to ﬁll in the excel sheet "images"
 
