@@ -7,14 +7,14 @@
 \usage{
 convert_zofar_export_to_handcrafted_questionnaire(
   input_directory,
-  output_directory = file.path(".", "handcrafted", "questions")
+  output_directory = file.path(".", "handcrafted", "pages")
 )
 }
 \arguments{
-\item{input_directory}{Input path, e.g. "./questions/ins1", must contain
+\item{input_directory}{Input path, e.g. "./pages/ins1", must contain
 "ins\{number\}"}
 
-\item{output_directory}{Output directory, e.g. "./handcrafted/questions",
+\item{output_directory}{Output directory, e.g. "./handcrafted/pages",
 will be created if it does not exist or will be overwritten otherwise}
 }
 \description{
@@ -37,8 +37,8 @@ The output directory will be created or overwritten.
 \examples{
 \dontrun{
 # All examples do exactly the same. They convert everything under "./ins1"
-# into the handcrafted format and write the output in "./handcrafted/questions".
+# into the handcrafted format and write the output in "./handcrafted/pages".
 convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1")
-convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/questions")
+convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/pages")
 }
 }

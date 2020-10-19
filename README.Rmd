@@ -11,7 +11,7 @@ output:
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Documentation](https://img.shields.io/badge/documentation--brightgreen)](https://dzhw.github.io/questionMetadataPreparation/)
 <!-- badges: end -->
-
+  
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,

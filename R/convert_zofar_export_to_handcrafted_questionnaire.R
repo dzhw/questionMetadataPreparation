@@ -16,20 +16,20 @@
 #' }
 #' The output directory will be created or overwritten.
 #'
-#' @param input_directory Input path, e.g. "./questions/ins1", must contain
+#' @param input_directory Input path, e.g. "./pages/ins1", must contain
 #' "ins\{number\}"
-#' @param output_directory Output directory, e.g. "./handcrafted/questions",
+#' @param output_directory Output directory, e.g. "./handcrafted/pages",
 #' will be created if it does not exist or will be overwritten otherwise
 #' @examples
 #' \dontrun{
 #' # All examples do exactly the same. They convert everything under "./ins1"
-#' # into the handcrafted format and write the output in "./handcrafted/questions".
+#' # into the handcrafted format and write the output in "./handcrafted/pages".
 #' convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1")
-#' convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/questions")
+#' convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/pages")
 #' }
 #' @export
 convert_zofar_export_to_handcrafted_questionnaire <- function(input_directory,
-  output_directory = file.path(".", "handcrafted", "questions")) {
+  output_directory = file.path(".", "handcrafted", "pages")) {
   input_directory <- remove_trailing_directory_delimiter(input_directory)
   output_directory <- remove_trailing_directory_delimiter(output_directory)
   create_empty_directory(output_directory)
