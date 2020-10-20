@@ -6,7 +6,7 @@
 \title{Convert Handcrafted Questionnaires to MDM Format}
 \usage{
 convert_handcrafted_questionnaires_to_mdm_format(
-  input_directory = file.path(".", "questions"),
+  input_directory = file.path(".", "pages"),
   output_directory = file.path(".", "mdm", "questions"),
   images_subdirectory = file.path("Bilder", "png")
 )
@@ -41,11 +41,11 @@ The format of the excel sheets is defined \href{https://metadatamanagement.readt
 }
 \examples{
 \dontrun{
-# All examples do exactly the same. They convert everything under "./questions"
+# All examples do exactly the same. They convert everything under "./pages"
 # into the MDM format and write the output in "./mdm/questions". Images will be
-# searched in "./questions/Bilder/png".
-convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions")
-convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
-convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
+# searched in "./pages/Bilder/png".
+convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages")
+convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages", output_directory = "./output/questions")
+convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
 }
 }

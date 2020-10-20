@@ -5,7 +5,7 @@
 #' uploaded to the [MDM](https://metadata.fdz.dzhw.eu). The handcrafted
 #' questionnaire must have the following format:
 #' \preformatted{
-#' |--questions
+#' |--pages
 #'   |--questions*.xlsx (two sheets, questions and images)
 #'   |--Bilder
 #'     |--png
@@ -17,23 +17,23 @@
 #'         |--5_2.png (must match the filename in the images excel sheet)
 #' }
 #' The format of the excel sheets is defined [here](https://metadatamanagement.readthedocs.io/de/latest/questions.html#questions-manuell-bzw-handcrafted).
-#' @param input_directory Input path, e.g. "./questions"
+#' @param input_directory Input path, e.g. "./pages"
 #' @param output_directory Output directory, e.g. "./mdm/questions", will
 #' be created if it does not exist or will be overwritten otherwise
 #' @param images_subdirectory Path relative to input_directory containing the
 #' images, e.g. "Bilder/png"
 #' @examples
 #' \dontrun{
-#' # All examples do exactly the same. They convert everything under "./questions"
+#' # All examples do exactly the same. They convert everything under "./pages"
 #' # into the MDM format and write the output in "./mdm/questions". Images will be
-#' # searched in "./questions/Bilder/png".
-#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions")
-#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions")
-#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./questions", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
+#' # searched in "./pages/Bilder/png".
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages")
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages", output_directory = "./output/questions")
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
 #' }
 #' @export
 convert_handcrafted_questionnaires_to_mdm_format <- function(
-  input_directory = file.path(".", "questions"),
+  input_directory = file.path(".", "pages"),
   output_directory = file.path(".", "mdm", "questions"),
   images_subdirectory = file.path("Bilder", "png")) {
   input_directory <- remove_trailing_directory_delimiter(input_directory)
