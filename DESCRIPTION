@@ -1,6 +1,6 @@
 Package: questionMetadataPreparation
 Title: Prepare Question Metadata for https://metadata.fdz.dzhw.eu
-Version: 1.0.104
+Version: 1.0.105
 Authors@R:
     c(person(given = "Robert",
            family = "Birkelbach",
@@ -18,7 +18,7 @@ Description: Prepare question-metadata for https://metadata.fdz.dzhw.eu
     This package helps to create question metadata according to the domain model
     of the mdm in json format. Currently there are two formats which are
     supported:
-    Zofar and Handcrafted. The Zofar format needs to be converted into the 
+    Zofar and Handcrafted. The Zofar format needs to be converted into the
     Handcrafted format for further editing.
 License: GPL-3
 Encoding: UTF-8
@@ -38,7 +38,7 @@ Suggests:
     spelling (== 2.2),
     testthat (== 2.3.2),
     knitr (== 1.30),
-    rmarkdown (== 2.4),
+    rmarkdown (== 2.5),
     pkgdown (== 1.6.1)
 Language: en-US
 VignetteBuilder: knitr
