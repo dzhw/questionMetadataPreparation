@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/dzhw/questionMetadataPreparation.svg)](https://travis-ci.org/dzhw/questionMetadataPreparation)
+status](https://travis-ci.com/dzhw/questionMetadataPreparation.svg)](https://travis-ci.com/dzhw/questionMetadataPreparation)
 [![Coverage
 status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
 [![Lifecycle:
