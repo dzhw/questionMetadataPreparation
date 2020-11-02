@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dzhw.github.io/questionMetadataPreparation/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dzhw.github.io/questionMetadataPreparation/reference/convert_handcrafted_questionnaires_to_mdm_format.html</loc>
+  </url>
+  <url>
+    <loc>https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html</loc>
+  </url>
+  <url>
+    <loc>https://dzhw.github.io/questionMetadataPreparation/reference/read_and_trim_excel.html</loc>
+  </url>
+  <url>
+    <loc>https://dzhw.github.io/questionMetadataPreparation/reference/trim_multiple_leading_trailing_ws.html</loc>
+  </url>
+  <url>
+    <loc>https://dzhw.github.io/questionMetadataPreparation/articles/general_workflow_and_tips.html</loc>
+  </url>
+</urlset>
