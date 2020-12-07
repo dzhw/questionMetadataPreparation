@@ -3,8 +3,7 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/dzhw/questionMetadataPreparation.svg)](https://travis-ci.com/dzhw/questionMetadataPreparation)
+[![Build Status](https://github.com/dzhw/questionMetadataPreparation/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/dzhw/questionMetadataPreparation/actions)
 [![Coverage
 status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
 [![Lifecycle:

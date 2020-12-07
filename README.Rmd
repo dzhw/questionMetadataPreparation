@@ -6,12 +6,12 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
-  [![Travis build status](https://travis-ci.com/dzhw/questionMetadataPreparation.svg)](https://travis-ci.com/dzhw/questionMetadataPreparation)
+  [![Build Status](https://github.com/dzhw/questionMetadataPreparation/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/dzhw/questionMetadataPreparation/actions)
   [![Coverage status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Documentation](https://img.shields.io/badge/documentation--brightgreen)](https://dzhw.github.io/questionMetadataPreparation/)
 <!-- badges: end -->
-  
+
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -40,10 +40,10 @@ remotes::install_github("dzhw/questionMetadataPreparation")
 
 ### After updating to a newer R version
 
-In case you update R, first make sure to have the appropriate [Rtools](https://cran.r-project.org/bin/windows/Rtools/) version 
-installed. Recently for example, R 4.0.0 was released, so you have to make sure 
-to use `rtools40-x86_64.exe`. Afterwards, perform the installation process from above again. In 
-case there's an error that the package/library `$X` is not available, 
+In case you update R, first make sure to have the appropriate [Rtools](https://cran.r-project.org/bin/windows/Rtools/) version
+installed. Recently for example, R 4.0.0 was released, so you have to make sure
+to use `rtools40-x86_64.exe`. Afterwards, perform the installation process from above again. In
+case there's an error that the package/library `$X` is not available,
 install this package manually: `install.packages("$X", type="source")` and replace `$X`
 with the package that caused the error (e.g. `backports`). It might be required to run
 `update.packages(repos='http://cran.rstudio.com/', ask=FALSE, checkBuilt=TRUE)`.
