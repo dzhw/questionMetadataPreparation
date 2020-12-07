@@ -1,6 +1,5 @@
 ^codecov\.yml$
 ^README\.Rmd$
-^\.travis\.yml$
 ^LICENSE\.md$
 ^questionMetadataPreparation\.Rproj$
 ^\.Rproj\.user$
