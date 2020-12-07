@@ -36,7 +36,7 @@ Roxygen: list(markdown = TRUE)
 Suggests:
     covr (== 3.5.1),
     spelling (== 2.2),
-    testthat (== 2.3.2),
+    testthat (== 3.0.0),
     knitr (== 1.30),
     rmarkdown (== 2.5),
     pkgdown (== 1.6.1)
