@@ -36,7 +36,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">questionMetadataPreparation</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.105</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.107</span>
       </span>
     </div>
 
@@ -95,13 +95,13 @@
 <a href="#installation-for-users" class="anchor"></a>Installation for Users</h2>
 <p>If you are a Windows user you might need to install the <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a>, in case one of the dependencies is not available as a binary. Make sure to use the correct – matching to the version of your R installation – version, not necessarily the newest version.</p>
 <p>You can install the released version of questionMetadataPreparation from <a href="https://github.com/dzhw/questionMetadataPreparation">Github</a> within your <a href="https://www.r-project.org/about.html">R</a> session:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span>, dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"dzhw/questionMetadataPreparation"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span>, dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"dzhw/questionMetadataPreparation"</span><span class="op">)</span></code></pre></div>
 <div id="after-updating-to-a-newer-r-version" class="section level3">
 <h3 class="hasAnchor">
 <a href="#after-updating-to-a-newer-r-version" class="anchor"></a>After updating to a newer R version</h3>
-<p>In case you update R, first make sure to have the appropriate <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a> version installed. Recently for example, R 4.0.0 was released, so you have to make sure to use <code>rtools40-x86_64.exe</code>. Afterwards, perform the installation process from above again. In case there’s an error that the package/library <code>$X</code> is not available, install this package manually: <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("$X", type="source")</a></code> and replace <code>$X</code> with the package that caused the error (e.g. <code>backports</code>). It might be required to run <code><a href="https://rdrr.io/r/utils/update.packages.html">update.packages(repos='http://cran.rstudio.com/', ask=FALSE, checkBuilt=TRUE)</a></code>.</p>
+<p>In case you update R, first make sure to have the appropriate <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a> version installed. Recently for example, R 4.0.0 was released, so you have to make sure to use <code>rtools40-x86_64.exe</code>. Afterwards, perform the installation process from above again. In case there’s an error that the package/library <code>$X</code> is not available, install this package manually: <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("$X", type="source")</a></code> and replace <code>$X</code> with the package that caused the error (e.g. <code>backports</code>). It might be required to run <code><a href="https://rdrr.io/r/utils/update.packages.html">update.packages(repos='http://cran.rstudio.com/', ask=FALSE, checkBuilt=TRUE)</a></code>.</p>
 </div>
 </div>
 </div>
@@ -109,30 +109,30 @@
 <h1 class="hasAnchor">
 <a href="#basic-workflow" class="anchor"></a>Basic Workflow</h1>
 <p>Load the library and set the working directory</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/dzhw/questionMetadataPreparation">questionMetadataPreparation</a></span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/getwd.html">setwd</a></span><span class="op">(</span><span class="st">"/yourworkingdirectory"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/dzhw/questionMetadataPreparation">questionMetadataPreparation</a></span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/getwd.html">setwd</a></span><span class="op">(</span><span class="st">"/yourworkingdirectory"</span><span class="op">)</span></code></pre></div>
 <p>In order to convert a Zofar export into a format which can be manually edited, you have to run:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="fu"><a href="reference/convert_zofar_export_to_handcrafted_questionnaire.html">convert_zofar_export_to_handcrafted_questionnaire</a></span><span class="op">(</span><span class="st">"./questions/ins1"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="reference/convert_zofar_export_to_handcrafted_questionnaire.html">convert_zofar_export_to_handcrafted_questionnaire</a></span><span class="op">(</span><span class="st">"./questions/ins1"</span><span class="op">)</span></code></pre></div>
 <p>The output will be written to <code>"./handcrafted/questions"</code>.</p>
 <p>A set of handcrafted questionnaires can be manually converted into the MDM format by running</p>
-<div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="fu"><a href="reference/convert_handcrafted_questionnaires_to_mdm_format.html">convert_handcrafted_questionnaires_to_mdm_format</a></span><span class="op">(</span><span class="st">"./questions"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="reference/convert_handcrafted_questionnaires_to_mdm_format.html">convert_handcrafted_questionnaires_to_mdm_format</a></span><span class="op">(</span><span class="st">"./questions"</span><span class="op">)</span></code></pre></div>
 <p>The output will be written to <code>"./mdm/questions"</code>.</p>
 <div id="installation-of-development-version" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation-of-development-version" class="anchor"></a>Installation of development version</h2>
 <p>Developers need to setup the R devtools on their machine.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span>, dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"dzhw/questionMetadataPreparation"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span>, dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"dzhw/questionMetadataPreparation"</span><span class="op">)</span></code></pre></div>
 <p>After setting up devtools you can install all required R packages with</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="ex">R</span> -e <span class="st">'devtools::install_deps(dep = T)'</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">R</span> -e <span class="st">'devtools::install_deps(dep = T)'</span></span></code></pre></div>
 <p>You can build the package on you local machine with</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="ex">R</span> CMD build .</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">R</span> CMD build .</span></code></pre></div>
 <p>Before pushing to Github (and thus kicking of CI) you should run</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="ex">R</span> CMD check *tar.gz</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">R</span> CMD check *tar.gz</span></code></pre></div>
 </div>
 </div>
 <div id="usefull-links-further-documentation" class="section level1">
@@ -183,7 +183,7 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://travis-ci.com/dzhw/questionMetadataPreparation"><img src="https://travis-ci.com/dzhw/questionMetadataPreparation.svg" alt="Travis build status"></a></li>
+<li><a href="https://github.com/dzhw/questionMetadataPreparation/actions"><img src="https://github.com/dzhw/questionMetadataPreparation/workflows/Build%20and%20Deploy/badge.svg" alt="Build Status"></a></li>
 <li><a href="https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master"><img src="https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg" alt="Coverage status"></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
 <li><a href="https://dzhw.github.io/questionMetadataPreparation/"><img src="https://img.shields.io/badge/documentation--brightgreen" alt="Documentation"></a></li>

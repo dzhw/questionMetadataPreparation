@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">questionMetadataPreparation</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.105</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.107</span>
       </span>
     </div>
 
@@ -76,7 +76,7 @@
 
       
 
-      </header><link href="general_workflow_and_tips_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
+      </header><script src="general_workflow_and_tips_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="general_workflow_and_tips_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
 <script src="general_workflow_and_tips_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
@@ -119,8 +119,8 @@
 <p>Copy the ﬁles into the project directory on Faust. In order to convert the metadata from the <em>Zofar</em> format to the <em>handcrafted format</em> which can be manually edited, you can use the R package <code>questionMetadataPreparation</code>.</p>
 <p>You need to use the metadata from the <code>pages</code> directory and <em>not</em> from the <code>questions</code> directory. The data in the <code>pages</code> directory corresponds to our model of a question. Zofar will nevertheless also ship a <code>questions</code> directory, which contains questions that are built up from multiple parts (e.g. a single choice item and a free form answer) that are split up into their individual parts.</p>
 <p>In order to convert the questionmetadata from the handcrafted format to the Zofar format, you need to use the following function</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="../reference/convert_handcrafted_questionnaires_to_mdm_format.html">convert_handcrafted_questionnaires_to_mdm_format</a></span><span class="op">(</span>input_directory <span class="op">=</span> <span class="st">"./questions"</span>, output_directory <span class="op">=</span> <span class="st">"./output/questions"</span>, images_subdirectory <span class="op">=</span> <span class="st">"Bilder/png"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/convert_handcrafted_questionnaires_to_mdm_format.html">convert_handcrafted_questionnaires_to_mdm_format</a></span><span class="op">(</span>input_directory <span class="op">=</span> <span class="st">"./questions"</span>, output_directory <span class="op">=</span> <span class="st">"./output/questions"</span>, images_subdirectory <span class="op">=</span> <span class="st">"Bilder/png"</span><span class="op">)</span></code></pre></div>
 <p>For further information on this function please refer to the section in the <a href="https://dzhw.github.io/questionMetadataPreparation/reference/convert_zofar_export_to_handcrafted_questionnaire.html">manual</a>.</p>
 <p>After the conversion from the Zofar format to the handcrafted format, they need to be adapted manually (hence the name handcrafted), because Zofar does not have all required information in advance.</p>
 </div>
@@ -212,7 +212,7 @@
 <td>technicalRepresentati<br>
 ion</td>
 <td>x*</td>
-<td>Origin of the code snippet (e.g. “ZOFAR-<br>
+<td>Origin of the code snippet (e.g. “ZOFAR-<br>
 Question Markup Language”)</td>
 </tr>
 <tr class="odd">
@@ -277,7 +277,7 @@ fill in?</strong></td>
 <tr class="odd">
 <td>fileName</td>
 <td>yes</td>
-<td>File name of the image (e.g. “1.1_1.png”) The image is then expected in “./Bilder/png/ins” + “{instrumentNumber}/”</td>
+<td>File name of the image (e.g. “1.1_1.png”) The image is then expected in “./Bilder/png/ins” + “{instrumentNumber}/”</td>
 </tr>
 <tr class="even">
 <td>questionNumber</td>
@@ -294,7 +294,7 @@ fill in?</strong></td>
 <td>yes</td>
 <td>
 <p>Language of the image</p>
-<p>*Please abbreviate according to ISO <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">639-1</a>: e.g. “de”, “en”</p>
+<p>*Please abbreviate according to ISO <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">639-1</a>: e.g. “de”, “en”</p>
 </td>
 </tr>
 <tr class="odd">
@@ -385,18 +385,18 @@ fill in?</strong></td>
 <li>However, usually you <em>don’t</em> want to use <code><a href="https://rdrr.io/r/base/getwd.html">getwd()</a></code> but work in a project manner. You’ll need the package/library <code>here</code>, as this makes the code independent of your computers directory structure. For more details and background, see <a href="https://github.com/jennybc/here_here">here</a>.</li>
 <li>Paths on windows need to be escaped, ie. <code>\</code> becomes <code>\\</code>. To make it easier, here’s an Rscript for that. Simply copy the path to your clipboard (ctrl + c) and then run the function as <code>pathPrep()</code>. Source: <a href="https://stackoverflow.com/a/8425591" class="uri">https://stackoverflow.com/a/8425591</a>]</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="va">pathPrep</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">path</span> <span class="op">=</span> <span class="st">"clipboard"</span><span class="op">)</span> <span class="op">{</span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">pathPrep</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">path</span> <span class="op">=</span> <span class="st">"clipboard"</span><span class="op">)</span> <span class="op">{</span>
     <span class="va">y</span> <span class="op">&lt;-</span> <span class="kw">if</span> <span class="op">(</span><span class="va">path</span> <span class="op">==</span> <span class="st">"clipboard"</span><span class="op">)</span> <span class="op">{</span>
-        <span class="fu"><a href="https://rdrr.io/r/utils/clipboard.html">readClipboard</a></span><span class="op">(</span><span class="op">)</span>
+        <span class="fu">readClipboard</span><span class="op">(</span><span class="op">)</span>
     <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span>
         <span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="st">"Please enter the path:\n\n"</span><span class="op">)</span>
         <span class="fu"><a href="https://rdrr.io/r/base/readline.html">readline</a></span><span class="op">(</span><span class="op">)</span>
     <span class="op">}</span>
     <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">chartr</a></span><span class="op">(</span><span class="st">"\\"</span>, <span class="st">"/"</span>, <span class="va">y</span><span class="op">)</span>
-    <span class="fu"><a href="https://rdrr.io/r/utils/clipboard.html">writeClipboard</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
+    <span class="fu">writeClipboard</span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
     <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="op">}</span></pre></div>
+<span class="op">}</span></code></pre></div>
 <p>Or you could replace <code>\</code> with <code><a href="https://rdrr.io/r/base/Arithmetic.html">/</a></code></p>
 </div>
 <div id="useful-links-further-documentation" class="section level1">
