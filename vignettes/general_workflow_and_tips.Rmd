@@ -22,6 +22,7 @@ After uploading to the metadata management system, the metadata must be checked.
 ## Request Metadata from Zofar
 As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. Keep in mind that Zofar works in sprints, which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be of higher priority).
 The Zofar team needs to know the following (example in brackets):
+
  - `dataAcquisitionProjectId` (`nac2018`)
  - `studyId` (`stu-nac2018`)
  - `instrumentIds` (`ins1` (`ins-nac2018-ins1`))
@@ -31,6 +32,7 @@ The Zofar team needs to know the following (example in brackets):
 
 After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there’s something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
 The following variables deserve special attention:
+
  - conceptIds (need to be added by you and cannot be delivered by Zofar)
  - instrumentNumbers/instrumentIds
  - surveryNumbers/surveyIds
