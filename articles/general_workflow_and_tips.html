@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">questionMetadataPreparation</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.107</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.109</span>
       </span>
     </div>
 
@@ -39,7 +39,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -62,7 +62,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/dzhw/metadatamanagement/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -76,8 +76,7 @@
 
       
 
-      </header><script src="general_workflow_and_tips_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="general_workflow_and_tips_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
-<script src="general_workflow_and_tips_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
+      </header><script src="general_workflow_and_tips_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Surrounding Workflow and Hints&amp;Tips</h1>
@@ -103,12 +102,28 @@
 <div id="request-metadata-from-zofar" class="section level2">
 <h2 class="hasAnchor">
 <a href="#request-metadata-from-zofar" class="anchor"></a>Request Metadata from Zofar</h2>
-<p>As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a <a href="https://github.com/dzhw/zofar/issues/new">new issue</a> and ask for question metadata. Keep in mind that Zofar works in sprints, which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be of higher priority). The Zofar team needs to know the following (example in brackets): - <code>dataAcquisitionProjectId</code> (<code>nac2018</code>) - <code>studyId</code> (<code>stu-nac2018</code>) - <code>instrumentIds</code> (<code>ins1</code> (<code>ins-nac2018-ins1</code>)) - <code>dataSetIds</code> (<code>ds1</code> (<code>dat-nac2018-ds1</code>))</p>
+<p>As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a <a href="https://github.com/dzhw/zofar/issues/new">new issue</a> and ask for question metadata. Keep in mind that Zofar works in sprints, which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be of higher priority). The Zofar team needs to know the following (example in brackets):</p>
+<ul>
+<li>
+<code>dataAcquisitionProjectId</code> (<code>nac2018</code>)</li>
+<li>
+<code>studyId</code> (<code>stu-nac2018</code>)</li>
+<li>
+<code>instrumentIds</code> (<code>ins1</code> (<code>ins-nac2018-ins1</code>))</li>
+<li>
+<code>dataSetIds</code> (<code>ds1</code> (<code>dat-nac2018-ds1</code>))</li>
+</ul>
 </div>
 <div id="check-and-prepare-metadata-for-transforming-them-from-zofar-format-to-handcrafted-format" class="section level2">
 <h2 class="hasAnchor">
 <a href="#check-and-prepare-metadata-for-transforming-them-from-zofar-format-to-handcrafted-format" class="anchor"></a>Check and prepare metadata for transforming them from Zofar format to handcrafted format</h2>
-<p>After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there’s something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again. The following variables deserve special attention: - conceptIds (need to be added by you and cannot be delivered by Zofar) - instrumentNumbers/instrumentIds - surveryNumbers/surveyIds - questionNumber</p>
+<p>After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there’s something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again. The following variables deserve special attention:</p>
+<ul>
+<li>conceptIds (need to be added by you and cannot be delivered by Zofar)</li>
+<li>instrumentNumbers/instrumentIds</li>
+<li>surveryNumbers/surveyIds</li>
+<li>questionNumber</li>
+</ul>
 <p>You need to check whether everything that was multilingual is present in all languages that were shown to the respondent. Check that all mandatory ﬁelds are filled in. The images need to look like the participants of the study saw the study. Images should be available for all languages. Check that the images fit to the json - there was a case once where one image was repeatedly present for multiple questions.</p>
 </div>
 <div id="file-management-and-use-of-questionmetadatapreparation" class="section level2">
@@ -183,7 +198,7 @@
 <tr class="odd">
 <td>questionsText.de/en</td>
 <td>yes</td>
-<td>“Overarching” question text if there’s a battery of items; introducing question text in case of complex questions. The complete question text for simple questions.</td>
+<td>“Overarching” question text if there’s a battery of items; introducing question text in case of complex questions. The complete question text for simple questions. For technical reasons this field is empty when coming from Zofar and needs to be extracted from additionalQuestionText manually.</td>
 </tr>
 <tr class="even">
 <td>instruction.de/en</td>
