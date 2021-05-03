@@ -22,6 +22,7 @@ After uploading to the metadata management system, the metadata must be checked.
 ## Request Metadata from Zofar
 As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. Keep in mind that Zofar works in sprints, which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be of higher priority).
 The Zofar team needs to know the following (example in brackets):
+
  - `dataAcquisitionProjectId` (`nac2018`)
  - `studyId` (`stu-nac2018`)
  - `instrumentIds` (`ins1` (`ins-nac2018-ins1`))
@@ -31,11 +32,12 @@ The Zofar team needs to know the following (example in brackets):
 
 After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there’s something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
 The following variables deserve special attention:
+
  - conceptIds (need to be added by you and cannot be delivered by Zofar)
  - instrumentNumbers/instrumentIds
  - surveryNumbers/surveyIds
  - questionNumber
- 
+
 You need to check whether everything that was multilingual is present in all languages that were shown to the respondent.
 Check that all mandatory ﬁelds are filled in.
 The images need to look like the participants of the study saw the study. Images should be available for all languages. Check that the images fit to the json - there was a case once where one image was repeatedly present for multiple questions.
@@ -64,7 +66,7 @@ After the conversion from the Zofar format to the handcrafted format, they need 
 
 *You will always have to follow the following steps*
 
-The `handcrafted` format consists of an excel file and possibly question-image files which are not mandatory. 
+The `handcrafted` format consists of an excel file and possibly question-image files which are not mandatory.
 
 ## Excel file
 
@@ -111,7 +113,14 @@ The excel file `questions.xlsx` contains the sheets "questions" and "images".
 |                        |                       | of complex questions.  |
 |                        |                       | The complete question  |
 |                        |                       | text for simple        |
-|                        |                       | questions.             |
+|                        |                       | questions. For         |
+|                        |                       | technical reasons this |
+|                        |                       | field is empty when    |
+|                        |                       | coming from Zofar and  |
+|                        |                       | needs to be extracted  |
+|                        |                       | from                   |
+|                        |                       | additionalQuestionText |
+|                        |                       | manually.              |
 +------------------------+-----------------------+------------------------+
 | instruction.de/en      | no                    | If available, statement|
 |                        |                       | text of the question   |
@@ -177,15 +186,15 @@ The excel file `questions.xlsx` contains the sheets "questions" and "images".
 |                        |                       | separated on one line  |
 +------------------------+-----------------------+------------------------+
 
-x\* = mandatory only, if technicalRepresentation present (it's provided by 
+x\* = mandatory only, if technicalRepresentation present (it's provided by
 Zofar)
 
 It could make sense to try out whether OCR is helpful in order to avoid typing everything and to just copy and paste. If you want to use OCR, scan the document in a the highest possible resolution without compression. It could be helpful to sharpen the pdf or employ other means to increase readability. Try out different OCR tools, as many of them are slightly different and give different results. Adobe Acrobat PRO is a commonly used option.
 
 ### How to ﬁll in the excel sheet "images"
 
-You need to fill the images spreadsheet only if there are images. 
-However, the columns need to be present always. 
+You need to fill the images spreadsheet only if there are images.
+However, the columns need to be present always.
 
 +------------------------+----------------------+-----------------------+
 | **Excel sheet   2:                                                    |
@@ -232,7 +241,7 @@ However, the columns need to be present always.
 |                        |                      | image in pixels       |
 +------------------------+----------------------+-----------------------+
 
-In case you have question images, you need to fill the second sheet of the excel 
+In case you have question images, you need to fill the second sheet of the excel
 file. The images have to be PNG files and need to be put in the subdirectory
 "./Bilder/png/ins{instrumentNumber}".
 
@@ -269,7 +278,7 @@ RDC-student employee: \
  - Make sure questions and variables are linked correctly.
  - Make sure the order in the MDM is the same as in the questionnaire.
  - Do not edit the jsons that are imported, but edit the handcrafted xlx ﬁle
- - The images need to look like the participants of the study saw the study. 
+ - The images need to look like the participants of the study saw the study.
  - Images should be available for all languages.
  - Check whether questions that were deleted (if any) are really deleted
 
@@ -284,7 +293,7 @@ As it came up often: You *always* need to transform the handcrafted format to th
 ## I cannot open an excel file from Zofar
 
 Check that you use utf-8.
-Sometimes the chararacters are not escaped properly. 
+Sometimes the chararacters are not escaped properly.
 This needs to be altered on a case to case basis. Look out for special characters (ä,ö,ü,ß, brackets etc).
 
 # Preload variables

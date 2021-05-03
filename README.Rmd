@@ -94,7 +94,7 @@ R CMD check *tar.gz
 # Usefull links, further documentation
 
 - [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
-- [Github repository documentation](https://dzhw.github.io/questionMetadataPreparation/index.html) and the - [introduction how to use questionMetadata Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)
+- [Github repository documentation](https://dzhw.github.io/questionMetadataPreparation/index.html)
 - [Further Documentation/FAQ](https://dzhw.github.io/questionMetadataPreparation/articles/general_workflow_and_tips.html)
 
 ## Having trouble?

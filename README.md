@@ -3,7 +3,8 @@
 
 <!-- badges: start -->
 
-[![Build Status](https://github.com/dzhw/questionMetadataPreparation/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/dzhw/questionMetadataPreparation/actions)
+[![Build
+Status](https://github.com/dzhw/questionMetadataPreparation/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/dzhw/questionMetadataPreparation/actions)
 [![Coverage
 status](https://codecov.io/github/dzhw/questionMetadataPreparation/branch/master/graph/badge.svg)](https://codecov.io/github/dzhw/questionMetadataPreparation?branch=master)
 [![Lifecycle:
@@ -48,7 +49,7 @@ make sure to use `rtools40-x86_64.exe`. Afterwards, perform the
 installation process from above again. In case there’s an error that the
 package/library `$X` is not available, install this package manually:
 `install.packages("$X", type="source")` and replace `$X` with the
-package that caused the error (e.g. `backports`). It might be required
+package that caused the error (e.g. `backports`). It might be required
 to run `update.packages(repos='http://cran.rstudio.com/', ask=FALSE,
 checkBuilt=TRUE)`.
 
@@ -100,8 +101,7 @@ You can build the package on you local machine with
 R CMD build .
 ```
 
-Before pushing to Github (and thus kicking of CI) you should
-    run
+Before pushing to Github (and thus kicking of CI) you should run
 
 ``` bash
 R CMD check *tar.gz
@@ -112,8 +112,6 @@ R CMD check *tar.gz
   - [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
   - [Github repository
     documentation](https://dzhw.github.io/questionMetadataPreparation/index.html)
-    and the - [introduction how to use questionMetadata
-    Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)
   - [Further
     Documentation/FAQ](https://dzhw.github.io/questionMetadataPreparation/articles/general_workflow_and_tips.html)
 
