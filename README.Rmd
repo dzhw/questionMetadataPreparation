@@ -93,9 +93,7 @@ R CMD check *tar.gz
 
 # Usefull links, further documentation
 
-- [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
-- [Github repository documentation](https://dzhw.github.io/questionMetadataPreparation/index.html)
-- [Further Documentation/FAQ](https://dzhw.github.io/questionMetadataPreparation/articles/general_workflow_and_tips.html)
+- [Further Documentation](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-2.0)
 
 ## Having trouble?
 

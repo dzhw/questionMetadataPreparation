@@ -19,15 +19,6 @@ After uploading to the metadata management system, the metadata must be checked.
 
 *Skip this section if the data was not collected using Zofar.*
 
-## Request Metadata from Zofar
-As soon as you start working on a data preparation project for which the data was generated using Zofar, contact the Zofar team by creating a [new issue](https://github.com/dzhw/zofar/issues/new) and ask for question metadata. Keep in mind that Zofar works in sprints, which means that if you miss to write down the issue before their planning meeting, they will consider it at the sprint afterwards at the earliest (possibly later due to other issues their product owner considers to be of higher priority).
-The Zofar team needs to know the following (example in brackets):
-
- - `dataAcquisitionProjectId` (`nac2018`)
- - `studyId` (`stu-nac2018`)
- - `instrumentIds` (`ins1` (`ins-nac2018-ins1`))
- - `dataSetIds` (`ds1` (`dat-nac2018-ds1`))
-
 ## Check and prepare metadata for transforming them from Zofar format to handcrafted format
 
 After they send you the metadata, you need to have a look at the following variables inside the question jsons and have a look at the question images. If there’s something wrong, you can decide whether to just edit it or (better) provide feedback to Zofar so that it does not happen in future metadata deliveries again.
@@ -324,8 +315,3 @@ pathPrep <- function(path = "clipboard") {
 }
 ```
 Or you could replace `\` with `/`
-
-# Useful links, further documentation
-
-- [readthedocs](https://metadatamanagement.readthedocs.io/de/stable/questions.html)
-- [Github repository](https://dzhw.github.io/questionMetadataPreparation/index.html) and the - [introduction how to use questionMetadata Preparation](https://dzhw.github.io/questionMetadataPreparation/articles/question_metadata_preparation_introduction.html)

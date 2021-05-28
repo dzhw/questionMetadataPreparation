@@ -1,6 +1,6 @@
 Package: questionMetadataPreparation
 Title: Prepare Question Metadata for https://metadata.fdz.dzhw.eu
-Version: 1.0.109
+Version: 1.0.110
 Authors@R:
     c(person(given = "Robert",
            family = "Birkelbach",

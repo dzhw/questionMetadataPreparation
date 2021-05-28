@@ -16,7 +16,7 @@
 #'         |--5_1.png (must match the filename in the images excel sheet)
 #'         |--5_2.png (must match the filename in the images excel sheet)
 #' }
-#' The format of the excel sheets is defined [here](https://metadatamanagement.readthedocs.io/de/latest/questions.html#questions-manuell-bzw-handcrafted).
+#' The format of the excel sheets is defined [here](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-2.0).
 #' @param input_directory Input path, e.g. "./pages"
 #' @param output_directory Output directory, e.g. "./mdm/questions", will
 #' be created if it does not exist or will be overwritten otherwise
