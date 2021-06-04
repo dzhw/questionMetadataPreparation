@@ -1,56 +1,78 @@
 #' Convert Handcrafted Questionnaires to MDM Format
 #'
-#' This script converts the handcrafted questionnaires which contains an excel
-#' and many images of several questionnaires into the format which can be
+#' This script converts the handcrafted instruments which consist each of an excel
+#' and many images into the format which can be
 #' uploaded to the [MDM](https://metadata.fdz.dzhw.eu). The handcrafted
-#' questionnaire must have the following format:
+#' instruments must have the following format:
 #' \preformatted{
-#' |--pages
-#'   |--questions*.xlsx (two sheets, questions and images)
-#'   |--Bilder
-#'     |--png
-#'       |--ins1
+#' |--02_handcrafted-format (=input_directory)
+#'   |--questions-ins1.xlsx (two sheets, questions and images)
+#'   |--questions-ins2.xlsx (two sheets, questions and images)
+#'   |--images
+#'      |--ins1
 #'         |--5_1.png (must match the filename in the images excel sheet)
 #'         |--5_2.png (must match the filename in the images excel sheet)
-#'       |--ins2
+#'      |--ins2
 #'         |--5_1.png (must match the filename in the images excel sheet)
 #'         |--5_2.png (must match the filename in the images excel sheet)
 #' }
 #' The format of the excel sheets is defined [here](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-2.0).
-#' @param input_directory Input path, e.g. "./pages"
-#' @param output_directory Output directory, e.g. "./mdm/questions", will
-#' be created if it does not exist or will be overwritten otherwise
+#' Multiple instruments are converted at once. Existing instruments in the
+#' output_directory will be overwritten if confirmed.
+#' @param input_directory Input path, e.g. "02_handcrafted-format"
+#' @param output_directory Output directory, e.g. "../03_mdm-format",
+#' existing instruments will be overwritten if confirmed
 #' @param images_subdirectory Path relative to input_directory containing the
-#' images, e.g. "Bilder/png"
+#' images, e.g. "images"
 #' @examples
 #' \dontrun{
-#' # All examples do exactly the same. They convert everything under "./pages"
-#' # into the MDM format and write the output in "./mdm/questions". Images will be
-#' # searched in "./pages/Bilder/png".
-#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages")
-#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages", output_directory = "./output/questions")
-#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = "./pages", output_directory = "./output/questions", images_subdirectory = "Bilder/png")
+#' # All examples do exactly the same. They convert everything under "."
+#' # into the MDM format and write the output in "../03_mdm-format". Images will be
+#' # searched for in "./images".
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = ".")
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = ".", output_directory = "../03_mdm-format")
+#' convert_handcrafted_questionnaires_to_mdm_format(input_directory = ".", output_directory = "../03_mdm-format", images_subdirectory = "images")
 #' }
 #' @export
 convert_handcrafted_questionnaires_to_mdm_format <- function(
-  input_directory = file.path(".", "pages"),
-  output_directory = file.path(".", "mdm", "questions"),
-  images_subdirectory = file.path("Bilder", "png")) {
+  input_directory = file.path("."),
+  output_directory = file.path("..", "03_mdm-format"),
+  images_subdirectory = file.path("images")) {
   input_directory <- remove_trailing_directory_delimiter(input_directory)
   output_directory <- remove_trailing_directory_delimiter(output_directory)
+  if (!file.exists(output_directory)) {
+    create_empty_directory(output_directory)
+  }
   images_subdirectory <- remove_trailing_directory_delimiter(
     images_subdirectory)
-  create_empty_directory(output_directory)
 
-  xlsx_file <- dir(input_directory, pattern = "*.xlsx", full.names = TRUE)[[1]]
+  xlsx_files <- dir(input_directory, pattern = "*.xlsx",
+    full.names = TRUE)
 
-  write_question_jsons(xlsx_file, output_directory)
+  invisible(lapply(xlsx_files, function(xlsx_file) {
+    message("\nProcessing file ", normalizePath(xlsx_file))
+    instrument_number <- parse_instrument_number(xlsx_file)
+    instrument_directory <- file.path(output_directory,
+      paste0("ins", instrument_number))
 
-  write_question_images(xlsx_file, input_directory, output_directory,
-    images_subdirectory)
+    answer <- ask_for_overwrite(instrument_directory)
+    if (answer != 1) {
+      message("Skipping directory: ", normalizePath(instrument_directory))
+      return()
+    }
+    create_empty_directory(instrument_directory)
+
+    write_question_jsons(xlsx_file, instrument_directory)
+
+    write_question_images(xlsx_file, input_directory, instrument_directory,
+      instrument_number, images_subdirectory)
+  }))
+
+  message("\nSuccessfully created mdm format: ",
+    normalizePath(output_directory))
 }
 
-write_question_jsons <- function(xlsx_file, output_directory) {
+write_question_jsons <- function(xlsx_file, instrument_directory) {
   message("Read excel file: sheet questions")
   excel <- read_and_trim_excel(xlsx_file, sheet = "questions")
   # trim later
@@ -62,7 +84,7 @@ write_question_jsons <- function(xlsx_file, output_directory) {
     "additionalQuestionText.de", "additionalQuestionText.en", "conceptIds"),
     excel, "questions")
   excel <- trim_list_cols(excel, col1 = "successorNumbers", col2 = "conceptIds")
-
+  message("Writing question jsons: ", normalizePath(instrument_directory))
   # for all questions in excel
   for (i in rownames(excel)) {
     que <- new.env(hash = TRUE, parent = emptyenv())
@@ -104,17 +126,12 @@ write_question_jsons <- function(xlsx_file, output_directory) {
       excel[i, "conceptIds"]
     )
 
-    instrument_directory <- file.path(output_directory,
-      paste0("ins", excel[i, "instrumentNumber"]))
-    if (!dir.exists(instrument_directory)) {
-      dir.create(instrument_directory, recursive = TRUE)
-    }
     # json export
     question_json <- file.path(
       instrument_directory,
       paste0(excel[i, "questionNumber"], ".json")
     )
-    message("Write question json:", question_json)
+
     con <- file(
       description = question_json,
       open = "w", encoding = "UTF-8"
@@ -126,40 +143,34 @@ write_question_jsons <- function(xlsx_file, output_directory) {
     ), file = con)
     close(con)
   }
-  message("Finished writing question jsons\n")
 }
 
 write_question_images <- function(xlsx_file, input_directory,
-  output_directory, images_subdirectory) {
-  message("Read excel file: sheet images\n")
+  instrument_directory, instrument_number, images_subdirectory) {
+  message("Read excel file: sheet images")
   excel <- read_and_trim_excel(xlsx_file, sheet = "images")
 
   # for all images in excel
-  check_missing_columns(c("fileName", "questionNumber",
-    "instrumentNumber", "language", "containsAnnotations", "indexInQuestion",
+  check_missing_columns(c("fileName", "questionNumber", "language",
+    "containsAnnotations", "indexInQuestion",
     "resolution.widthX", "resolution.heightY"), excel, "images")
 
   for (i in rownames(excel)) {
-    images_directory <- file.path(output_directory,
-      paste0("ins", excel[i, "instrumentNumber"]),
+    images_directory <- file.path(instrument_directory,
       "images", excel[i, "questionNumber"])
-    if (!dir.exists(images_directory)) {
-      dir.create(images_directory, recursive = TRUE)
-    }
+    create_empty_directory(images_directory);
 
     # copy the image file
     question_image <- paste(input_directory, images_subdirectory,
-       paste0("ins", excel[i, "instrumentNumber"]), excel[i, "fileName"],
+       paste0("ins", instrument_number), excel[i, "fileName"],
         sep = .Platform$file.sep)
-    message("Copying image file:", question_image)
     if (!file.exists(question_image)) {
       stop("Could not copy file. Check whether you set the correct
         images_subdirectory")
     }
     file.copy(
       question_image,
-      file.path(output_directory,
-        paste0("ins", excel[i, "instrumentNumber"]),
+      file.path(instrument_directory,
         "images", excel[i, "questionNumber"],
       paste0(
         excel[i, "questionNumber"], "_", excel[i, "indexInQuestion"], ".png")))
@@ -176,12 +187,10 @@ write_question_images <- function(xlsx_file, input_directory,
       excel[i, "resolution.heightY"]
     )
     # json export
-    question_image_json <- file.path(output_directory,
-      paste0("ins", excel[i, "instrumentNumber"]),
+    question_image_json <- file.path(instrument_directory,
       "images", excel[i, "questionNumber"],
       paste0(
         excel[i, "questionNumber"], "_", excel[i, "indexInQuestion"], ".json"))
-    message("Write question image json:", question_image_json)
     con <- file(question_image_json, "w", encoding = "UTF-8")
     write(jsonlite::toJSON(nested_env_as_list(image),
       null = "null", na = "null",
@@ -189,7 +198,8 @@ write_question_images <- function(xlsx_file, input_directory,
     ), file = con)
     close(con)
   }
-  message("Finished writing image files")
+  message("Wrote question images: ", normalizePath(
+    file.path(instrument_directory, "images")))
 }
 
 trim_cols <- function(x) {

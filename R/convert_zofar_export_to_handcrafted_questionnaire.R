@@ -3,65 +3,85 @@
 #' This script takes the export of zofar and converts it into a format which can
 #' be manually edited. The zofar export must have the following structure:
 #' \preformatted{
-#' |--ins1 (must have the pattern "ins\{number\}")
-#'   |--5.json
-#'   |--images
-#'      |--5
-#'         |--5_1.png
-#'         |--5_1.json
-#'         |--5_2.png
-#'         |--5_2.json
-#'         |--5_3.png
-#'         |--5_3.json
+#' 01_zofar-format (= input_directory)
+#'   |--ins1 (must have the pattern "ins\{number\}")
+#'      |--5.json
+#'      |--images
+#'         |--5
+#'            |--5_1.png
+#'            |--5_1.json
+#'            |--5_2.png
+#'            |--5_2.json
+#'   |--ins2
 #' }
-#' The output directory will be created or overwritten.
-#'
-#' @param input_directory Input path, e.g. "./pages/ins1", must contain
-#' "ins\{number\}"
-#' @param output_directory Output directory, e.g. "./handcrafted/pages",
-#' will be created if it does not exist or will be overwritten otherwise
+#' Multiple instruments will be created in the output_directory
+#' (=../02_handcrafted-format). Existing instruments in the output_directory
+#' will be overwritten if confirmed.
+#' @param input_directory Input path, e.g. "01_zofar-format", must contain at
+#' least one subfolder "ins\{number\}"
+#' @param output_directory Output directory, e.g. "./02_handcrafted-format",
+#' existing instruments in this directory will be overwritten if confirmed.
 #' @examples
 #' \dontrun{
-#' # All examples do exactly the same. They convert everything under "./ins1"
-#' # into the handcrafted format and write the output in "./handcrafted/pages".
-#' convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1")
-#' convert_zofar_export_to_handcrafted_questionnaire(input_directory = "./ins1", output_directory = "./handcrafted/pages")
+#' # All examples do exactly the same. They convert everything under "."
+#' # into the handcrafted format and write the output in "../02_handcrafted-format".
+#' convert_zofar_export_to_handcrafted_questionnaire(input_directory = ".")
+#' convert_zofar_export_to_handcrafted_questionnaire(input_directory = ".", output_directory = "../02_handcrafted-format")
 #' }
 #' @export
-convert_zofar_export_to_handcrafted_questionnaire <- function(input_directory,
-  output_directory = file.path(".", "handcrafted", "pages")) {
+convert_zofar_export_to_handcrafted_questionnaire <- function(
+  input_directory = ".",
+  output_directory = file.path("..", "02_handcrafted-format")) {
   input_directory <- remove_trailing_directory_delimiter(input_directory)
   output_directory <- remove_trailing_directory_delimiter(output_directory)
-  create_empty_directory(output_directory)
+  if (!file.exists(output_directory)) {
+    create_empty_directory(output_directory)
+  }
+  instrument_directories <- dir(input_directory,
+      pattern = "ins*", full.names = TRUE)
 
-  instrument_number <- parse_instrument_number(input_directory)
+  invisible(lapply(instrument_directories, function(instrument_directory) {
+    message("\nProcessing instrument: ", normalizePath(instrument_directory))
+    instrument_number <- parse_instrument_number(instrument_directory)
+    sheets <- list(
+      "questions" = create_questions_sheet(instrument_directory,
+        instrument_number),
+      "images" = create_images_sheet(instrument_directory, instrument_number)
+    )
 
-  copy_image_files(input_directory, output_directory, instrument_number)
+    excel_file <- file.path(output_directory,
+      paste0("questions-ins", instrument_number, ".xlsx"))
+    answer <- ask_for_overwrite(excel_file)
+    if (answer == 1) {
+      openxlsx::write.xlsx(sheets, file = excel_file, row.names = FALSE,
+        showNA = FALSE)
+      message("Wrote excel: ", normalizePath(excel_file))
+    } else {
+      message("Skipping excel: ", normalizePath(excel_file))
+    }
 
-  sheets <- list(
-    "questions" = create_questions_sheet(input_directory, instrument_number),
-    "images" = create_images_sheet(input_directory, instrument_number)
-  )
+    copy_image_files(instrument_directory, output_directory, instrument_number)
+  }))
 
-  excel_file <- file.path(output_directory,
-    paste0("questions-ins", instrument_number, ".xlsx"))
-  message("Write excel: ", excel_file)
-  openxlsx::write.xlsx(sheets,
-    file = excel_file,
-    row.names = FALSE, showNA = FALSE)
+  message("\nSuccessfully created handcrafted format: ",
+    normalizePath(output_directory))
 }
 
-copy_image_files <- function(input_directory, output_directory,
+copy_image_files <- function(instrument_directory, output_directory,
   instrument_number) {
-  images_directory <- file.path(output_directory, "Bilder", "png",
+  images_directory <- file.path(output_directory, "images",
     paste0("ins", instrument_number))
+  answer <- ask_for_overwrite(images_directory)
+  if (answer != 1) {
+    message("Skipping directory: ", normalizePath(images_directory))
+    return()
+  }
   create_empty_directory(images_directory)
+  message("Copying images to directory '", normalizePath(images_directory), "'")
   question_image_pngs <- dir(
-    file.path(input_directory, "images"), pattern = "*.png",
+    file.path(instrument_directory, "images"), pattern = "*.png",
     recursive = TRUE, full.names = TRUE)
   for (png in question_image_pngs) {
-    message("Copy image '", png, "' to directory '",
-      images_directory, "'")
     file.copy(png, images_directory)
   }
 }
@@ -78,15 +98,16 @@ create_empty_directory <- function(directory) {
   dir.create(directory, recursive = TRUE)
 }
 
-parse_instrument_number <- function(input_directory) {
-  return(gsub(input_directory, pattern = "^.*ins", replacement = ""))
+parse_instrument_number <- function(instrument_directory) {
+  return(stringr::str_match(instrument_directory, "(?<=ins)\\d*"))
 }
 
-create_questions_sheet <- function(input_directory, instrument_number) {
-  question_jsons <- dir(input_directory, pattern = "*.json")
+create_questions_sheet <- function(instrument_directory, instrument_number) {
+  message("Reading question jsons in '",
+    normalizePath(instrument_directory), "'")
+  question_jsons <- dir(instrument_directory, pattern = "*.json")
   col_names <- c("indexInInstrument",
   "questionNumber",
-  "instrumentNumber",
   "successorNumbers",
   "questionText.de",
   "questionText.en",
@@ -111,14 +132,12 @@ create_questions_sheet <- function(input_directory, instrument_number) {
   colnames(excel_sheet) <- col_names
 
   for (i in seq_along(question_jsons)) {
-    message("Read question json: ", question_jsons[[i]])
     json <- jsonlite::fromJSON(
-      file.path(input_directory, question_jsons[[i]]))
+      file.path(instrument_directory, question_jsons[[i]]))
 
     excel_sheet$indexInInstrument[i] <- json$indexInInstrument
     excel_sheet$questionNumber[i] <- gsub(question_jsons[[i]],
       pattern = ".json", replacement = "")
-    excel_sheet$instrumentNumber[i] <- instrument_number
     excel_sheet$successorNumbers[i] <- ifelse(
       length(json$successorNumbers) == 0,
       NA_character_, paste0(json$successorNumbers, collapse = ","))
@@ -168,13 +187,14 @@ create_questions_sheet <- function(input_directory, instrument_number) {
   return(sorted_excel)
 }
 
-create_images_sheet <- function(input_directory, instrument_number) {
+create_images_sheet <- function(instrument_directory, instrument_number) {
+  message("Reading image jsons in '",
+    normalizePath(file.path(instrument_directory, "images")), "'")
   question_image_jsons <- dir(
-    file.path(input_directory, "images"), pattern = "*.json",
+    file.path(instrument_directory, "images"), pattern = "*.json",
     recursive = TRUE)
   col_names <- c("fileName",
   "questionNumber",
-  "instrumentNumber",
   "language",
   "containsAnnotations",
   "indexInQuestion",
@@ -185,21 +205,11 @@ create_images_sheet <- function(input_directory, instrument_number) {
   colnames(excel_sheet) <- col_names
 
   for (i in seq_along(question_image_jsons)) {
-    message("Read image json: ", question_image_jsons[[i]])
-    json <- jsonlite::fromJSON(file.path(input_directory, "images",
+    json <- jsonlite::fromJSON(file.path(instrument_directory, "images",
       question_image_jsons[[i]]))
 
-    # zofar delivers the field 'file' instead of 'fileName',
-    # furthermore there are path delimiters which we need to be stripped of
-    # generally this field is not required at all for the MDM
-    excel_sheet$fileName[i] <- parse_image_filename(json)
-
-    # generally this field is not required at all for the MDM
     excel_sheet$questionNumber[i] <- parse_question_number(
       question_image_jsons[[i]])
-
-    # generally this field is not required at all for the MDM
-    excel_sheet$instrumentNumber[i] <- instrument_number
 
     excel_sheet$language[i] <- ifelse(length(json$language) == 0,
       NA_character_, json$language)
@@ -209,25 +219,19 @@ create_images_sheet <- function(input_directory, instrument_number) {
       json$containsAnnotations)
     excel_sheet$indexInQuestion[i] <- parse_index_in_question(json,
       question_image_jsons[[i]])
-    excel_sheet$resolution.widthX[i] <- parse_resolution_width(json)
-    excel_sheet$resolution.heightY[i] <- parse_resolution_height(json)
+
+    excel_sheet$fileName[i] <- paste0(excel_sheet$questionNumber[i],"_",
+      excel_sheet$indexInQuestion[i], ".png")
+
+    excel_sheet$resolution.widthX[i] <-
+      ifelse(length(json$resolution) == 0, NA_character_, json$resolution$widthX)
+    excel_sheet$resolution.heightY[i] <-
+      ifelse(length(json$resolution)== 0, NA_character_, json$resolution$heightY)
   }
   # sort by questionNumber
   sorted_excel <- excel_sheet[order(excel_sheet$questionNumber), ]
 
   return(sorted_excel)
-}
-
-parse_resolution_width <- function(image_json) {
-  return(ifelse(length(image_json$resolution) == 0,
-    NA_character_,
-    gsub(image_json$resolution, pattern = "x.*$", replacement = "")))
-}
-
-parse_resolution_height <- function(image_json) {
-  return(ifelse(length(image_json$resolution) == 0,
-    NA_character_,
-    gsub(image_json$resolution, pattern = "^.*x", replacement = "")))
 }
 
 parse_index_in_question <- function(image_json, json_filename) {
@@ -237,14 +241,31 @@ parse_index_in_question <- function(image_json, json_filename) {
     image_json$indexInQuestion)
 }
 
-parse_image_filename <- function(image_json) {
-  gsub(ifelse(length(image_json$fileName) == 0,
-    ifelse(length(image_json$file) == 0, NA_character_, image_json$file),
-    image_json$fileName), pattern = "^.*/", replacement = "")
-}
-
 parse_question_number <- function(filename) {
   return(gsub(gsub(filename,
     pattern = "_[0-9]*.json", replacement = ""),
     pattern = paste0(.Platform$file.sep, ".*$"), replacement = ""))
+}
+
+ask_for_overwrite <- function(filename) {
+  if (file.exists(filename)) {
+    cat(paste0("\nGoing to overwrite '", normalizePath(filename),
+      "'.\nMay I proceed? [1=yes, 2=skip, default=exit program]: "))
+    stdin <- file("stdin")
+    answer <- readLines(stdin,1)
+    close(stdin)
+    if(answer == 1 || answer == 2) {
+      return(answer)
+    } else {
+      message("Exiting programm...")
+      stop_quietly()
+    }
+  }
+  return(1)
+}
+
+stop_quietly <- function() {
+  opt <- options(show.error.messages = FALSE)
+  on.exit(options(opt))
+  stop()
 }

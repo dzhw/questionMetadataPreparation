@@ -3,7 +3,10 @@
     "imageType":"PNG",
     "language":"de",
     "file":"./3.2_0.png",
-    "resolution":"1280x720",
+    "resolution":{
+        "widthX":"1280",
+        "heightY":"720"
+    },
     "containsAnnotations":"false",
     "indexInQuestion":0,
     "questionId":"3.2",
