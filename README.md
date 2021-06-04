@@ -25,33 +25,14 @@ with our internal processes.
 
 ## Installation for Users
 
-If you are a Windows user you might need to install the
-[Rtools](https://cran.r-project.org/bin/windows/Rtools/), in case one of
-the dependencies is not available as a binary. Make sure to use the
-correct – matching to the version of your R installation – version, not
-necessarily the newest version.
-
 You can install the released version of questionMetadataPreparation from
 [Github](https://github.com/dzhw/questionMetadataPreparation) within
 your [R](https://www.r-project.org/about.html) session:
 
 ``` r
-install.packages("remotes", dependencies = TRUE)
-remotes::install_github("dzhw/questionMetadataPreparation")
+install.packages('remotes', repo = 'https://ftp.gwdg.de/pub/misc/cran/', dependencies = TRUE)
+remotes::install_github('dzhw/questionMetadataPreparation', ref = 'master')
 ```
-
-### After updating to a newer R version
-
-In case you update R, first make sure to have the appropriate
-[Rtools](https://cran.r-project.org/bin/windows/Rtools/) version
-installed. Recently for example, R 4.0.0 was released, so you have to
-make sure to use `rtools40-x86_64.exe`. Afterwards, perform the
-installation process from above again. In case there’s an error that the
-package/library `$X` is not available, install this package manually:
-`install.packages("$X", type="source")` and replace `$X` with the
-package that caused the error (e.g. `backports`). It might be required
-to run `update.packages(repos='http://cran.rstudio.com/', ask=FALSE,
-checkBuilt=TRUE)`.
 
 ## Installation of development version
 
