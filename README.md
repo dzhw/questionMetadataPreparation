@@ -23,17 +23,6 @@ research data center of the DZHW, this package will probably be only
 useful for learning purposes, as it is specifically designed to help
 with our internal processes.
 
-## Installation for Users
-
-You can install the released version of questionMetadataPreparation from
-[Github](https://github.com/dzhw/questionMetadataPreparation) within
-your [R](https://www.r-project.org/about.html) session:
-
-``` r
-install.packages('remotes', repo = 'https://ftp.gwdg.de/pub/misc/cran/', dependencies = TRUE)
-remotes::install_github('dzhw/questionMetadataPreparation', ref = 'master')
-```
-
 ## Installation of development version
 
 Developers need to setup the R devtools on their machine.
@@ -69,6 +58,14 @@ Before pushing to Github (and thus kicking of CI) you should run
 ``` bash
 R CMD check *tar.gz
 ```
+
+# Deployment
+
+The scripts under `/bin` must be copied to
+`//faust/abt4/FDZ/4_Datenaufnahme/_Organisation/_Vorlage_Ordnerstruktur/DAP-id/vX.X.X/4_Dokumentation/questions`.
+New releases can be installed by the users by executing
+`/bin/install_questionMetadataPreparation.bat`which installs the latest
+commit on `master`.
 
 # Usefull links, further documentation
 
