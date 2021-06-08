@@ -1,9 +1,8 @@
 pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
-articles:
-  general_workflow_and_tips: general_workflow_and_tips.html
-last_built: 2021-05-03T09:35Z
+articles: {}
+last_built: 2021-06-08T12:26Z
 urls:
   reference: https://dzhw.github.io/questionMetadataPreparation/reference
   article: https://dzhw.github.io/questionMetadataPreparation/articles
