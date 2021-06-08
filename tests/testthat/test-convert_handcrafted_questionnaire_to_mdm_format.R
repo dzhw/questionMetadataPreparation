@@ -6,13 +6,13 @@ testthat::context("from handcrafted to mdm")
 
 test_that("conversion handcrafted to mdm works", {
   questionMetadataPreparation::convert_zofar_export_to_handcrafted_questionnaire(#nolint
-    input_directory = testthat::test_path("from_zofar/questions/ins3"),
+    input_directory = testthat::test_path("from_zofar/questions"),
     output_directory = paste0(base::tempdir(), "/handcrafted"))
 
   questionMetadataPreparation::convert_handcrafted_questionnaires_to_mdm_format(
     input_directory = paste0(base::tempdir(), "/handcrafted/"),
     output_directory = paste0(base::tempdir(), "/mdm"),
-    images_subdirectory = "/Bilder/png")
+    images_subdirectory = "images")
   generated_file_list <- list.files(paste0(base::tempdir(),
     "/mdm/"), recursive = TRUE)
   expected_file_list <- c("ins3/1.1.json", "ins3/2.1.json", "ins3/3.1.json",
@@ -47,19 +47,19 @@ test_that("conversion handcrafted to mdm works", {
     questionMetadataPreparation::convert_handcrafted_questionnaires_to_mdm_format( #nolint
     input_directory = testthat::test_dir("erronous_handcrafted_one_column_missing"),
     output_directory = paste0(base::tempdir(), "/mdm_error"),
-    images_subdirectory = "/Bilder/png")
+    images_subdirectory = "images")
   )
   expect_error(
     questionMetadataPreparation::convert_handcrafted_questionnaires_to_mdm_format( #nolint
       input_directory =
         testthat::test_dir("erronous_handcrafted_two_columns_missing"),
       output_directory = paste0(base::tempdir(), "/mdm_error"),
-      images_subdirectory = "/Bilder/png")
+      images_subdirectory = "images")
   )
   expect_error(
     questionMetadataPreparation::convert_handcrafted_questionnaires_to_mdm_format( #nolint
       input_directory =
-        testthat::test_dir("from_zofar/questions/ins3"),
+        testthat::test_dir("from_zofar/questions"),
       output_directory = paste0(base::tempdir(),
         "/mdm_error_wrong_images_subdirectory"),
       images_subdirectory = "/Bilder")
@@ -159,6 +159,6 @@ class = "data.frame")
          c("4.1", "5.1", "5.1", "6.1"),
          "6.1"))
 })
-testthat::teardown(
-  unlink(paste0(base::tempdir(), "/handcrafted"), recursive = TRUE)
-)
+
+testthat::teardown(unlink(paste0(base::tempdir(), "/mdm"), recursive = TRUE))
+testthat::teardown(unlink(paste0(base::tempdir(), "/handcrafted"), recursive = TRUE))

@@ -6,14 +6,14 @@ testthat::context("from Zofar to handcrafted")
 
 test_that("conversion from Zofar to handcrafted works", {
   questionMetadataPreparation::convert_zofar_export_to_handcrafted_questionnaire(#nolint
-    input_directory = testthat::test_path("from_zofar/questions/ins3"),
+    input_directory = testthat::test_path("from_zofar/questions"),
     output_directory = paste0(base::tempdir(), "/handcrafted"))
   file_list_generated <- list.files(paste0(base::tempdir(),
     "/handcrafted/"), recursive = TRUE)
-  file_list_expected <- c("Bilder/png/ins3/1.1_0.png",
-    "Bilder/png/ins3/2.1_0.png", "Bilder/png/ins3/3.1_0.png",
-    "Bilder/png/ins3/3.2_0.png", "Bilder/png/ins3/4.1_0.png",
-    "Bilder/png/ins3/4.2_0.png", "Bilder/png/ins3/5.1_0.png",
+  file_list_expected <- c("images/ins3/1.1_0.png",
+    "images/ins3/2.1_0.png", "images/ins3/3.1_0.png",
+    "images/ins3/3.2_0.png", "images/ins3/4.1_0.png",
+    "images/ins3/4.2_0.png", "images/ins3/5.1_0.png",
     "questions-ins3.xlsx")
 
   generated_excel <- readxl::read_xlsx(paste0(base::tempdir(),
@@ -26,6 +26,5 @@ test_that("conversion from Zofar to handcrafted works", {
 
  })
 
-testthat::teardown(
-  unlink(paste0(base::tempdir(), "/handcrafted"), recursive = TRUE)
-)
+testthat::teardown(unlink(paste0(base::tempdir(), "/mdm"), recursive = TRUE))
+testthat::teardown(unlink(paste0(base::tempdir(), "/handcrafted"), recursive = TRUE))
