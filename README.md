@@ -47,7 +47,7 @@ devtools::install() # installs the project from the current directory
 devtools::test() # runs the test_that tests
 ```
 
-You can build the package on you local machine with
+You can build the package on your local machine with
 
 ``` bash
 R CMD build .
