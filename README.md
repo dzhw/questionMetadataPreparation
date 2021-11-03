@@ -70,7 +70,7 @@ commit on `master`.
 # Usefull links, further documentation
 
   - [Further
-    Documentation](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-2.0)
+    Documentation](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-(Questions))
 
 ## Having trouble?
 

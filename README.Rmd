@@ -63,7 +63,7 @@ The scripts under `/bin` must be copied to `//faust/abt4/FDZ/4_Datenaufnahme/_Or
 
 # Usefull links, further documentation
 
-- [Further Documentation](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-2.0)
+- [Further Documentation](https://github.com/dzhw/FDZ_Allgemein/wiki/Fragen-(Questions))
 
 ## Having trouble?
 
