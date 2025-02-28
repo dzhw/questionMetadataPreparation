@@ -158,7 +158,9 @@ write_question_images <- function(xlsx_file, input_directory,
   for (i in rownames(excel)) {
     images_directory <- file.path(instrument_directory,
       "images", excel[i, "questionNumber"])
-    create_empty_directory(images_directory);
+    if (!dir.exists(images_directory)) {
+      dir.create(images_directory, recursive = TRUE)
+    }
 
     # copy the image file
     question_image <- paste(input_directory, images_subdirectory,
